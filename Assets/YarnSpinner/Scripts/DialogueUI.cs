@@ -46,6 +46,8 @@ namespace Yarn.Unity {
         /// How quickly to show the text, in seconds per character
         [Tooltip("How quickly to show the text, in seconds per character")]
         public float textSpeed = 0.025f;
+        public float nextLineSeconds = 3f;
+        public float waitForOptionsTimer = 5f;
 
         /// The buttons that let the user choose an option
         public List<Button> optionButtons;
@@ -132,12 +134,13 @@ namespace Yarn.Unity {
             // Indicate to the rest of the game that the line has finished being delivered
             onLineFinishDisplaying?.Invoke();
 
-            while (userRequestedNextLine == false) {
-                yield return null;
-            }
+            //while (userRequestedNextLine == false) {
+            //    yield return null;
+            //}
+            yield return new WaitForSeconds(nextLineSeconds);
 
-            // Avoid skipping lines if textSpeed == 0
-            yield return new WaitForEndOfFrame();
+            //// Avoid skipping lines if textSpeed == 0
+            //yield return new WaitForEndOfFrame();
 
             // Hide the text and prompt
             onLineEnd?.Invoke();
@@ -154,20 +157,18 @@ namespace Yarn.Unity {
         /// selection.
         public  IEnumerator DoRunOptions (Yarn.OptionSet optionsCollection, IDictionary<string,string> strings, System.Action<int> selectOption)
         {
-            // Do a little bit of safety checking
-            if (optionsCollection.Options.Length > optionButtons.Count) {
-                Debug.LogWarning("There are more options to present than there are" +
-                                 "buttons to present them in. This will cause problems.");
-            }
-
             // Display each option in a button, and make it visible
             int i = 0;
 
             waitingForOptionSelection = true;
 
             currentOptionSelectionHandler = selectOption;
-            
+
             foreach (var optionString in optionsCollection.Options) {
+
+                if (i >= optionButtons.Count)
+                    continue;
+
                 optionButtons [i].gameObject.SetActive (true);
 
                 // When the button is selected, tell the dialogue about it
@@ -195,7 +196,16 @@ namespace Yarn.Unity {
             onOptionsStart?.Invoke();
 
             // Wait until the chooser has been used and then removed 
+            float timer = 0f;
             while (waitingForOptionSelection) {
+                timer += Time.deltaTime;
+
+                // after some time always choose the last option
+                if (timer > waitForOptionsTimer)
+                {
+                    SelectOption(optionsCollection.Options.Length - 1);
+                }
+
                 yield return null;
             }
 
