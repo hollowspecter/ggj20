@@ -108,11 +108,21 @@ namespace Yarn.Unity {
                 text = line.ID;
             }
 
+            Voice.Registry.TryGetValue(GetNameFromLine(text), out Voice voice);
+
             if (textSpeed > 0.0f) {
                 // Display the line one character at a time
                 var stringBuilder = new StringBuilder ();
 
                 foreach (char c in text) {
+
+                    // play a voice if character is a vowel
+                    if ("aeiouAEIOU".IndexOf(c) >= 0)
+                    {
+                        // get the voice event and play it as a oneshot
+                        voice?.Talk();
+                    }
+
                     stringBuilder.Append (c);
                     onLineUpdate?.Invoke(stringBuilder.ToString ());
                     if (userRequestedNextLine) {
@@ -265,6 +275,19 @@ namespace Yarn.Unity {
             }
             waitingForOptionSelection = false;
             currentOptionSelectionHandler?.Invoke(index);
+        }
+
+        protected string GetNameFromLine(string line)
+        {
+            int indexOfPoints = line.IndexOf(':');
+            return line.Substring(0, indexOfPoints);
+
+        }
+
+        protected string GetLineFromLineWithoutName(string line)
+        {
+            int indexOfPoints = line.IndexOf(':');
+            return line.Substring(indexOfPoints + 2);
         }
 
     }

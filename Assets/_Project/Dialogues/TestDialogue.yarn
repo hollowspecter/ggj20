@@ -3,19 +3,19 @@ tags:
 colorID: 0
 position: 721,130
 ---
-    Ship: Hey, friend.  #line:5837f2
-    Player: Hi, Ship. #line:ship9
-    Player: How's space? #line:ship10
-    Ship: Oh, man. #line:ship11
-    Where should we go next?
+    A: Hey, friend.  #line:5837f2
+    B: Hi, Ship. #line:ship9
+    B: How's space? #line:ship10
+    A: Oh, man. #line:ship11
+    B: Where should we go next?
     -> North
-        It is cold to the north.
+        A: It is cold to the north.
     -> South
-        You've heard that the weather to the south is sunny.
+        A: You've heard that the weather to the south is sunny.
     -> East
-        You're not sure if the rumours of bandits to the east are true.
+        A: You're not sure if the rumours of bandits to the east are true.
     -> West
-        Go west blablabla
+        A: Go west blablabla
     -> Nothing
-        Thanks for not answering lol
+        A: Thanks for not answering lol
 ===
