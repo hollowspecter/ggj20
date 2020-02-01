@@ -4,6 +4,7 @@
     {
         _MainTex ("Texture", 2D) = "white" {}
 		_ShadowTex ("Texture", 2D) = "white" {}
+		[PerRendererData]
 		_Color ("Color", Color) = (1,1,1,1)
     }
     SubShader

@@ -128,6 +128,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2848387467012517180, guid: 2fb4f63892a674739a7e9a557d66b92a,
+        type: 3}
+      propertyPath: panicGradient.key0.r
+      value: 0.16993701
+      objectReference: {fileID: 0}
+    - target: {fileID: 2848387467012517180, guid: 2fb4f63892a674739a7e9a557d66b92a,
+        type: 3}
+      propertyPath: panicGradient.key0.g
+      value: 0.7075472
+      objectReference: {fileID: 0}
+    - target: {fileID: 2848387467012517180, guid: 2fb4f63892a674739a7e9a557d66b92a,
+        type: 3}
+      propertyPath: panicGradient.key0.b
+      value: 0.16353686
+      objectReference: {fileID: 0}
+    - target: {fileID: 2848387467012517180, guid: 2fb4f63892a674739a7e9a557d66b92a,
+        type: 3}
+      propertyPath: panicGradient.key1.r
+      value: 0.3679245
+      objectReference: {fileID: 0}
+    - target: {fileID: 2848387467012517180, guid: 2fb4f63892a674739a7e9a557d66b92a,
+        type: 3}
+      propertyPath: panicGradient.key1.g
+      value: 0.01561943
+      objectReference: {fileID: 0}
+    - target: {fileID: 2848387467012517180, guid: 2fb4f63892a674739a7e9a557d66b92a,
+        type: 3}
+      propertyPath: panicGradient.key1.b
+      value: 0.01561943
+      objectReference: {fileID: 0}
     - target: {fileID: 2848387467012517181, guid: 2fb4f63892a674739a7e9a557d66b92a,
         type: 3}
       propertyPath: m_LocalPosition.x
