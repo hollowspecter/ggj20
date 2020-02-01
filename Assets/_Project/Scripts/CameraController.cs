@@ -5,6 +5,7 @@ using Cinemachine;
 public class CameraController : MonoBehaviour
 {
     public Transform mouthstart;
+    public bool isRightEye;
     public Vector2 xConstraint = new Vector2(-60,60);
     public Vector2 yConstraint = new Vector2(-60,60);
     [SerializeField] private float mouseSensitivity = 1f;
@@ -36,6 +37,21 @@ public class CameraController : MonoBehaviour
         
         transform.eulerAngles = currentRotation;
         prepareCam.transform.eulerAngles = currentRotation;
+
+        if (isRightEye)
+        {
+            if (targetRotation.y <= yConstraint.x)
+            {
+                CameraManager.instance.SwitchCamera();
+            }
+        }
+        else
+        {
+            if (targetRotation.y >= yConstraint.y)
+            {
+                CameraManager.instance.SwitchCamera();
+            }
+        }
 
     }
     
