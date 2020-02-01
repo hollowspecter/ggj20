@@ -36,6 +36,7 @@ public class TableSide : MonoBehaviour
         if(positions.ContainsKey(other.tag))
         {
             waiter.OrderItem(other.tag, positions[other.tag]);
+            other.tag = "Untagged";
         }
     }
 }
