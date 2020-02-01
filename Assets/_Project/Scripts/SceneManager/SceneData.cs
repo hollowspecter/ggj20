@@ -23,9 +23,12 @@ public class SceneData : MonoBehaviour
 
     private void Awake()
     {
+        ToggleDistractions(false);
+
         // Turn on distraction
         onDisasterStart.AddListener(() => {
             ToggleDistractions(true);
+            disasterRunning = true;
         });
     }
 
@@ -46,7 +49,8 @@ public class SceneData : MonoBehaviour
     {
         foreach(var distraction in distractions)
         {
-            distraction.gameObject.SetActive(_isActive);
+            if (distraction != null)
+                distraction.gameObject.SetActive(_isActive);
         }
     }
 }

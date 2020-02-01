@@ -23,20 +23,24 @@ public class SceneManager : MonoBehaviour
         // load all the scripts
         for (int i=0; i < scenes.Length; ++i)
         {
-            dialogueRunner.Add(scenes[i].startDialogue);
-            dialogueRunner.Add(scenes[i].endDialogue);
+            if (scenes[i].startDialogue != null)
+                dialogueRunner.Add(scenes[i].startDialogue);
+            if (scenes[i].endDialogue != null)
+                dialogueRunner.Add(scenes[i].endDialogue);
             for(int j=0; j<scenes[i].distractions.Length; ++j)
             {
-                dialogueRunner.Add(scenes[i].distractions[j].distractionDialogue);
+                if (scenes[i].distractions[j].distractionDialogue != null)
+                    dialogueRunner.Add(scenes[i].distractions[j].distractionDialogue);
             }
         }
     }
 
     public void StartScene()
     {
-        if (waitForSceneStart)
+        if (waitForSceneStart && currentSceneIndex < scenes.Length)
         {
             waitForSceneStart = false;
+            StartCoroutine(RunScene());
         }
     }
 
@@ -46,6 +50,7 @@ public class SceneManager : MonoBehaviour
         SceneData currentScene = scenes[currentSceneIndex++];
 
         // On Scene Start
+        Debug.Log($"Start Scene {currentScene}");
         currentScene.onSceneStart?.Invoke();
         onSceneStart?.Invoke();
         dialogueRunner.StartDialogue(currentScene.startNode);
@@ -56,8 +61,10 @@ public class SceneManager : MonoBehaviour
         }
 
         // Invoke disaster start
+        Debug.Log($"Start Disaster {currentScene}");
         onDisasterStart?.Invoke();
         currentScene.onDisasterStart?.Invoke();
+        yield return null;
 
         // Wait till disaster is over
         while (currentScene.DisasterRunning)
@@ -66,6 +73,7 @@ public class SceneManager : MonoBehaviour
         }
 
         // Invoke disaster end
+        Debug.Log($"End Disaster {currentScene}");
         onDisasterEnd?.Invoke();
         currentScene.onDisasterEnd?.Invoke();
 
@@ -76,6 +84,7 @@ public class SceneManager : MonoBehaviour
         }
 
         // Trigger end dialogue
+        Debug.Log($"Start End Dialogue for Scene {currentScene}");
         dialogueRunner.StartDialogue(currentScene.endNode);
 
         // Wait till its done
@@ -85,6 +94,7 @@ public class SceneManager : MonoBehaviour
         }
 
         // End of scene
+        Debug.Log($"End of scene {currentScene}");
         onSceneEnd?.Invoke();
         currentScene.onSceneEnd?.Invoke();
         waitForSceneStart = true;
