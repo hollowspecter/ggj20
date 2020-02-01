@@ -43,6 +43,7 @@ public class Tongue : MonoBehaviour
     protected Attachable currentAttachable;
     private Vector3 tongueTargetPosition;
     private Boopable boopableThatWeAreGoingToHit;
+    private Quaternion previousMouthRotation;
 
     #region Unity methods
 
@@ -169,6 +170,7 @@ public class Tongue : MonoBehaviour
                 {
                     // Stick tongue to mouth.
                     transform.position = mouthStart.position;
+                    transform.rotation = transform.rotation * (mouthStart.rotation * Quaternion.Inverse(previousMouthRotation));
 
                     if (Input.GetButtonDown("Fire1") && currentAttachable != null)
                     {
@@ -188,6 +190,8 @@ public class Tongue : MonoBehaviour
         }
 
         UpdateTongueRenderer();
+
+        previousMouthRotation = mouthStart.rotation;
     }
 
     #endregion
@@ -227,10 +231,10 @@ public class Tongue : MonoBehaviour
 
         if (Physics.Raycast(mouthStart.position, Camera.main.transform.forward, out var raycastHit, tongueMaxLength, boopableLayerMask, QueryTriggerInteraction.Collide))
         {
-            Debug.Log("Hit object: " + raycastHit.collider.name + " @ " + Time.frameCount);
+            //Debug.Log("Hit object: " + raycastHit.collider.name + " @ " + Time.frameCount);
             if (raycastHit.collider.TryGetComponent<Boopable>(out var boopable))
             {
-                Debug.Log("Booping boopable " + boopable.name);
+                //Debug.Log("Booping boopable " + boopable.name);
                 boopableThatWeAreGoingToHit = boopable;
             }
 
@@ -238,7 +242,7 @@ public class Tongue : MonoBehaviour
         }
         else
         {
-            Debug.Log("Missed shot @ " + Time.frameCount);
+            //Debug.Log("Missed shot @ " + Time.frameCount);
             tongueTargetPosition = mouthStart.position + Camera.main.transform.forward * tongueMaxLength;
         }
 
