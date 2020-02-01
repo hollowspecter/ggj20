@@ -69,7 +69,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueContainer: {fileID: 0}
   textSpeed: 0.025
-  nextLineSeconds: 3
+  nextLineSeconds: 1
   waitForOptionsTimer: 10
   optionButtons:
   - {fileID: 6528194374468216939}
