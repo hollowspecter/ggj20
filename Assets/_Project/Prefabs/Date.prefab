@@ -1,5 +1,24 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!95 &7893427498530064270
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3859448299027606683}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c033e2f196d4e5046b78128e8cc38394, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2848387467012517182
 GameObject:
   m_ObjectHideFlags: 0
@@ -29,7 +48,7 @@ Transform:
   m_LocalScale: {x: 1.692, y: 1.692, z: 1.692}
   m_Children:
   - {fileID: 2848387467755220961}
-  - {fileID: 4556823979042716953}
+  - {fileID: 276085305785736840}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -48,7 +67,7 @@ MonoBehaviour:
   panicMeter: 0
   isAttentive: 1
   panicDecreaseWhenAttentive: 0.01
-  skinRenderer: {fileID: 5581087207181426847}
+  skinRenderer: {fileID: 8186924435035669262}
   panicGradient:
     serializedVersion: 2
     key0: {r: 0.010130286, g: 1, b: 0, a: 1}
@@ -266,7 +285,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1001 &2648473656643821777
+--- !u!1001 &1740792547560571712
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -331,19 +350,45 @@ PrefabInstance:
     - target: {fileID: 3289609455091085275, guid: 15703884b4607594ea3f73f006579554,
         type: 3}
       propertyPath: m_Name
-      value: Chameleon
+      value: ChameleonFBX
+      objectReference: {fileID: 0}
+    - target: {fileID: 3737747576911888587, guid: 15703884b4607594ea3f73f006579554,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9911158
+      objectReference: {fileID: 0}
+    - target: {fileID: 3737747576911888587, guid: 15703884b4607594ea3f73f006579554,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.109605685
+      objectReference: {fileID: 0}
+    - target: {fileID: 3737747576911888587, guid: 15703884b4607594ea3f73f006579554,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.0024811386
+      objectReference: {fileID: 0}
+    - target: {fileID: 3737747576911888587, guid: 15703884b4607594ea3f73f006579554,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.07529835
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15703884b4607594ea3f73f006579554, type: 3}
---- !u!4 &4556823979042716953 stripped
+--- !u!1 &3859448299027606683 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3289609455091085275, guid: 15703884b4607594ea3f73f006579554,
+    type: 3}
+  m_PrefabInstance: {fileID: 1740792547560571712}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &276085305785736840 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2016578568748703176, guid: 15703884b4607594ea3f73f006579554,
     type: 3}
-  m_PrefabInstance: {fileID: 2648473656643821777}
+  m_PrefabInstance: {fileID: 1740792547560571712}
   m_PrefabAsset: {fileID: 0}
---- !u!137 &5581087207181426847 stripped
+--- !u!137 &8186924435035669262 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 7617071295846056014, guid: 15703884b4607594ea3f73f006579554,
     type: 3}
-  m_PrefabInstance: {fileID: 2648473656643821777}
+  m_PrefabInstance: {fileID: 1740792547560571712}
   m_PrefabAsset: {fileID: 0}
