@@ -20,18 +20,18 @@ public class Tongue : MonoBehaviour
 
     protected const float maxShootingTime = 3f;
 
-    [SerializeField] protected State currentState = State.In;
+    [SerializeField] private State currentState = State.In;
     [Space]
     [SerializeField] protected LineRenderer tongueLine;
-    [SerializeField] protected Transform mouthStart;
+    public Transform mouthStart;
     [SerializeField] private float tongueShootForce = 4f;
     [SerializeField] private float tongueMaxLength = 10f;
     [SerializeField] private float attachableShootForce = 4f;
     [SerializeField] protected float retractionDuration = 0.5f;
     [SerializeField] protected LayerMask boopableLayerMask;
     [SerializeField] protected List<Transform> tongueRopeTransforms = new List<Transform>();
-    [SerializeField] protected CinemachineVirtualCamera vcamNormal;
-    [SerializeField] protected CinemachineVirtualCamera vcamPreparing;
+    public CinemachineVirtualCamera vcamNormal;
+    public CinemachineVirtualCamera vcamPreparing;
     [SerializeField] protected float timeScalePreparing = 0.8f;
     [SerializeField] protected Canvas canvasReticle;
     protected bool doRetractAttachablesAutomatically = true;
@@ -180,7 +180,7 @@ public class Tongue : MonoBehaviour
                         {
                             Destroy(joint);
                         }
-                        currentAttachable.Rigidbody.AddForce(Camera.main.transform.forward * attachableShootForce, ForceMode.Impulse);
+                        currentAttachable.Rigidbody.AddForce(CameraManager.instance.currentControlledCamera.transform.forward * attachableShootForce, ForceMode.Impulse);
                         currentAttachable = null;
                     }
                 }
@@ -224,12 +224,14 @@ public class Tongue : MonoBehaviour
 
     private void Shoot()
     {
+        print("cam: " + CameraManager.instance.currentControlledCamera);
+        print("forward: " + CameraManager.instance.currentControlledCamera.transform.forward);
         if (currentState != State.In && currentState != State.Prepare)
             return;
 
         currentState = State.Shooting;
 
-        if (Physics.Raycast(mouthStart.position, Camera.main.transform.forward, out var raycastHit, tongueMaxLength, boopableLayerMask, QueryTriggerInteraction.Collide))
+        if (Physics.Raycast(mouthStart.position, CameraManager.instance.currentControlledCamera.transform.forward, out var raycastHit, tongueMaxLength, boopableLayerMask, QueryTriggerInteraction.Collide))
         {
             //Debug.Log("Hit object: " + raycastHit.collider.name + " @ " + Time.frameCount);
             if (raycastHit.collider.TryGetComponent<Boopable>(out var boopable))
@@ -243,7 +245,7 @@ public class Tongue : MonoBehaviour
         else
         {
             //Debug.Log("Missed shot @ " + Time.frameCount);
-            tongueTargetPosition = mouthStart.position + Camera.main.transform.forward * tongueMaxLength;
+            tongueTargetPosition = mouthStart.position + CameraManager.instance.currentControlledCamera.transform.forward * tongueMaxLength;
         }
 
         for (int i = 1; i < tongueRopeTransforms.Count - 1; i++)
