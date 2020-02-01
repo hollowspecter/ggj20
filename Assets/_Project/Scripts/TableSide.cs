@@ -35,12 +35,7 @@ public class TableSide : MonoBehaviour
     {
         if(positions.ContainsKey(other.tag))
         {
-            Debug.Log("Yes"+other.name);
             waiter.OrderItem(other.tag, positions[other.tag]);
-        }
-        else
-        {
-            Debug.Log("No"+other.name);
         }
     }
 }

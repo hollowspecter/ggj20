@@ -252,8 +252,9 @@ MonoBehaviour:
   distractions:
   - {fileID: 0}
   - {fileID: 0}
-  endDialogue: {fileID: 0}
-  endNode: Test
+  endDialogue: {fileID: 2480198943629176163, guid: 0556985a6affa4f49aff93763c91ecca,
+    type: 3}
+  endNode: goodend.sceneone.start
   disasterTimer: 60
   disasterMeter: 0.03
   onSceneStart:

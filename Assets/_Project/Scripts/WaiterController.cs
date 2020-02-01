@@ -7,14 +7,25 @@ using UnityEngine.AI;
 public class WaiterController : MonoBehaviour
 {
 
+    public enum WaiterWaypoint
+    {
+        None,
+        Kitchen,
+        PlayerTable
+    }
+
     private NavMeshAgent navAgent;
-    bool hasArrived = false;
+    bool hasArrived = true;
 
 
     [SerializeField]
     GameObject TableWaypoint;
     [SerializeField]
     GameObject KitchenWaypoint;
+
+    WaiterWaypoint currentWaypoint;
+
+
 
 
     [SerializeField]
@@ -32,95 +43,129 @@ public class WaiterController : MonoBehaviour
     Dictionary<string, List<GameObject>> Orderables = new Dictionary<string, List<GameObject>>();
 
 
-    List<KeyValuePair<string,Transform>> Orders;
+    Dictionary<string, List<Transform>> Orders = new Dictionary<string, List<Transform>>();
     // Start is called before the first frame update
     void Start()
     {
         navAgent = GetComponent<NavMeshAgent>();
-        GoToKitchen();
-        Orders = new List<KeyValuePair<string, Transform>>();
+        GoToWaypoint(WaiterWaypoint.Kitchen);
 
         Orderables.Add("Drink", new List<GameObject>());
-        foreach(var d in Drinks)
+        Orders.Add("Drink", new List<Transform>());
+        foreach (var d in Drinks)
         {
             Orderables["Drink"].Add(d);
         }
 
         Orderables.Add("Food", new List<GameObject>());
+        Orders.Add("Food", new List<Transform>());
         foreach (var f in Foods)
         {
             Orderables["Food"].Add(f);
         }
 
         Orderables.Add("CutleryLeft", new List<GameObject>());
-        foreach (var f in LeftCutlery)
+        Orders.Add("CutleryLeft", new List<Transform>());
+        foreach (var leftCutlery in LeftCutlery)
         {
-            Orderables["CutleryLeft"].Add(f);
+            Orderables["CutleryLeft"].Add(leftCutlery);
         }
 
         Orderables.Add("CutleryRight", new List<GameObject>());
-        foreach (var f in RightCutlery)
+        Orders.Add("CutleryRight", new List<Transform>());
+        foreach (var rightCutlery in RightCutlery)
         {
-            Orderables["CutleryRight"].Add(f);
+            Orderables["CutleryRight"].Add(rightCutlery);
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!hasArrived && (transform.position - TableWaypoint.transform.position).sqrMagnitude <= 2.0f)
+        if (!navAgent.pathPending)
         {
-            ArriveAtTable();
-        }
-        if (!hasArrived && (transform.position - KitchenWaypoint.transform.position).sqrMagnitude <= 2.0f)
-        {
-            GoToTable();
+            if (navAgent.remainingDistance <= navAgent.stoppingDistance)
+            {
+                if (!navAgent.hasPath || Mathf.Approximately(navAgent.velocity.sqrMagnitude, 0.0f))
+                {
+                    switch (currentWaypoint)
+                    {
+                        case WaiterWaypoint.Kitchen:
+                            hasArrived = true;
+                            break;
+                        case WaiterWaypoint.PlayerTable:
+                            ArriveAtTable();
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
         }
     }
+
+
     void ArriveAtTable()
     {
-        hasArrived = true;
-        StartCoroutine("PlaceOrders");
+        if (!hasArrived)
+        {
+            hasArrived = true;
+            StartCoroutine("PlaceOrders");
+        }
     }
 
-    void GoToTable()
+    void GoToWaypoint(WaiterWaypoint _waypoint)
     {
-        navAgent.SetDestination(TableWaypoint.transform.position);
+        if (_waypoint == currentWaypoint || !hasArrived)
+        {
+            return;
+        }
         hasArrived = false;
-    }
-
-    void GoToKitchen()
-    {
-        navAgent.SetDestination(KitchenWaypoint.transform.position);
-        hasArrived = false;
+        switch (_waypoint)
+        {
+            case WaiterWaypoint.Kitchen:
+                navAgent.SetDestination(KitchenWaypoint.transform.position);
+                break;
+            case WaiterWaypoint.PlayerTable:
+                navAgent.SetDestination(TableWaypoint.transform.position);
+                break;
+            default:
+                break;
+        }
+        currentWaypoint = _waypoint;
     }
 
     public void OrderItem(string OrderType, Transform spawn)
     {
-        if (Orderables.ContainsKey(OrderType))
+        if (!Orders[OrderType].Contains(spawn))
         {
-            Orders.Add(new KeyValuePair<string, Transform>(OrderType, spawn));
-            GoToTable();
+            Debug.Log("NEW ORDER");
+            Orders[OrderType].Add(spawn);
+            GoToWaypoint(WaiterWaypoint.PlayerTable);
         }
     }
 
     IEnumerator PlaceOrders()
     {
-        foreach (var order in Orders)
+        //Durch alle Bestelllisten durchgehen
+        foreach (var orderType in Orders.Keys)
         {
-            var type = order.Key;
-            if (Orderables.ContainsKey(type))
+            foreach (Transform _transform in Orders[orderType])
             {
-                //Gets a random item of the list of orderables
-                int max = Orderables[type].Count;
-                GameObject pref = Orderables[type][Random.Range(0, max-1)];
-                Transform spawnTransform = order.Value;
-                var GO = Instantiate<GameObject>(pref, spawnTransform.position, spawnTransform.rotation);
-                GO.transform.localScale = spawnTransform.lossyScale;
+                int max = Orderables[orderType].Count;
+                int random = Random.Range(0, max);
+                GameObject GO = Orderables[orderType][random];
+
+                GO = Instantiate<GameObject>(GO, _transform.position, _transform.rotation);
+                GO.transform.localScale = _transform.lossyScale;
                 yield return new WaitForSeconds(0.5f);
             }
         }
-        Orders.Clear();
-        GoToKitchen();
+        foreach (var orderList in Orders.Values)
+        {
+            orderList.Clear();
+        }
+        yield return new WaitForSeconds(3.0f);
+        GoToWaypoint(WaiterWaypoint.Kitchen);
     }
 }
