@@ -1,0 +1,345 @@
+title: sceneone.start
+tags: start
+colorID: 1
+position: 431,-92
+---
+Date: Hello! It is so nice to finally see you. You look so much greener than on 'Chameleove'.  #line:0090914
+Date: Hihi...  #line:07a8d73
+Date: I am so curious about this place. I have never been here. #line:0940c32
+
+-> Nervous #line:0ec96ba
+    Me: H-hey. Uhm... yeah, green is good, right... So you found the place...? Of course you did, you are here. Haha... #line:059eb39
+    [[nervous]] 
+-> Compliment #line:00d369d
+    Me: I am so happy that you said yes to go on a date with me...Hehe... Your eyes are the prettiest! So big! #line:015be8d
+    [[compliment]] 
+-> Selfcentered #line:0631f5a
+    Me: So, hello... Thank you! I always keep my skin moist and then rub it in sand to get rid of old skin. #line:03c7f6f
+    Me: You should try it! Also, this place has the most stars on omnivore.com, so I really wanted to try it. #line:099d46e
+    [[selfcentered]]
+-> Silence #line:0cc7eca
+    Me: yeah...uhhh... what...? #line:017e735
+    [[sceneone.end]]
+===
+title: nervous
+tags: bees
+colorID: 2
+position: 168,208
+---
+Date: You are so cute! Hihi.  #line:09962fa
+Date: So... do you know if they have roasted bees here? They are so delicious! Also with honey!  #line:03ae0c2
+Date: Do you like sweets? #line:087ab9e
+
+-> Fruits #line:015fb0e
+    Me: Oh, hehe... yes, I love sweets. Especially pie. With aaaall the fruits. Fruits are the best thing in the world! #line:094d013
+    [[fruits]] 
+-> Roasted bees? #line:06a135d
+    Me: I never tried roasted bees, they sound weird. Will you not get stung? #line:0fde7c6
+    [[stung]] 
+-> Pie #line:0db210a
+    Me: Well, I just like pies. Do you like pies? #line:006bbc9
+    [[pie]] 
+-> Silence #line:0917a36
+    Me: yeah...uhhh... what...? #line:08fde7a
+    [[silence_one]] 
+===
+title: compliment
+tags: 
+colorID: 2
+position: 561,204
+---
+Date: Uhm... okay... #line:0a52ca1
+Date: Can you instead tell me something about you?  #line:0973c0c
+
+-> Yellow #line:0448fb6
+    Me: My favorite thing is sunbathing, feeling the wonderful warmth of the sun on me... and I guess I like yellow. #line:09518bb
+    [[yellow]] 
+-> Green #line:028352c
+    Me: I love hanging around and watch trees grow and how the wind is waving in the leaves, hehe... And I really like green. #line:0c4d765
+    [[green]] 
+-> Red #line:07df95d
+    Me: I really love cherries and red, like some of the scales in your shiny skin. #line:01bdab4
+    [[red]] 
+-> Silence #line:0a2570b
+    Me: yeah...uhhh... what...? #line:0884d16
+    [[silence_one]] 
+===
+title: selfcentered
+tags: colors
+colorID: 2
+position: 76,-40
+---
+Date: Moist skin is the best skin.  #line:0c4b7cc
+Date: Hihi.  #line:0f96f44
+Date: I don't like the sand, but maybe I will try it, if it makes you that green.  #line:06f13f2
+Date: Do you have a favorite color?  #line:0b9685e
+
+-> Yellow #line:0b28c5d
+    Me: My favorite thing is sunbathing, feeling the wonderful warmth of the sun on me... so I guess I really like yellow. #line:006d1d0
+    [[yellow]] 
+-> Green #line:0f68a62
+    Me: Of course my favorite color is all the greens, like my picture in my mirror pond. #line:0a0c8ac
+    Me: I also love hanging around and watch trees grow and how the wind is waving in the leaves. #line:0bb9781
+    [[green]] 
+-> Red #line:0fb1c82
+    Me: It's exactly the kind of lovely red you have in your beautiful scale. #line:0ac5fb6
+    [[red]] 
+-> Silence #line:0ae1353
+    Me: yeah...uhhh... what...? #line:0873478
+    [[silence_one]] 
+===
+title: fruits
+tags: dessert
+colorID: 3
+position: -92,363
+---
+Date: Oh yes! Yes! We should have fruits for dessert! #line:0921d97
+Date: Maybe they even have fruit salad! #line:020c0b0
+
+-> Very good #line:059e6ec
+    Me: Oh yes! Let's do it! Give me all the fruits! #line:0710836
+    Me: They are all so delicious and juicy and flavourful and just the best. Fruits are basically my reason to live! #line:0e57f9b
+    [[good]] 
+-> Meh #line:0e484ab
+    Me: I mean... I don't like all the fruits. I am allergic to kiwi, bananas are too sweet, #line:0c3b43b
+    Me: strawberries are actually nuts, apples can be very sour, pineapple makes my stomach weird, #line:00fe740
+    Me: oranges hurt my teeth... I mean, you get what I am saying... #line:0024d4a
+    [[meh]] 
+-> Silence #line:019351b
+    Me: yeah...uhhh... what...? #line:0eaaef9
+    [[silence_one]] 
+===
+title: stung
+tags: 
+colorID: 3
+position: 129,576
+---
+Date: Oh, uh... Stung?  #line:0eedf91
+Date: No, no! You just pick out the stingy part.  #line:0555aae
+Date: It's not weird...  #line:0c8a6e6
+Date: Also, I like it kinda dangerous. Hihi.  #line:03aea2e
+Date: My grandma always said: No risk, no risk.  #line:04e856d
+Date: And then she got trampled by an elephant while trying to ride it.  #line:0b7942e
+Date: Ha... she died, as she lived.  #line:080a5d1
+
+-> Hero #line:077a809
+    Me: I actually never saw it from that perspective. That sounds awesome! She sounds like a real adventurer! #line:041717e
+    [[hero]] 
+-> Idiot #line:07df9b9
+    Me: Hm... okay... I am not sure that sounds like a relaxed meal, haha... And about riding an elephant... #line:01897ac
+    Me: What did she want to achieve with that? That sounds like foolhardiness to me... #line:05c92af
+    [[idiot]] 
+-> Unsure #line:08f9a1f
+    Me: That really sounds... risky... haha... Do you also ride elephants? #line:0b786ff
+    [[unsure]] 
+-> Silence #line:0d4ab2d
+    Me: yeah...uhhh... what...? #line:0e496a7
+    [[silence_one]] 
+===
+title: pie
+tags: 
+colorID: 3
+position: 367,605
+---
+Date: I like my sweets more cross. But pie is fine.  #line:0965db3
+Date: Oh, you could also fill it with bees!!! #line:0e6bcc0
+
+-> Yes!! #line:0f715f6
+    Me: Huh? That actually sounds like a good idea! Let's invent a new cake! But I can not really bake. Do you bake...? #line:0f8ccea
+    [[yes]] 
+-> No! #line:065f31d
+    Me: But pie is about being sweet! Nah, that doesn't sound tasty at all! #line:0100793
+    [[no]] 
+-> Silence #line:0d446f8
+    Me: yeah...uhhh... what...? #line:0b2721f
+    [[silence_one]] 
+===
+title: yellow
+tags: subathing
+colorID: 3
+position: -458,-144
+---
+Date: Sunbathing! One of the best things in live... #line:007747b
+Date: We should totally do it together some time, hihi. #line:0241270
+
+-> Sure #line:0bdd25f
+    Me: Uh, really? Hehe... that sounds nice. #line:0365b18
+    [[sure]] 
+-> Nope #line:07be3a0
+    Me: Uh-uh... sorry, but no. That is my private chill time and I will share it with nobody. #line:0c498da
+    [[nope]] 
+-> Silence #line:053cf2e
+    Me: yeah...uhhh... what...? #line:0b4d08b
+    [[silence_one]] 
+===
+title: green
+tags: 
+colorID: 3
+position: -169,-353
+---
+Date: You can see the trees grow?  #line:0f721f9
+Date: Awesome! And so much green!  #line:08464f8
+Date: I love green!  #line:0ca88cd
+Date: Like so much! But sometimes, when I am scared or angry, I can become red, I really hate red.  #line:05d31af
+
+-> Like cherry #line:02de37b
+    Me: I am sure you would also look beautiful in red. Like a nice... cherry. #line:04f3da1
+    [[cherry]] 
+-> Don't worry #line:0c03254
+    Me: Oh, I see. Don't worry, I will make sure there will be no reason for you to become angry or scared. #line:02022da
+    [[worry]] 
+-> Silence #line:05f8de5
+    Me: yeah...uhhh... what...? #line:043ef77
+    [[silence_one]] 
+===
+title: red
+tags: 
+colorID: 3
+position: -421,109
+---
+Date: Ugh! I hate red!  #line:02e65fd
+Date: It always appears, when I am angry or scared and I really don't like it.  #line:0f79a59
+
+-> Like cherry #line:0bd7269
+    Me: I am sure you would also look beautiful in red. Like a nice... cherry. #line:087f1fc
+    [[cherry]] 
+-> Don't worry #line:0df4f32
+    Me: Oh, I see. Don't worry, I will make sure there will be no reason for you to become angry or scared. #line:061ae1c
+    [[worry]] 
+-> Silence #line:0414f40
+    Me: yeah...uhhh... what...? #line:08c718e
+    [[silence_one]] 
+===
+title: hero
+tags: 
+colorID: 4
+position: -266,803
+---
+Date: Hihi. #line:04f21e8
+Date: Yes, thank you so much for saying that! She was so awesome. #line:0dcf77b
+Date: I wish I could be more like her. #line:018d14a
+Date: But, to be honest, I am really easily scared... #line:09c5a2c
+[[sceneone.end]]
+===
+title: idiot
+tags: 
+colorID: 4
+position: -32,885
+---
+Date: What?!  #line:0166800
+Date: You really can't say anything about it, if you haven't tried it yet!  #line:0f612a6
+Date: ... #line:045531a
+[[sceneone.end]]
+===
+title: unsure
+tags: 
+colorID: 4
+position: 194,889
+---
+Date: Hihi, no I haven't tried riding an elephant yet.  #line:01634c7
+Date: It really sounds risky, but maybe it is super fun!  #line:03375b3
+Date: But I am also afraid of heights...  #line:02a72fc
+[[sceneone.end]]
+===
+title: yes
+tags: 
+colorID: 4
+position: 589,926
+---
+Date: Yes!  #line:0f9c1ce
+Date: Hihi.  #line:004c231
+Date: But.. I also can not bake...  #line:023d8da
+[[sceneone.end]]
+===
+title: no
+tags: 
+colorID: 4
+position: 731,692
+---
+Date: Hm... I think you have no idea! #line:0479ea0
+Date: You should try it first!  #line:0cb0144
+[[sceneone.end]]
+===
+title: good
+tags: 
+colorID: 4
+position: -549,373
+---
+Date: Wow, you sound very enthusiastic.  #line:01fdaa1
+Date: Are you okay though...?  #line:04a4f84
+[[sceneone.end]]
+===
+title: meh
+tags: 
+colorID: 4
+position: -508,607
+---
+Date: Oh, okay...  #line:09432b3
+Date: so...  #line:09209e2
+Date: I am not sure what you mean exactly, to be honest...  #line:05a554f
+[[sceneone.end]]
+===
+title: sure
+tags: 
+colorID: 4
+position: -855,-349
+---
+Date: Hihi, yes...  #line:0b6b32c
+Date: In the sun... together...  #line:0d62b5f
+Date: Hihi... #line:0872eda
+[[sceneone.end]]
+===
+title: nope
+tags: 
+colorID: 4
+position: -868,-113
+---
+Date: I would never want to disturb your peace! #line:0a7d854
+Date: Just... I thought... #line:045d042
+Date: But, okay...  #line:0905780
+[[sceneone.end]]
+===
+title: cherry
+tags: cherry
+colorID: 4
+position: -530,-557
+---
+Date: A... cherry?  #line:0ca66ed
+Date: That sounds really weird.  #line:0186d3a
+Date: Please, don't call me a cherry anymore...  #line:0f4ffb5
+[[sceneone.end]]
+===
+title: worry
+tags: 
+colorID: 4
+position: -283,-638
+---
+Date: Hihi, okay.  #line:0282548
+Date: I am counting on you!  #line:0e2c330
+[[sceneone.end]]
+===
+title: silence_one
+tags: 
+colorID: 0
+position: 200,-452
+---
+Date: Am I boring you?  #line:035e063
+[[sceneone.end]]
+===
+title: silence
+tags: 
+colorID: 0
+position: 1213,-311
+---
+[[sceneone.end]]
+===
+title: sceneone.end
+tags: 
+colorID: 0
+position: 1213,-311
+---
+Date: Hey, didn't you say something about a gift?
+Date: I really wonder, what it could be!
+Date: Can I have it now?
+Instructions: Give your date the gift!
+===

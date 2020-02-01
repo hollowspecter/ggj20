@@ -20,6 +20,16 @@ public class Fire : MonoBehaviour
         ResetSpreadTimer();
     }
 
+    private void OnEnable()
+    {
+        FireDisaster.numberOfFires++;
+    }
+
+    private void OnDisable()
+    {
+        FireDisaster.numberOfFires--;
+    }
+
     void Update()
     {
         // increase slowly

@@ -1,0 +1,39 @@
+fileFormatVersion: 2
+guid: 8cb48369d1cd746248a45ced587b2a5e
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en
+  stringIDs:
+  - flower.start-flower.start-0
+  - flower.start-flower.start-1
+  - flower.start-flower.start-2
+  - flower.start-flower.start-3
+  - flower.start-why-4
+  - flower.start-why-5
+  - flower.start-why-6
+  - flower.start-why-7
+  - flower.start-lame-8
+  - flower.start-lame-9
+  - flower.start-turn-10
+  - flower.start-turn-11
+  - flower.start-turn-12
+  - flower.start-turn-13
+  - flower.start-turn-14
+  - flower.start-turn-15
+  - flower.start-turn-16
+  - flower.start-turn-17
+  - flower.start-silence_two-18
+  - flower.start-book-19
+  - flower.start-book-20
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: 8cb48369d1cd746248a45ced587b2a5e,
+    type: 3}
+  localizations: []

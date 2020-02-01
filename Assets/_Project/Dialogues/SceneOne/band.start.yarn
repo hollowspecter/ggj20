@@ -1,0 +1,148 @@
+title: band.Start
+tags: band
+colorID: 1
+position: 543,131
+---
+Oh, wow! The band is just awesome!  #line:0f89258
+[[ I think they are a new indie band with instrumental-alternative-lounge-folk-rock music. Have you heard of them? | band]]  #line:0719c63
+===
+title: band
+tags: music
+colorID: 2
+position: 559,410
+---
+Uh, you really seem sophisticated in music genres. #line:0ee5d36
+I never heard of that one, though... #line:0555e3b
+They seem cool, but what is so special about them?  #line:07ac2ef
+
+[[ You see, they pretend to be amateurs. It's basically a deconstruction of music itself. Back to the basics. Almost less than the the basics you might say. |basics ]]  #line:0329e1f
+[[ If you really listen, you recognize the comedy aspect of it. In the language of music, every instrument is telling a joke. But it is very specific. | language]]  #line:0c9fa68
+[[ uh... | silence_three ]]  #line:04fbc58
+===
+title: basics
+tags: 
+colorID: 3
+position: 353,707
+---
+Oh, wow! That sounds like a real form of art!  #line:0b25dde
+I love art!  #line:01b1464
+I also love playing my music very loud to annoy my neighbors. Hihi... #line:080da47
+Tell me more about the deconstruction of music!  #line:03544cb
+
+[[ So, they break it down to every note and then just play what ever they feel in their heart. It is the purest of music. They strip all the talent and training away to enjoy it just like kids. |think ]]  #line:07cb3ac
+[[ Uh, it's kind of hard to explain, you know? They just break the music down and then repair it again... I can't really tell you... because... |nojoke ]]  #line:0b94c5d
+[[ uh... | silence_three]]  #line:0f3a7aa
+===
+title: language
+tags: 
+colorID: 3
+position: 703,695
+---
+And you can speak that language of music?  #line:08cde3e
+Could you... could you translate it for me? #line:03bd3e0
+I love great jokes, hihi.  #line:0fefff2
+
+[[ What is Beethovens favorite fruit? BA-NA-NA-NAAAAA! |jokegood]]  #line:01db0ec
+[[ Why wouldn't the shrimp share his treasure? Because he was a little shellfish! |jokebad ]]  #line:03dc561
+[[ Uhm, so... I can't really... tell... |nojoke ]]  #line:0cb1e98
+===
+title: jokegood
+tags: 
+colorID: 4
+position: 617,966
+---
+Whaaat? Hihi! #line:05a64d8
+This is awesome?  #line:0e37a45
+What else are they joking about in the music?  #line:085b3ca
+
+[[ What's the definition of a nervous breakdown? A chameleon on a tartan rug !|chameleon ]] #line:0d07419
+[[ Uh... I... can't really tell... | nojoke]]  #line:06ebd25
+===
+title: jokebad
+tags: bad joke
+colorID: 4
+position: 1241,843
+---
+Hihi... but... wait...  #line:0758409
+That doesn't have anything to do with music?  #line:094ebdd
+Are making this up?  #line:098dae3
+
+[[ Uhm... haha... yes. But it would be fun if it was true, right? | truth]]  #line:0552369
+[[ No! Of course not! They were telling this joke with the instruments! |lie ]]  #line:018cace
+[[ uh... | silence_three]]  #line:005c0d8
+===
+title: nojoke
+tags: end
+colorID: 4
+position: 1034,574
+---
+What? What do you mean, you can't tell?  #line:0a0e91f
+Are you just making fun of me?  #line:0935534
+===
+title: truth
+tags: 
+colorID: 5
+position: 1096,1177
+---
+Hihi! Yes! #line:0eadb79
+Oh my, I almost believed you! Hihi! #line:072649d
+You sly reptile! But I really love good jokes!  #line:089e47a
+
+[[ Okay, listen to this one: What's the coldest type of reptile? A blizzard! | blizzard]]  #line:03121f6
+[[ uh... | silence_three]]  #line:014a1aa
+===
+title: lie
+tags: angry
+colorID: 5
+position: 1353,1191
+---
+Do you think I am stupid?  #line:00bf392
+Stop lying to me!  #line:0fd3527
+At least be honest... #line:0cad0c2
+===
+title: blizzard
+tags: 
+colorID: 6
+position: 968,1423
+---
+Hihi! A cold... Hihi!  #line:04ee5f1
+Love it!  #line:081c753
+===
+title: chameleon
+tags: 
+colorID: 5
+position: 689,1229
+---
+Hihi! Oh, no! #line:062172c
+That would be awful! Hihi!  #line:0ea8280
+Another one!  #line:0da5be3
+
+[[ Okay, listen to this one: What's the coldest type of reptile? A blizzard! | blizzard]] #line:0df962d
+[[ Uh... I can't tell... | nojoke]]  #line:0bad643
+===
+title: think
+tags: 
+colorID: 4
+position: 64,673
+---
+That sounds... interesting.  #line:0e36a03
+Although I am not sure I can really appreciate it...  #line:06f56a3
+I think I still like loud rock music a lot more. Hihi.  #line:0145879
+
+[[ Hehe... yes... I really love dancing, so let me know, when you want to annoy your neighbors again. | dancing]]  #line:0bfd2e1
+[[ uh... | silence]]  #line:0613ff5
+===
+title: dancing
+tags: plan
+colorID: 5
+position: -26,942
+---
+Hihi, that sounds like a plan!  #line:0f06a71
+===
+title: silence_three
+tags: silence
+colorID: 0
+position: 1119,190
+---
+Are you trying to make fun of me...?! #line:09e2d7f
+===

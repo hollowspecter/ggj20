@@ -176,7 +176,7 @@ namespace Yarn.Unity {
 
             foreach (var optionString in optionsCollection.Options) {
 
-                if (i >= optionButtons.Count)
+                if (i >= optionButtons.Count-1)
                     continue;
 
                 optionButtons [i].gameObject.SetActive (true);
@@ -279,6 +279,8 @@ namespace Yarn.Unity {
 
         protected string GetNameFromLine(string line)
         {
+            if (line.Length == 0)
+                return "";
             int indexOfPoints = line.IndexOf(':');
             return line.Substring(0, indexOfPoints);
 
@@ -286,6 +288,8 @@ namespace Yarn.Unity {
 
         protected string GetLineFromLineWithoutName(string line)
         {
+            if (line.Length == 0)
+                return "";
             int indexOfPoints = line.IndexOf(':');
             return line.Substring(indexOfPoints + 2);
         }

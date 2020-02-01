@@ -9,9 +9,9 @@ public class GiftDisaster : MonoBehaviour
     public UnityEvent onGoodGiftReceived;
     public UnityEvent onBadGiftReceived;
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.collider.TryGetComponent<Attachable>(out var gift))
+        if (other.TryGetComponent<Attachable>(out var gift))
         {
             if (goodGifts.Contains(gift.gameObject))
             {

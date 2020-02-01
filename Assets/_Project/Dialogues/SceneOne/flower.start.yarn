@@ -1,0 +1,59 @@
+title: flower.start
+tags: 
+colorID: 1
+position: 555,45
+---
+This flower over here... #line:08e221d
+It is my favorite one!  #line:068a96b
+They call it chameleon flower.  #line:084ea22
+[[ Do you know why? |why ]]  #line:00c05ca
+===
+title: why
+tags: 
+colorID: 2
+position: 315,207
+---
+Hihi, because it can change its color?  #line:0bd1a16
+
+[[ Thaaaat... iiiiis... right... | lame]]  #line:0350e8b
+[[ Noooo! It is because it looks like a chameleon, when you turn your head like this... | turn]]  #line:0b6e174
+[[ ... |silence_two ]]  #line:05d3a75
+===
+title: lame
+tags: end
+colorID: 3
+position: 56,98
+---
+Oh, ok... #line:0024996
+That is... nice. #line:07b196e
+===
+title: turn
+tags: 
+colorID: 3
+position: 33,343
+---
+Really? That sounds awesome! #line:0945bac
+Let me try it! #line:0e95e78
+... #line:0ce70e4
+I can't... #line:081430c
+Oh! Now! I see it! #line:002f9c3
+Hihi, how did you know? #line:00ab1e9
+
+[[ I have the great chameleoncyclopaedia one to three at home. You can borrow it, if you want.| book]]  #line:0ea5e47
+[[ ... |silence_two ]]  #line:011bd59
+===
+title: silence_two
+tags: 
+colorID: 0
+position: 604,466
+---
+Are you listening...? #line:040903a
+===
+title: book
+tags: end
+colorID: 4
+position: 297,567
+---
+Oh, I always wanted to read it!  #line:0004dd5
+I will totally come and borrow it, hihi.  #line:00b7ee6
+===

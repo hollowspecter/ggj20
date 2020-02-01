@@ -21,6 +21,8 @@ public class SceneData : MonoBehaviour
     private bool disasterRunning = false;
     private bool endDisasterEarly = false;
 
+    public void SetEndNode(string _endNode) => endNode = _endNode;
+
     public bool DisasterRunning => disasterRunning;
 
     private void Awake()
