@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 7900713804496788760}
   - component: {fileID: 2314019759724630231}
   - component: {fileID: 6862154348240184679}
-  - component: {fileID: 608823184405711108}
   - component: {fileID: 6958109649013359540}
+  - component: {fileID: 4546825705973069613}
   m_Layer: 4
   m_Name: FireMesh
   m_TagString: Untagged
@@ -81,20 +81,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &608823184405711108
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4471628086165227469}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &6958109649013359540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,6 +107,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!65 &4546825705973069613
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4471628086165227469}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.15}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7339851432243320561
 GameObject:
   m_ObjectHideFlags: 0

@@ -132,3 +132,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TableWaypoint: {fileID: 0}
   KitchenWaypoint: {fileID: 0}
+  Drinks:
+  - {fileID: 8332521635011790616, guid: 63eaddce4bf234553a450b8ee044d973, type: 3}
+  - {fileID: 1848304535800069951, guid: a505cd389589547aa8371d06f4cd3e89, type: 3}
+  - {fileID: 3963264749303598852, guid: 4ae322702cfec4c339da4369c2ac39d8, type: 3}
+  - {fileID: 7483908189613129233, guid: 297b93a58a16145788b217447b350332, type: 3}
+  Foods:
+  - {fileID: 6897585337841693424, guid: f78e95f41c43a4749bfd92bb3fb98bf2, type: 3}
+  - {fileID: 958830084646756388, guid: 49eccfd06f91248f692bf42bc980f3ef, type: 3}
+  - {fileID: 5496097439177599823, guid: f4ad15c83d58541278d80cc0ffe4e2fe, type: 3}
+  - {fileID: 2458454982413349467, guid: 8fd16c8033bb34389907d75a82444a42, type: 3}
+  - {fileID: 9122215216984485562, guid: 8d1f47ddd5a6e424e931c9f9260bb84e, type: 3}
+  - {fileID: 7507171719441516464, guid: 98e29b6fd87124e489539bf834578b87, type: 3}
+  LeftCutlery:
+  - {fileID: 6339285299350131230, guid: 64c3fac938d174c208d0d61d5631c165, type: 3}
+  - {fileID: 2741650609971358114, guid: cb75638c5cbf0411cab1b714cd60f233, type: 3}
+  RightCutlery:
+  - {fileID: 4940605987710541969, guid: ca8204a7e14b34f799d53dd75e22466f, type: 3}

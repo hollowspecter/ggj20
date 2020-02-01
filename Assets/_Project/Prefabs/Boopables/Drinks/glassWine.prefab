@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2353705435863028267}
   m_Layer: 0
   m_Name: glassWine
-  m_TagString: Untagged
+  m_TagString: Drink
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
