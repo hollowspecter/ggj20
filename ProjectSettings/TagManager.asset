@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Drink
+  - Food
+  - CutleryLeft
+  - CutleryRight
   layers:
   - Default
   - TransparentFX

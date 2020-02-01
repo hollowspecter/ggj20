@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using Cinemachine;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
@@ -27,6 +29,11 @@ public class Tongue : MonoBehaviour
     [SerializeField] private float attachableShootForce = 4f;
     [SerializeField] protected float retractionDuration = 0.5f;
     [SerializeField] protected LayerMask boopableLayerMask;
+    [SerializeField] protected List<Transform> tongueRopeTransforms = new List<Transform>();
+    [SerializeField] protected CinemachineVirtualCamera vcamNormal;
+    [SerializeField] protected CinemachineVirtualCamera vcamPreparing;
+    [SerializeField] protected float timeScalePreparing = 0.8f;
+    [SerializeField] protected Canvas canvasReticle;
     protected bool doRetractAttachablesAutomatically = true;
     private float tongueShootDuration;
     protected float timeWhenShot;
@@ -36,6 +43,7 @@ public class Tongue : MonoBehaviour
     protected Attachable currentAttachable;
     private Vector3 tongueTargetPosition;
     private Boopable boopableThatWeAreGoingToHit;
+    private Quaternion previousMouthRotation;
 
     #region Unity methods
 
@@ -45,6 +53,9 @@ public class Tongue : MonoBehaviour
         rigidbody.isKinematic = true;
 
         transform.SetParent(null);
+        vcamPreparing.enabled = false;
+        vcamNormal.enabled = true;
+        canvasReticle.enabled = false;
     }
 
     private void FixedUpdate()
@@ -55,6 +66,8 @@ public class Tongue : MonoBehaviour
 
     private void Update()
     {
+        canvasReticle.enabled = currentState == State.Prepare;
+
         switch (currentState)
         {
             case State.In:
@@ -64,6 +77,14 @@ public class Tongue : MonoBehaviour
                     if (Input.GetButtonDown("Fire1"))
                     {
                         Shoot();
+                    }
+                    else if (Input.GetButtonDown("Fire2"))
+                    {
+                        currentState = State.Prepare;
+
+                        Time.timeScale = timeScalePreparing;
+                        vcamPreparing.enabled = true;
+                        vcamNormal.enabled = false;
                     }
                 }
                 break;
@@ -126,11 +147,30 @@ public class Tongue : MonoBehaviour
                 }
                 break;
             case State.Prepare:
+                {
+                    if (Input.GetButtonDown("Fire1"))
+                    {
+                        Shoot();
+                    }
+                    else if (Input.GetButtonUp("Fire2"))
+                    {
+                        currentState = State.In;
+                    }
+
+                    // Exit state.
+                    if (currentState != State.Prepare)
+                    {
+                        Time.timeScale = 1f;
+                        vcamPreparing.enabled = false;
+                        vcamNormal.enabled = true;
+                    }
+                }
                 break;
             case State.Holding:
                 {
                     // Stick tongue to mouth.
                     transform.position = mouthStart.position;
+                    transform.rotation = transform.rotation * (mouthStart.rotation * Quaternion.Inverse(previousMouthRotation));
 
                     if (Input.GetButtonDown("Fire1") && currentAttachable != null)
                     {
@@ -150,6 +190,8 @@ public class Tongue : MonoBehaviour
         }
 
         UpdateTongueRenderer();
+
+        previousMouthRotation = mouthStart.rotation;
     }
 
     #endregion
@@ -182,17 +224,17 @@ public class Tongue : MonoBehaviour
 
     private void Shoot()
     {
-        if (currentState != State.In)
+        if (currentState != State.In && currentState != State.Prepare)
             return;
 
         currentState = State.Shooting;
 
         if (Physics.Raycast(mouthStart.position, Camera.main.transform.forward, out var raycastHit, tongueMaxLength, boopableLayerMask, QueryTriggerInteraction.Collide))
         {
-            Debug.Log("Hit object: " + raycastHit.collider.name + " @ " + Time.frameCount);
+            //Debug.Log("Hit object: " + raycastHit.collider.name + " @ " + Time.frameCount);
             if (raycastHit.collider.TryGetComponent<Boopable>(out var boopable))
             {
-                Debug.Log("Booping boopable " + boopable.name);
+                //Debug.Log("Booping boopable " + boopable.name);
                 boopableThatWeAreGoingToHit = boopable;
             }
 
@@ -200,8 +242,16 @@ public class Tongue : MonoBehaviour
         }
         else
         {
-            Debug.Log("Missed shot @ " + Time.frameCount);
+            //Debug.Log("Missed shot @ " + Time.frameCount);
             tongueTargetPosition = mouthStart.position + Camera.main.transform.forward * tongueMaxLength;
+        }
+
+        for (int i = 1; i < tongueRopeTransforms.Count - 1; i++)
+        {
+            if (tongueRopeTransforms[i].TryGetComponent<Rigidbody>(out var rb))
+            {
+                rb.isKinematic = false;
+            }
         }
 
         tongueShootDuration = Vector3.Distance(mouthStart.position, tongueTargetPosition) / tongueShootForce;
@@ -212,9 +262,26 @@ public class Tongue : MonoBehaviour
 
     private void UpdateTongueRenderer()
     {
-        var tonguePositions = new Vector3[2];
-        tonguePositions[0] = mouthStart.position;
-        tonguePositions[1] = transform.position;
-        tongueLine.SetPositions(tonguePositions);
+        var isTongueMoving = currentState == State.Shooting || currentState == State.Retracting;
+        if (isTongueMoving)
+        {
+            tongueLine.positionCount = tongueRopeTransforms.Count;
+            tongueLine.SetPositions(tongueRopeTransforms.Select(x => x.position).ToArray());
+        }
+
+        tongueLine.forceRenderingOff = !isTongueMoving;
+
+        // Set tongue rope rigidbody kinematic state.
+        for (int i = 1; i < tongueRopeTransforms.Count - 1; i++)
+        {
+            if (tongueRopeTransforms[i].TryGetComponent<Rigidbody>(out var rb))
+            {
+                if (!isTongueMoving)
+                {
+                    rb.MovePosition(mouthStart.position);
+                }
+                rb.isKinematic = !isTongueMoving;
+            }
+        }
     }
 }
