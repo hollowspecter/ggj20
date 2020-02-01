@@ -9,10 +9,11 @@ public class Tongue : MonoBehaviour
     public enum State
     {
         In,
+        Prepare,
         Shooting,
         Stuck,
         Retracting,
-        Prepare
+        Holding,
     }
 
     protected const float maxShootingTime = 3f;
@@ -21,7 +22,8 @@ public class Tongue : MonoBehaviour
     [Space]
     [SerializeField] protected LineRenderer tongueLine;
     [SerializeField] protected Transform mouthStart;
-    [SerializeField] private float shootForce = 4f;
+    [SerializeField] private float tongueShootForce = 4f;
+    [SerializeField] private float attachableShootForce = 4f;
     [SerializeField] protected float timeUntilRetraction = 0.2f;
     [SerializeField] protected float retractionDuration = 0.5f;
     [SerializeField] protected bool doRetractAttachablesAutomatically = true;
@@ -38,6 +40,14 @@ public class Tongue : MonoBehaviour
     {
         rigidbody = GetComponent<Rigidbody>();
         rigidbody.isKinematic = true;
+
+        transform.SetParent(null);
+    }
+
+    private void FixedUpdate()
+    {
+        if (rigidbody.IsSleeping())
+            rigidbody.WakeUp();
     }
 
     private void Update()
@@ -67,46 +77,70 @@ public class Tongue : MonoBehaviour
                 {
                     if (doRetractAttachablesAutomatically || currentAttachable == null)
                     {
-                        if (Time.time > timeWhenCollided + timeUntilRetraction)
-                        {
-                            Retract();
-                        }
+                        Retract();
                     }
-                    else
-                    {
-                        if (Input.GetButtonDown("Fire1"))
-                        {
-                            Retract();
-                        }
-                        else
-                        {
-                            var input = Vector2.zero;
-                            input.x = Input.GetAxis("Mouse X");
-                            input.y = Input.GetAxis("Mouse Y");
-                            var vectorMouthToEnd = transform.position - mouthStart.position;
-                            rigidbody.AddForce(input, ForceMode.Force);
-                        }
-                    }
+                    //else
+                    //{
+                    //    if (Input.GetButtonDown("Fire1"))
+                    //    {
+                    //        Retract();
+                    //    }
+                    //    else
+                    //    {
+                    //        var input = Vector2.zero;
+                    //        input.x = Input.GetAxis("Mouse X");
+                    //        input.y = Input.GetAxis("Mouse Y");
+                    //        var vectorMouthToEnd = transform.position - mouthStart.position;
+                    //        rigidbody.AddForce(input, ForceMode.Force);
+                    //    }
+                    //}
                 }
                 break;
             case State.Retracting:
                 {
                     var t = (Time.time - timeWhenRetractionStarted) / retractionDuration;
-                    t = Mathf.Clamp01(t * t);
+                    t = t * t;
                     transform.position = Vector3.Lerp(transform.position, mouthStart.position, t);
-                    if (Mathf.Approximately(t, 1f))
+                    if (t >= 1f)
                     {
-                        currentState = State.In;
-
-                        rigidbody.angularVelocity = Vector3.zero;
-                        if (currentAttachable != null && TryGetComponent<FixedJoint>(out var joint))
+                        if (currentAttachable != null)
                         {
-                            Destroy(joint);
+                            currentState = State.Holding;
                         }
+                        else
+                        {
+                            currentState = State.In;
+
+                            rigidbody.isKinematic = true;
+                        }
+
+                        //if (currentAttachable != null && TryGetComponent<FixedJoint>(out var joint))
+                        //{
+                        //    Destroy(joint);
+                        //    currentAttachable = null;
+                        //}
                     }
                 }
                 break;
             case State.Prepare:
+                break;
+            case State.Holding:
+                {
+                    // Stick tongue to mouth.
+                    transform.position = mouthStart.position;
+
+                    if (Input.GetButtonDown("Fire1") && currentAttachable != null)
+                    {
+                        currentState = State.In;
+
+                        if (TryGetComponent<FixedJoint>(out var joint))
+                        {
+                            Destroy(joint);
+                        }
+                        currentAttachable.Rigidbody.AddForce(Camera.main.transform.forward * attachableShootForce, ForceMode.Impulse);
+                        currentAttachable = null;
+                    }
+                }
                 break;
             default:
                 break;
@@ -117,6 +151,11 @@ public class Tongue : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("OnCollisionEnter @ " + Time.frameCount + " with " + collision.collider.name + " Current state: " + currentState);
+
+        if (currentState != State.Shooting)
+            return;
+
         currentState = State.Stuck;
         timeWhenCollided = Time.time;
 
@@ -136,10 +175,9 @@ public class Tongue : MonoBehaviour
     public void AttachAttachable(Attachable _attachable)
     {
         currentAttachable = _attachable;
-        currentState = State.Stuck;
-
         var joint = gameObject.AddComponent<FixedJoint>();
         joint.connectedBody = currentAttachable.Rigidbody;
+        joint.massScale = 0.01f;
     }
 
     #endregion
@@ -148,16 +186,25 @@ public class Tongue : MonoBehaviour
 
     private void Retract()
     {
-        currentAttachable = null;
-        timeWhenRetractionStarted = Time.time;
+        if (currentState != State.Stuck && currentState != State.Shooting)
+            return;
+
         currentState = State.Retracting;
+
+        timeWhenRetractionStarted = Time.time;
+
+        rigidbody.isKinematic = true;
     }
 
     private void Shoot()
     {
+        if (currentState != State.In)
+            return;
+
         currentState = State.Shooting;
+
         rigidbody.isKinematic = false;
-        rigidbody.AddForce(Camera.main.transform.forward * shootForce, ForceMode.Impulse);
+        rigidbody.AddForce(Camera.main.transform.forward * attachableShootForce, ForceMode.Impulse);
         timeWhenShot = Time.time;
     }
 
