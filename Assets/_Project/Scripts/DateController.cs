@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Yarn.Unity;
+using Random = UnityEngine.Random;
 
 public class DateController : MonoBehaviour
 {
@@ -16,6 +17,9 @@ public class DateController : MonoBehaviour
     [SerializeField] private float panicDecreaseWhenAttentive = 0.01f;
     [SerializeField] protected Renderer skinRenderer;
     [SerializeField] protected Gradient panicGradient;
+    [SerializeField] protected List<Transform> eyes;
+    [SerializeField] private float unattentiveEyeRollAmount = 1f;
+    [SerializeField] private float unattentiveEyeRollFrequency = 1f;
 
     protected DialogueRunner dialogueRunner;
     protected SceneManager sceneManager;
@@ -95,14 +99,45 @@ public class DateController : MonoBehaviour
     protected void Update()
     {
         UpdatePanicMeter();
-
         UpdateSkinColor();
+        UpdateEyes();
+    }
+
+    private void UpdateEyes()
+    {
+        foreach (var eye in eyes)
+        {
+            if (IsAttentive)
+            {
+                eye.LookAt(Camera.main.transform);
+            }
+            else
+            {
+                eye.rotation = Quaternion.Slerp(eye.rotation, UnityEngine.Random.rotation, Time.deltaTime * unattentiveEyeRollFrequency);
+            }
+        }
     }
 
     #endregion
 
 
     #region Date methods
+
+    Vector3 AddNoiseOnAngle(float min, float max)
+    {
+        // Find random angle between min & max inclusive
+        float xNoise = Random.Range(min, max);
+        float yNoise = Random.Range(min, max);
+        float zNoise = Random.Range(min, max);
+
+        // Convert Angle to Vector3
+        Vector3 noise = new Vector3(
+          Mathf.Sin(2 * Mathf.PI * xNoise / 360),
+          Mathf.Sin(2 * Mathf.PI * yNoise / 360),
+          Mathf.Sin(2 * Mathf.PI * zNoise / 360)
+        );
+        return noise;
+    }
 
     private void UpdatePanicMeter()
     {
