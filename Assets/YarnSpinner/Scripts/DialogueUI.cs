@@ -286,7 +286,15 @@ namespace Yarn.Unity {
             if (line.Length == 0)
                 return "";
             int indexOfPoints = line.IndexOf(':');
-            return line.Substring(0, indexOfPoints);
+
+
+            if (indexOfPoints <= 0)
+            {
+                Debug.LogWarning("No name for this line!");
+                return "";
+            }
+            else
+                return line.Substring(0, indexOfPoints);
 
         }
 
@@ -295,7 +303,14 @@ namespace Yarn.Unity {
             if (line.Length == 0)
                 return "";
             int indexOfPoints = line.IndexOf(':');
-            return line.Substring(indexOfPoints + 2);
+
+            if (indexOfPoints <= 0)
+            {
+                Debug.LogWarning("No name for this line!");
+                return "";
+            }
+            else
+                return line.Substring(indexOfPoints + 2);
         }
 
     }
