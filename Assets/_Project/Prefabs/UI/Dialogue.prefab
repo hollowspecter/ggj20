@@ -45,13 +45,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yarnScripts:
-  - {fileID: 2480198943629176163, guid: d3595c87a5aa24757af29151af04d399, type: 3}
+  yarnScripts: []
   textLanguage: 
   variableStorage: {fileID: 6528194374148020420}
   dialogueUI: {fileID: 6528194374148020421}
-  startNode: Test
-  startAutomatically: 1
+  startNode: 
+  startAutomatically: 0
   automaticCommands: 1
   onNodeComplete:
     m_PersistentCalls:
