@@ -14,7 +14,21 @@
             </e>
           </e>
           <e p="Scripts" t="Include">
+            <e p="Attachable.cs" t="Include" />
+            <e p="Boopable.cs" t="Include" />
+            <e p="CameraController.cs" t="Include" />
+            <e p="Catastrophe" t="Include">
+              <e p="Fire.cs" t="Include" />
+            </e>
+            <e p="Dialogue" t="Include">
+              <e p="Voice.cs" t="Include" />
+            </e>
             <e p="TestScript.cs" t="Include" />
+            <e p="Tongue.cs" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="Fire.shader" t="Include" />
+            <e p="FireEffect.shader" t="Include" />
           </e>
         </e>
         <e p="Breakable Windows" t="Include">
@@ -501,6 +515,7 @@
             <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
         </e>
+        <e p="WaiterController.cs" t="Include" />
         <e p="YarnSpinner" t="Include">
           <e p="Editor" t="Include">
             <e p="YarnImporter.cs" t="Include" />
