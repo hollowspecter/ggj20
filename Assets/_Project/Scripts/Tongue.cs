@@ -41,7 +41,13 @@ public class Tongue : MonoBehaviour
         rigidbody = GetComponent<Rigidbody>();
         rigidbody.isKinematic = true;
 
-        transform.parent.SetParent(null);
+        transform.SetParent(null);
+    }
+
+    private void FixedUpdate()
+    {
+        if (rigidbody.IsSleeping())
+            rigidbody.WakeUp();
     }
 
     private void Update()
@@ -105,8 +111,6 @@ public class Tongue : MonoBehaviour
                         {
                             currentState = State.In;
 
-                            rigidbody.angularVelocity = Vector3.zero;
-                            rigidbody.velocity = Vector3.zero;
                             rigidbody.isKinematic = true;
                         }
 
@@ -147,7 +151,7 @@ public class Tongue : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("OnCollisionEnter @ " + Time.frameCount + " with " + collision.collider.name);
+        Debug.Log("OnCollisionEnter @ " + Time.frameCount + " with " + collision.collider.name + " Current state: " + currentState);
 
         if (currentState != State.Shooting)
             return;
@@ -174,7 +178,6 @@ public class Tongue : MonoBehaviour
         var joint = gameObject.AddComponent<FixedJoint>();
         joint.connectedBody = currentAttachable.Rigidbody;
         joint.massScale = 0.01f;
-        Debug.Break();
     }
 
     #endregion
@@ -189,6 +192,8 @@ public class Tongue : MonoBehaviour
         currentState = State.Retracting;
 
         timeWhenRetractionStarted = Time.time;
+
+        rigidbody.isKinematic = true;
     }
 
     private void Shoot()
