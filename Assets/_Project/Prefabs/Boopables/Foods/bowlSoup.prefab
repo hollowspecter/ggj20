@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 9110676457308076328}
   - component: {fileID: 9110676457308076329}
   - component: {fileID: 9110676457308076330}
+  - component: {fileID: 8376536162962086406}
   m_Layer: 0
   m_Name: bowlSoup
   m_TagString: Food
@@ -131,3 +132,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 671038974649800322, guid: 42b00ca4d5005724298a533689c96135, type: 3}
+--- !u!114 &8376536162962086406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958830084646756388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 544f70995c80645d98933d9092ab6e6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 1
+  strength: {x: 1, y: 1, z: 1}
+  vibrato: 18
+  randomness: 50

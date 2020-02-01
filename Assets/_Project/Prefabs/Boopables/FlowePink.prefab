@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 5216507896728019539}
   - component: {fileID: 7658497794718380321}
   - component: {fileID: 1861608536659875466}
+  - component: {fileID: -5850731339655646470}
   m_Layer: 0
-  m_Name: Lily_Type02_Orange
+  m_Name: FlowePink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -127,3 +128,19 @@ CapsuleCollider:
   m_Height: 0.42678797
   m_Direction: 1
   m_Center: {x: 0.009171657, y: 0.21339414, z: 0.03338995}
+--- !u!114 &-5850731339655646470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6833308324679851422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 544f70995c80645d98933d9092ab6e6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 1
+  strength: {x: 1, y: 1, z: 1}
+  vibrato: 18
+  randomness: 50

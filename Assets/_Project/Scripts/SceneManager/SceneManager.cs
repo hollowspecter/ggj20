@@ -11,9 +11,9 @@ public class SceneManager : MonoBehaviour
     public UnityEvent onDisasterStart;
     public UnityEvent onDisasterEnd;
     public UnityEvent onSceneEnd;
+    public int currentSceneIndex = 0;
 
     private bool waitForSceneStart = true;
-    private int currentSceneIndex = 0;
     private Yarn.Unity.DialogueRunner dialogueRunner;
 
     private void Awake()

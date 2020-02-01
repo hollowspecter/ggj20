@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7676264862633453113}
   - component: {fileID: 7676264862633453114}
   - component: {fileID: 7676264862633453115}
+  - component: {fileID: -7829487442865919197}
   m_Layer: 0
   m_Name: cocktail
   m_TagString: Drink
@@ -131,6 +132,22 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -1818810689560967479, guid: f8fb85a31f071d543890b32dc8e35fb8, type: 3}
+--- !u!114 &-7829487442865919197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848304535800069951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 544f70995c80645d98933d9092ab6e6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 1
+  strength: {x: 1, y: 1, z: 1}
+  vibrato: 18
+  randomness: 50
 --- !u!1 &4202192942147699459
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,0 +1,253 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &328725963154211201
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 328725963154211231}
+  - component: {fileID: 328725963154211230}
+  m_Layer: 0
+  m_Name: SharkSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &328725963154211231
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328725963154211201}
+  m_LocalRotation: {x: -0, y: -0.9993, z: -0, w: 0.03740978}
+  m_LocalPosition: {x: 5.42, y: 14.93, z: 56.61}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 231830027833430075}
+  m_Father: {fileID: 328725964789457853}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -175.712, z: 0}
+--- !u!114 &328725963154211230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328725963154211201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207276ddbce604ceaa18e52767f62aa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharkPrefab: {fileID: 7717870083080780619, guid: e2393ee133190460ab51ae0f4f9bbf71,
+    type: 3}
+  spawnDurationMinMax: {x: 2, y: 8}
+  xRotationOffsetRange: 20
+  yRotationOffsetRange: 10
+  forceMinMax: {x: 70, y: 140}
+  points:
+  - {fileID: 328725963509844853}
+--- !u!1 &328725963509844852
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 328725963509844853}
+  m_Layer: 0
+  m_Name: SharksStay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &328725963509844853
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328725963509844852}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.8, y: 0, z: 58}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 328725964789457853}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &328725964451380146
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 328725964451380147}
+  m_Layer: 0
+  m_Name: SharksEnd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &328725964451380147
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328725964451380146}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 48.3, y: 0, z: 36}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 328725964789457853}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &328725964753444970
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 328725964753444971}
+  m_Layer: 0
+  m_Name: SharksStart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &328725964753444971
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328725964753444970}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 144.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 328725964789457853}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &328725964789457852
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 328725964789457853}
+  m_Layer: 0
+  m_Name: SharkNadoParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &328725964789457853
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328725964789457852}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 328725963154211231}
+  - {fileID: 328725964753444971}
+  - {fileID: 328725963509844853}
+  - {fileID: 328725964451380147}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &328725963807663316
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 328725963154211231}
+    m_Modifications:
+    - target: {fileID: 556333827496342754, guid: 33be94144e19742acbfb07edb4f4fa27,
+        type: 3}
+      propertyPath: m_Name
+      value: Sharknado
+      objectReference: {fileID: 0}
+    - target: {fileID: 556333827496342767, guid: 33be94144e19742acbfb07edb4f4fa27,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0033361458
+      objectReference: {fileID: 0}
+    - target: {fileID: 556333827496342767, guid: 33be94144e19742acbfb07edb4f4fa27,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8.931948
+      objectReference: {fileID: 0}
+    - target: {fileID: 556333827496342767, guid: 33be94144e19742acbfb07edb4f4fa27,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.030333113
+      objectReference: {fileID: 0}
+    - target: {fileID: 556333827496342767, guid: 33be94144e19742acbfb07edb4f4fa27,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 556333827496342767, guid: 33be94144e19742acbfb07edb4f4fa27,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9993
+      objectReference: {fileID: 0}
+    - target: {fileID: 556333827496342767, guid: 33be94144e19742acbfb07edb4f4fa27,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 556333827496342767, guid: 33be94144e19742acbfb07edb4f4fa27,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.03740978
+      objectReference: {fileID: 0}
+    - target: {fileID: 556333827496342767, guid: 33be94144e19742acbfb07edb4f4fa27,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 556333827496342767, guid: 33be94144e19742acbfb07edb4f4fa27,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 556333827496342767, guid: 33be94144e19742acbfb07edb4f4fa27,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 556333827496342767, guid: 33be94144e19742acbfb07edb4f4fa27,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 33be94144e19742acbfb07edb4f4fa27, type: 3}
+--- !u!4 &231830027833430075 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 556333827496342767, guid: 33be94144e19742acbfb07edb4f4fa27,
+    type: 3}
+  m_PrefabInstance: {fileID: 328725963807663316}
+  m_PrefabAsset: {fileID: 0}
