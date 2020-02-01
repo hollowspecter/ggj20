@@ -127,10 +127,12 @@ MonoBehaviour:
   tongueLine: {fileID: 2750407520049676601}
   mouthStart: {fileID: 2666557441029540455}
   tongueShootForce: 50
+  tongueMaxLength: 50
   attachableShootForce: 20
-  timeUntilRetraction: 0.2
   retractionDuration: 0.3
-  doRetractAttachablesAutomatically: 1
+  boopableLayerMask:
+    serializedVersion: 2
+    m_Bits: 51
 --- !u!1 &2666557439752727249
 GameObject:
   m_ObjectHideFlags: 0

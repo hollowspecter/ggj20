@@ -23,10 +23,11 @@ public class Tongue : MonoBehaviour
     [SerializeField] protected LineRenderer tongueLine;
     [SerializeField] protected Transform mouthStart;
     [SerializeField] private float tongueShootForce = 4f;
+    [SerializeField] private float tongueMaxLength = 10f;
     [SerializeField] private float attachableShootForce = 4f;
-    [SerializeField] protected float timeUntilRetraction = 0.2f;
     [SerializeField] protected float retractionDuration = 0.5f;
-    [SerializeField] protected bool doRetractAttachablesAutomatically = true;
+    [SerializeField] protected LayerMask boopableLayerMask;
+    protected bool doRetractAttachablesAutomatically = true;
     private float tongueShootDuration;
     protected float timeWhenShot;
     protected float timeWhenCollided;
@@ -34,7 +35,6 @@ public class Tongue : MonoBehaviour
     protected new Rigidbody rigidbody;
     protected Attachable currentAttachable;
     private Vector3 tongueTargetPosition;
-    private float tongueMaxLength = 10f;
     private Boopable boopableThatWeAreGoingToHit;
 
     #region Unity methods
@@ -187,7 +187,7 @@ public class Tongue : MonoBehaviour
 
         currentState = State.Shooting;
 
-        if (Physics.Raycast(mouthStart.position, Camera.main.transform.forward, out var raycastHit, tongueMaxLength))
+        if (Physics.Raycast(mouthStart.position, Camera.main.transform.forward, out var raycastHit, tongueMaxLength, boopableLayerMask, QueryTriggerInteraction.Collide))
         {
             Debug.Log("Hit object: " + raycastHit.collider.name + " @ " + Time.frameCount);
             if (raycastHit.collider.TryGetComponent<Boopable>(out var boopable))
