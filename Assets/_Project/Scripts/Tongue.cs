@@ -231,10 +231,10 @@ public class Tongue : MonoBehaviour
 
         if (Physics.Raycast(mouthStart.position, Camera.main.transform.forward, out var raycastHit, tongueMaxLength, boopableLayerMask, QueryTriggerInteraction.Collide))
         {
-            Debug.Log("Hit object: " + raycastHit.collider.name + " @ " + Time.frameCount);
+            //Debug.Log("Hit object: " + raycastHit.collider.name + " @ " + Time.frameCount);
             if (raycastHit.collider.TryGetComponent<Boopable>(out var boopable))
             {
-                Debug.Log("Booping boopable " + boopable.name);
+                //Debug.Log("Booping boopable " + boopable.name);
                 boopableThatWeAreGoingToHit = boopable;
             }
 
@@ -242,7 +242,7 @@ public class Tongue : MonoBehaviour
         }
         else
         {
-            Debug.Log("Missed shot @ " + Time.frameCount);
+            //Debug.Log("Missed shot @ " + Time.frameCount);
             tongueTargetPosition = mouthStart.position + Camera.main.transform.forward * tongueMaxLength;
         }
 
