@@ -27,12 +27,15 @@ public class Tongue : MonoBehaviour
     [SerializeField] protected float timeUntilRetraction = 0.2f;
     [SerializeField] protected float retractionDuration = 0.5f;
     [SerializeField] protected bool doRetractAttachablesAutomatically = true;
-
+    private float tongueShootDuration;
     protected float timeWhenShot;
     protected float timeWhenCollided;
     protected float timeWhenRetractionStarted;
     protected new Rigidbody rigidbody;
     protected Attachable currentAttachable;
+    private Vector3 tongueTargetPosition;
+    private float tongueMaxLength = 10f;
+    private Boopable boopableThatWeAreGoingToHit;
 
     #region Unity methods
 
@@ -66,9 +69,17 @@ public class Tongue : MonoBehaviour
                 break;
             case State.Shooting:
                 {
-                    var currentShootingTime = Time.time - timeWhenShot;
-                    if (currentShootingTime > maxShootingTime)
+                    var t = (Time.time - timeWhenShot) / tongueShootDuration;
+                    transform.position = Vector3.Lerp(mouthStart.position, tongueTargetPosition, EasingFunction.EaseOutBounce(0f, 1f, t));
+                    if (t >= 1f)
                     {
+                        // Exit state.
+                        if (boopableThatWeAreGoingToHit != null)
+                        {
+                            boopableThatWeAreGoingToHit.Boop(this);
+                            boopableThatWeAreGoingToHit = null;
+                        }
+
                         Retract();
                     }
                 }
@@ -110,15 +121,7 @@ public class Tongue : MonoBehaviour
                         else
                         {
                             currentState = State.In;
-
-                            rigidbody.isKinematic = true;
                         }
-
-                        //if (currentAttachable != null && TryGetComponent<FixedJoint>(out var joint))
-                        //{
-                        //    Destroy(joint);
-                        //    currentAttachable = null;
-                        //}
                     }
                 }
                 break;
@@ -147,25 +150,6 @@ public class Tongue : MonoBehaviour
         }
 
         UpdateTongueRenderer();
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log("OnCollisionEnter @ " + Time.frameCount + " with " + collision.collider.name + " Current state: " + currentState);
-
-        if (currentState != State.Shooting)
-            return;
-
-        currentState = State.Stuck;
-        timeWhenCollided = Time.time;
-
-        if (collision.collider.attachedRigidbody != null)
-        {
-            if (collision.collider.TryGetComponent<Boopable>(out var boopable))
-            {
-                boopable.Boop(this);
-            }
-        }
     }
 
     #endregion
@@ -203,8 +187,24 @@ public class Tongue : MonoBehaviour
 
         currentState = State.Shooting;
 
-        rigidbody.isKinematic = false;
-        rigidbody.AddForce(Camera.main.transform.forward * attachableShootForce, ForceMode.Impulse);
+        if (Physics.Raycast(mouthStart.position, Camera.main.transform.forward, out var raycastHit, tongueMaxLength))
+        {
+            Debug.Log("Hit object: " + raycastHit.collider.name + " @ " + Time.frameCount);
+            if (raycastHit.collider.TryGetComponent<Boopable>(out var boopable))
+            {
+                Debug.Log("Booping boopable " + boopable.name);
+                boopableThatWeAreGoingToHit = boopable;
+            }
+
+            tongueTargetPosition = raycastHit.point;
+        }
+        else
+        {
+            Debug.Log("Missed shot @ " + Time.frameCount);
+            tongueTargetPosition = mouthStart.position + Camera.main.transform.forward * tongueMaxLength;
+        }
+
+        tongueShootDuration = Vector3.Distance(mouthStart.position, tongueTargetPosition) / tongueShootForce;
         timeWhenShot = Time.time;
     }
 
