@@ -106,8 +106,8 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.5
-    agentHeight: 2
+    agentRadius: 1.5
+    agentHeight: 3
     agentSlope: 45
     agentClimb: 0.4
     ledgeDropHeight: 0
@@ -34567,7 +34567,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh61294
+  m_Name: pb_Mesh97234
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -34963,7 +34963,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh60958
+  m_Name: pb_Mesh96898
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -36779,7 +36779,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh61212
+  m_Name: pb_Mesh97152
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -36956,7 +36956,7 @@ PrefabInstance:
     - target: {fileID: 1167973648718013405, guid: f1ffe342213454810ac43e9aaf9fe763,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.13
+      value: 3.97
       objectReference: {fileID: 0}
     - target: {fileID: 1167973648718013405, guid: f1ffe342213454810ac43e9aaf9fe763,
         type: 3}
@@ -37002,6 +37002,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1167973648718013406, guid: f1ffe342213454810ac43e9aaf9fe763,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1167973648718013407, guid: f1ffe342213454810ac43e9aaf9fe763,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3319296114542399327, guid: f1ffe342213454810ac43e9aaf9fe763,
         type: 3}
