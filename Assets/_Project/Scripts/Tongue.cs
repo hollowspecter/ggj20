@@ -33,6 +33,7 @@ public class Tongue : MonoBehaviour
     [SerializeField] protected CinemachineVirtualCamera vcamNormal;
     [SerializeField] protected CinemachineVirtualCamera vcamPreparing;
     [SerializeField] protected float timeScalePreparing = 0.8f;
+    [SerializeField] protected Canvas canvasReticle;
     protected bool doRetractAttachablesAutomatically = true;
     private float tongueShootDuration;
     protected float timeWhenShot;
@@ -53,6 +54,7 @@ public class Tongue : MonoBehaviour
         transform.SetParent(null);
         vcamPreparing.enabled = false;
         vcamNormal.enabled = true;
+        canvasReticle.enabled = false;
     }
 
     private void FixedUpdate()
@@ -63,6 +65,8 @@ public class Tongue : MonoBehaviour
 
     private void Update()
     {
+        canvasReticle.enabled = currentState == State.Prepare;
+
         switch (currentState)
         {
             case State.In:
@@ -238,6 +242,14 @@ public class Tongue : MonoBehaviour
             tongueTargetPosition = mouthStart.position + Camera.main.transform.forward * tongueMaxLength;
         }
 
+        for (int i = 1; i < tongueRopeTransforms.Count - 1; i++)
+        {
+            if (tongueRopeTransforms[i].TryGetComponent<Rigidbody>(out var rb))
+            {
+                rb.isKinematic = false;
+            }
+        }
+
         tongueShootDuration = Vector3.Distance(mouthStart.position, tongueTargetPosition) / tongueShootForce;
         timeWhenShot = Time.time;
     }
@@ -246,7 +258,26 @@ public class Tongue : MonoBehaviour
 
     private void UpdateTongueRenderer()
     {
-        tongueLine.positionCount = tongueRopeTransforms.Count;
-        tongueLine.SetPositions(tongueRopeTransforms.Select(x => x.position).ToArray());
+        var isTongueMoving = currentState == State.Shooting || currentState == State.Retracting;
+        if (isTongueMoving)
+        {
+            tongueLine.positionCount = tongueRopeTransforms.Count;
+            tongueLine.SetPositions(tongueRopeTransforms.Select(x => x.position).ToArray());
+        }
+
+        tongueLine.forceRenderingOff = !isTongueMoving;
+
+        // Set tongue rope rigidbody kinematic state.
+        for (int i = 1; i < tongueRopeTransforms.Count - 1; i++)
+        {
+            if (tongueRopeTransforms[i].TryGetComponent<Rigidbody>(out var rb))
+            {
+                if (!isTongueMoving)
+                {
+                    rb.MovePosition(mouthStart.position);
+                }
+                rb.isKinematic = !isTongueMoving;
+            }
+        }
     }
 }
