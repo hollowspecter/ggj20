@@ -8,6 +8,11 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="_Project" t="Include">
+          <e p="Animations" t="Include">
+            <e p="Chameleon" t="Include">
+              <e p="MultilayerShader.shader" t="Include" />
+            </e>
+          </e>
           <e p="Fonts" t="Include">
             <e p="Nunito" t="Include">
               <e p="OFL.txt" t="Include" />
@@ -17,15 +22,24 @@
             <e p="Attachable.cs" t="Include" />
             <e p="Boopable.cs" t="Include" />
             <e p="CameraController.cs" t="Include" />
+            <e p="CameraManager.cs" t="Include" />
             <e p="Catastrophe" t="Include">
               <e p="Fire.cs" t="Include" />
+              <e p="FireDisaster.cs" t="Include" />
+              <e p="GiftDisaster.cs" t="Include" />
             </e>
+            <e p="DateController.cs" t="Include" />
             <e p="Dialogue" t="Include">
               <e p="ButtonProxy.cs" t="Include" />
               <e p="Voice.cs" t="Include" />
             </e>
             <e p="EasingFunction.cs" t="Include" />
             <e p="RandomGifsGenerator.cs" t="Include" />
+            <e p="SceneManager" t="Include">
+              <e p="Distraction.cs" t="Include" />
+              <e p="SceneData.cs" t="Include" />
+              <e p="SceneManager.cs" t="Include" />
+            </e>
             <e p="TableSide.cs" t="Include" />
             <e p="TestScript.cs" t="Include" />
             <e p="Tongue.cs" t="Include" />
