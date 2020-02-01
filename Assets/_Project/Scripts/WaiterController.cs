@@ -116,6 +116,7 @@ public class WaiterController : MonoBehaviour
                 GameObject pref = Orderables[type][Random.Range(0, max-1)];
                 Transform spawnTransform = order.Value;
                 var GO = Instantiate<GameObject>(pref, spawnTransform.position, spawnTransform.rotation);
+                GO.transform.localScale = spawnTransform.lossyScale;
                 yield return new WaitForSeconds(0.5f);
             }
         }
