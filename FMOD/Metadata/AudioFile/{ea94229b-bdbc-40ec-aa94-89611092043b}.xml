@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{ea94229b-bdbc-40ec-aa94-89611092043b}">
+		<property name="assetPath">
+			<value>waitress_scooter_01_loop.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>4.4107029478458051</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f39ecda5-40f1-49c0-8c17-db0661e90480}</destination>
+		</relationship>
+	</object>
+</objects>
