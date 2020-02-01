@@ -43,6 +43,7 @@ public class Tongue : MonoBehaviour
     protected Attachable currentAttachable;
     private Vector3 tongueTargetPosition;
     private Boopable boopableThatWeAreGoingToHit;
+    private Quaternion previousMouthRotation;
 
     #region Unity methods
 
@@ -169,6 +170,7 @@ public class Tongue : MonoBehaviour
                 {
                     // Stick tongue to mouth.
                     transform.position = mouthStart.position;
+                    transform.rotation = transform.rotation * (mouthStart.rotation * Quaternion.Inverse(previousMouthRotation));
 
                     if (Input.GetButtonDown("Fire1") && currentAttachable != null)
                     {
@@ -188,6 +190,8 @@ public class Tongue : MonoBehaviour
         }
 
         UpdateTongueRenderer();
+
+        previousMouthRotation = mouthStart.rotation;
     }
 
     #endregion
