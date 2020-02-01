@@ -920,7 +920,7 @@ MonoBehaviour:
   mouthstart: {fileID: 5766392960789404749}
   isRightEye: 1
   xConstraint: {x: -65, y: 30}
-  yConstraint: {x: -10, y: 140}
+  yConstraint: {x: -10, y: 170}
   mouseSensitivity: 1
   smoothness: 10
   doLockCursor: 1
@@ -1525,7 +1525,7 @@ MonoBehaviour:
   mouthstart: {fileID: 8562512425204754205}
   isRightEye: 0
   xConstraint: {x: -65, y: 30}
-  yConstraint: {x: -140, y: 10}
+  yConstraint: {x: -170, y: 10}
   mouseSensitivity: 1
   smoothness: 10
   doLockCursor: 1
