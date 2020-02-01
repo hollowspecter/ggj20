@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{06718dac-4af4-4b4d-b273-134926617c9f}">
+		<property name="name">
+			<value>ProximityToMouth</value>
+		</property>
+		<relationship name="folder">
+			<destination>{0b611068-2acf-44dd-ba3d-bcf72de8475f}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{91a2e270-6fc8-4b8f-8286-4a814e24e97f}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{91a2e270-6fc8-4b8f-8286-4a814e24e97f}">
+		<property name="maximum">
+			<value>100</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
