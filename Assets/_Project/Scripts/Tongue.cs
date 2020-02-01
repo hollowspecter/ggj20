@@ -33,6 +33,7 @@ public class Tongue : MonoBehaviour
     [SerializeField] protected CinemachineVirtualCamera vcamNormal;
     [SerializeField] protected CinemachineVirtualCamera vcamPreparing;
     [SerializeField] protected float timeScalePreparing = 0.8f;
+    [SerializeField] protected Canvas canvasReticle;
     protected bool doRetractAttachablesAutomatically = true;
     private float tongueShootDuration;
     protected float timeWhenShot;
@@ -53,6 +54,7 @@ public class Tongue : MonoBehaviour
         transform.SetParent(null);
         vcamPreparing.enabled = false;
         vcamNormal.enabled = true;
+        canvasReticle.enabled = false;
     }
 
     private void FixedUpdate()
@@ -63,6 +65,8 @@ public class Tongue : MonoBehaviour
 
     private void Update()
     {
+        canvasReticle.enabled = currentState == State.Prepare;
+
         switch (currentState)
         {
             case State.In:
