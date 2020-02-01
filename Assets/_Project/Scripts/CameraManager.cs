@@ -33,15 +33,15 @@ public class CameraManager : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            SwitchCamera();
-        }
-    }
+    // void Update()
+    // {
+    //     if (Input.GetKeyDown(KeyCode.E))
+    //     {
+    //         SwitchCamera();
+    //     }
+    // }
     
-    void SwitchCamera()
+    public void SwitchCamera()
     {
         currentCameraController.Deactivate();
         currentCameraController = currentControlledCamera != leftEye ? leftCameraController : rightCameraController;
