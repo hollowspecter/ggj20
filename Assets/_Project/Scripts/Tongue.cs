@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using Cinemachine;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
@@ -27,6 +29,10 @@ public class Tongue : MonoBehaviour
     [SerializeField] private float attachableShootForce = 4f;
     [SerializeField] protected float retractionDuration = 0.5f;
     [SerializeField] protected LayerMask boopableLayerMask;
+    [SerializeField] protected List<Transform> tongueRopeTransforms = new List<Transform>();
+    [SerializeField] protected CinemachineVirtualCamera vcamNormal;
+    [SerializeField] protected CinemachineVirtualCamera vcamPreparing;
+    [SerializeField] protected float timeScalePreparing = 0.8f;
     protected bool doRetractAttachablesAutomatically = true;
     private float tongueShootDuration;
     protected float timeWhenShot;
@@ -45,6 +51,8 @@ public class Tongue : MonoBehaviour
         rigidbody.isKinematic = true;
 
         transform.SetParent(null);
+        vcamPreparing.enabled = false;
+        vcamNormal.enabled = true;
     }
 
     private void FixedUpdate()
@@ -64,6 +72,14 @@ public class Tongue : MonoBehaviour
                     if (Input.GetButtonDown("Fire1"))
                     {
                         Shoot();
+                    }
+                    else if (Input.GetButtonDown("Fire2"))
+                    {
+                        currentState = State.Prepare;
+
+                        Time.timeScale = timeScalePreparing;
+                        vcamPreparing.enabled = true;
+                        vcamNormal.enabled = false;
                     }
                 }
                 break;
@@ -126,6 +142,24 @@ public class Tongue : MonoBehaviour
                 }
                 break;
             case State.Prepare:
+                {
+                    if (Input.GetButtonDown("Fire1"))
+                    {
+                        Shoot();
+                    }
+                    else if (Input.GetButtonUp("Fire2"))
+                    {
+                        currentState = State.In;
+                    }
+
+                    // Exit state.
+                    if (currentState != State.Prepare)
+                    {
+                        Time.timeScale = 1f;
+                        vcamPreparing.enabled = false;
+                        vcamNormal.enabled = true;
+                    }
+                }
                 break;
             case State.Holding:
                 {
@@ -182,7 +216,7 @@ public class Tongue : MonoBehaviour
 
     private void Shoot()
     {
-        if (currentState != State.In)
+        if (currentState != State.In && currentState != State.Prepare)
             return;
 
         currentState = State.Shooting;
@@ -212,9 +246,7 @@ public class Tongue : MonoBehaviour
 
     private void UpdateTongueRenderer()
     {
-        var tonguePositions = new Vector3[2];
-        tonguePositions[0] = mouthStart.position;
-        tonguePositions[1] = transform.position;
-        tongueLine.SetPositions(tonguePositions);
+        tongueLine.positionCount = tongueRopeTransforms.Count;
+        tongueLine.SetPositions(tongueRopeTransforms.Select(x => x.position).ToArray());
     }
 }
