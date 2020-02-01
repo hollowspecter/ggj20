@@ -7,6 +7,7 @@
         _noise ("noise", 2D) = "white" {}
         _mask ("mask", 2D) = "white" {}
         _alpha ("alpha", 2D) = "white" {}
+        _alphaStrength("alpha strength", Range(0,4)) = 1 
         _FireBase ("FireBase", Range(0, 8)) = 2.643478
         [HideInInspector]_Cutoff ("Alpha cutoff", Range(0,1)) = 0.5
         _VSpeed("V Speed", Range(-4,4)) = -2
@@ -19,7 +20,7 @@
 
         Pass
         {
-                    Tags {"LightMode"="ForwardBase"}
+            Tags {"LightMode"="ForwardBase"}
             Blend SrcAlpha OneMinusSrcAlpha
             ZWrite Off
             CGPROGRAM
@@ -47,6 +48,7 @@
             uniform sampler2D _alpha; uniform float4 _alpha_ST;
             uniform sampler2D _mask; uniform float4 _mask_ST;
             uniform float _FireBase;
+            uniform float _alphaStrength;
 
             v2f vert (appdata v)
             {
@@ -74,9 +76,8 @@
                 float3 noisecCol = (((noiseA.rgb*2)*noiseB.rgb)*noiseC.rgb)*2;
                 float3 emissive = lerp(_ColorBase.rgb,_ColorTop.rgb,i.uv0.g);
                 float3 finalColor = emissive+(noisecCol.rgb);
-                return fixed4(finalColor,1);
                 float4 opacityTex = tex2D(_alpha,TRANSFORM_TEX(i.uv0, _alpha)); //node_5185
-                return fixed4(finalColor,opacityTex.r*0.88);
+                return fixed4(finalColor,opacityTex.r*_alphaStrength);
             }
             ENDCG
         }
