@@ -176,7 +176,11 @@ namespace Yarn.Unity {
 
             foreach (var optionString in optionsCollection.Options) {
 
-                if (i >= optionButtons.Count-1)
+                // dont show options if no buttons are available
+                if (i >= optionButtons.Count - 1)
+                    continue;
+                // dont show the last option ever
+                if (i >= optionsCollection.Options.Length - 1)
                     continue;
 
                 optionButtons [i].gameObject.SetActive (true);

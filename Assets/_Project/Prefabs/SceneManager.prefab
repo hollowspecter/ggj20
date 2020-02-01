@@ -335,8 +335,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startDialogue: {fileID: 0}
   startNode: Test
-  distractions: []
-  endDialogue: {fileID: 0}
+  distractions:
+  - {fileID: 0}
+  endDialogue: {fileID: 2480198943629176163, guid: d3595c87a5aa24757af29151af04d399,
+    type: 3}
   endNode: Test
   disasterTimer: 60
   disasterMeter: 0.03

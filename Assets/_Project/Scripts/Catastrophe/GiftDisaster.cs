@@ -13,6 +13,8 @@ public class GiftDisaster : MonoBehaviour
     {
         if (other.TryGetComponent<Attachable>(out var gift))
         {
+            Debug.Log("Received a gift! " + gift.name);
+
             if (goodGifts.Contains(gift.gameObject))
             {
                 onGoodGiftReceived?.Invoke();
