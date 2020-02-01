@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5107447030451138843}
   - component: {fileID: 389274535521339696}
   - component: {fileID: 7320330012974812636}
+  - component: {fileID: 3502207667099209337}
   m_Layer: 0
   m_Name: utensilSpoon
   m_TagString: CutleryLeft
@@ -126,3 +127,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.4795867, y: 0.027799997, z: 0.12000003}
   m_Center: {x: 0, y: 0.013899999, z: 0}
+--- !u!114 &3502207667099209337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2741650609971358114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 544f70995c80645d98933d9092ab6e6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 1
+  strength: {x: 1, y: 1, z: 1}
+  vibrato: 18
+  randomness: 50

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5724615759231838461}
   - component: {fileID: 5509268295349072067}
   - component: {fileID: 357516720105586163}
+  - component: {fileID: 5978844449965003}
   m_Layer: 0
   m_Name: pottedPlant
   m_TagString: Untagged
@@ -129,6 +130,22 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3914873980704102052, guid: 687c182cafc967242984737873e4646f, type: 3}
+--- !u!114 &5978844449965003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3432518897516089243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 544f70995c80645d98933d9092ab6e6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 1
+  strength: {x: 1, y: 1, z: 1}
+  vibrato: 18
+  randomness: 50
 --- !u!1 &7640272322625866324
 GameObject:
   m_ObjectHideFlags: 0
