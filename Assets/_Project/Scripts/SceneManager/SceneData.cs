@@ -11,6 +11,7 @@ public class SceneData : MonoBehaviour
     public YarnProgram endDialogue;
     public string endNode;
     public float disasterTimer = 60f;
+    public float disasterMeter = 0.03f; // can be changed from afar :)
 
     public UnityEvent onSceneStart;
     public UnityEvent onDisasterStart;
@@ -18,6 +19,7 @@ public class SceneData : MonoBehaviour
     public UnityEvent onSceneEnd;
 
     private bool disasterRunning = false;
+    private bool endDisasterEarly = false;
 
     public bool DisasterRunning => disasterRunning;
 
@@ -37,7 +39,7 @@ public class SceneData : MonoBehaviour
         if (disasterRunning)
         {
             disasterTimer -= Time.deltaTime;
-            if (disasterTimer < 0f)
+            if (disasterTimer < 0f || endDisasterEarly)
             {
                 disasterRunning = false;
                 onDisasterEnd.AddListener(() => ToggleDistractions(false));
@@ -51,6 +53,15 @@ public class SceneData : MonoBehaviour
         {
             if (distraction != null)
                 distraction.gameObject.SetActive(_isActive);
+        }
+    }
+
+    // call this to end the disaster early!
+    public void EndDisasterEarly()
+    {
+        if (disasterRunning)
+        {
+            endDisasterEarly = true;
         }
     }
 }
