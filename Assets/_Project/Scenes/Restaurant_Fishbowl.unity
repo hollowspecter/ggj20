@@ -246,7 +246,7 @@ PrefabInstance:
     - target: {fileID: 3734029770573727978, guid: 4ae322702cfec4c339da4369c2ac39d8,
         type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3963264749303598852, guid: 4ae322702cfec4c339da4369c2ac39d8,
         type: 3}
@@ -17894,7 +17894,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25862
+  m_Name: pb_Mesh17608
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -30003,7 +30003,7 @@ PrefabInstance:
     - target: {fileID: 6825256215885142328, guid: 63eaddce4bf234553a450b8ee044d973,
         type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8332521635011790616, guid: 63eaddce4bf234553a450b8ee044d973,
         type: 3}
@@ -30024,7 +30024,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25950
+  m_Name: pb_Mesh17732
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -30191,7 +30191,7 @@ PrefabInstance:
     - target: {fileID: 3293177823282780077, guid: 64c3fac938d174c208d0d61d5631c165,
         type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6339285299350131230, guid: 64c3fac938d174c208d0d61d5631c165,
         type: 3}
@@ -30297,7 +30297,7 @@ PrefabInstance:
     - target: {fileID: 4051063532071290677, guid: ca8204a7e14b34f799d53dd75e22466f,
         type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4940605987710541969, guid: ca8204a7e14b34f799d53dd75e22466f,
         type: 3}
@@ -30373,7 +30373,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25874
+  m_Name: pb_Mesh17620
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -30947,7 +30947,7 @@ PrefabInstance:
     - target: {fileID: 5107447030451138843, guid: cb75638c5cbf0411cab1b714cd60f233,
         type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb75638c5cbf0411cab1b714cd60f233, type: 3}
@@ -31096,6 +31096,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1669755651}
     m_Modifications:
+    - target: {fileID: 3293177823282780077, guid: 64c3fac938d174c208d0d61d5631c165,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6339285299350131230, guid: 64c3fac938d174c208d0d61d5631c165,
         type: 3}
       propertyPath: m_Name
@@ -31496,7 +31501,7 @@ PrefabInstance:
     - target: {fileID: 9110676457308076328, guid: 49eccfd06f91248f692bf42bc980f3ef,
         type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49eccfd06f91248f692bf42bc980f3ef, type: 3}
@@ -31645,7 +31650,7 @@ PrefabInstance:
     - target: {fileID: 5107447030451138843, guid: cb75638c5cbf0411cab1b714cd60f233,
         type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb75638c5cbf0411cab1b714cd60f233, type: 3}
@@ -31665,7 +31670,7 @@ PrefabInstance:
     - target: {fileID: 4199259536723410491, guid: f78e95f41c43a4749bfd92bb3fb98bf2,
         type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6897585337841693424, guid: f78e95f41c43a4749bfd92bb3fb98bf2,
         type: 3}
@@ -31827,8 +31832,10 @@ Animation:
   m_GameObject: {fileID: 1878318303}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: afd570d30d6e5ff438000f615b63ef84, type: 2}
-  m_Animations: []
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: afd570d30d6e5ff438000f615b63ef84, type: 2}
+  - {fileID: 7400000, guid: 5ea0e552a14c4a448bb98a4e59094ef1, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -31862,7 +31869,7 @@ PrefabInstance:
     - target: {fileID: 5728533786160000394, guid: 297b93a58a16145788b217447b350332,
         type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5874795081785936898, guid: 297b93a58a16145788b217447b350332,
         type: 3}
@@ -32097,6 +32104,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7676264862633453113, guid: a505cd389589547aa8371d06f4cd3e89,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a505cd389589547aa8371d06f4cd3e89, type: 3}
 --- !u!4 &2006178888 stripped
@@ -32115,7 +32127,7 @@ PrefabInstance:
     - target: {fileID: 4051063532071290677, guid: ca8204a7e14b34f799d53dd75e22466f,
         type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4940605987710541969, guid: ca8204a7e14b34f799d53dd75e22466f,
         type: 3}
@@ -32345,7 +32357,7 @@ PrefabInstance:
     - target: {fileID: 6851728451809126450, guid: 14b5e27cbe693694cbd40aadeb1802a2,
         type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14b5e27cbe693694cbd40aadeb1802a2, type: 3}
@@ -32359,7 +32371,7 @@ PrefabInstance:
     - target: {fileID: 5216507896728019539, guid: 957f6d38dc633ef4287b7d588a5ded15,
         type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6827538185639694342, guid: 957f6d38dc633ef4287b7d588a5ded15,
         type: 3}
