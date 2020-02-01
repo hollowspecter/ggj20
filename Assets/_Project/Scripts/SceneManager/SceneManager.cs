@@ -47,7 +47,7 @@ public class SceneManager : MonoBehaviour
     private IEnumerator RunScene()
     {
         // Fetch the next scene
-        SceneData currentScene = scenes[currentSceneIndex++];
+        SceneData currentScene = scenes[currentSceneIndex];
 
         // On Scene Start
         Debug.Log($"Start Scene {currentScene}");
@@ -98,6 +98,12 @@ public class SceneManager : MonoBehaviour
         onSceneEnd?.Invoke();
         currentScene.onSceneEnd?.Invoke();
         waitForSceneStart = true;
+        currentSceneIndex++;
         yield return null;
+    }
+
+    public float GetPanicRate()
+    {
+        return scenes[currentSceneIndex].disasterMeter;
     }
 }

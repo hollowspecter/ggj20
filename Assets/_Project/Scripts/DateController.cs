@@ -108,8 +108,7 @@ public class DateController : MonoBehaviour
     {
         if (isDisasterRunning && !IsAttentive)
         {
-            //panicMeter += SceneManager.GetPanicRate() * Time.deltaTime;
-            panicMeter += 0.03f * Time.deltaTime;
+            panicMeter += SceneManager.GetPanicRate() * Time.deltaTime;
         }
 
         if (IsAttentive)
