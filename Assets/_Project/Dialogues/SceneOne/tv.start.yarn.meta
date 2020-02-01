@@ -1,0 +1,60 @@
+fileFormatVersion: 2
+guid: 4e48790cedec74496b99c26724f2ed48
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en
+  stringIDs:
+  - tv.start-tv.start-0
+  - tv.start-tv.start-1
+  - tv.start-tv.start-2
+  - tv.start-tv.start-3
+  - tv.start-tv_favorite-4
+  - tv.start-tv_favorite-5
+  - tv.start-tv_favorite-6
+  - tv.start-tv_favorite-7
+  - tv.start-tv_favorite-8
+  - tv.start-tv_favorite-9
+  - tv.start-tv_favorite-10
+  - tv.start-tv_favorite-11
+  - tv.start-tv_favorite-12
+  - tv.start-tv_favorite-13
+  - tv.start-tv_favorite-14
+  - tv.start-tv_favorite-15
+  - tv.start-tv_favorite-16
+  - tv.start-tv_favorite-17
+  - tv.start-igor-18
+  - tv.start-igor-19
+  - tv.start-susan-20
+  - tv.start-susan-21
+  - tv.start-susan-22
+  - tv.start-susan-23
+  - tv.start-susan-24
+  - tv.start-susan-25
+  - tv.start-susan-26
+  - tv.start-Lina-27
+  - tv.start-Lina-28
+  - tv.start-Lina-29
+  - tv.start-Lina-30
+  - tv.start-Lina-31
+  - tv.start-Lina-32
+  - tv.start-Lina-33
+  - tv.start-Lina-34
+  - tv.start-silence_four-35
+  - tv.start-sister-36
+  - tv.start-sister-37
+  - tv.start-sister-38
+  - tv.start-kids-39
+  - tv.start-kids-40
+  - tv.start-kids-41
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: 4e48790cedec74496b99c26724f2ed48,
+    type: 3}
+  localizations: []

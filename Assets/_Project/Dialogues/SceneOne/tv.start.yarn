@@ -1,0 +1,104 @@
+title: tv.start
+tags: 
+colorID: 1
+position: 683,450
+---
+Me: Look! There is my favorite show on the telly! #line:002cfaa
+Me: When I was a little reptile, I loved to eat my worm-flakes while watching [i]Roving Reptiles[/i]. #line:0c5fb5a
+
+-> What was your favorite? #line:0415d7f
+Me: What was your favorite hero of the [i]Roving Reptiles[/i]? #line:049bf30
+[[tv_favorite]]
+
+===
+title: tv_favorite
+tags: 
+colorID: 2
+position: 676,167
+---
+Date: Oh, wow! I also loved this as a child.  #line:028a7d9
+Date: My favorite was always Tom the Turtle. He was just so nice and chill. And yours? #line:010a7b5
+
+-> The strong Iguana! #line:0bff1d7
+    Me: Igor the Iguana! #line:06d2468
+    Me: I love Igor the Iguana, he is so strong.  #line:0236379
+    Me: He can punch everyone! #line:0ebe449
+    [[igor]] 
+-> The clever Snake! #line:0e81afa
+    Me: Susan the Snake! #line:03daa33
+    Me: She always impressed me by figuring out a solution for everything.  #line:0890c33
+    [[susan]] 
+-> The lazy Lizard #line:0c22347
+    Me: Lina the Lizard! #line:00319db
+    Me: She was enjoying the easy life but always saved the day with wise hints. #line:0f31d08
+    [[Lina]] 
+-> silence #line:0d62ed7
+    Me: My...what...? #line:02cae16
+    [[silence_four]] 
+===
+title: igor
+tags: 
+colorID: 3
+position: 710,-106
+---
+Date: Hm... I think he was pretty boring...  #line:0f68fce
+Date: Being strong is not really fun and pretty standard. #line:04e5b4c
+===
+title: susan
+tags: 
+colorID: 3
+position: 991,-104
+---
+Date: Oh, yes! She was my sisters favorite too.  #line:0b8cd31
+Date: A real smartass. Hihi.  #line:082ab82
+
+-> My sister.  #line:06a896f
+    Me: I also have a sister.  #line:06f3f53
+    Me: But she is more like Lina the lazy Lizard, hehe.  #line:0541ccb
+    [[sister]] 
+-> silence #line:0a5cb97
+    Me: Ouch! Ugh... #line:0346991
+    [[silence_four]] 
+===
+title: Lina
+tags: 
+colorID: 3
+position: 1151,155
+---
+Date: Hihi, I also like Lina very much! #line:05a7c50
+Date: Remember when she won in hide and seek because she fell asleep on the toilet?  #line:08bc856
+
+-> My sister did that! #line:0eb85c6
+    Me: Hehe, yes. Thas was so funny!  #line:08e3baa
+    Me: She also reminds me very much of my sister.  #line:08893c2
+    Me: I swear, that happened to her too, when we were kids, hehe.  #line:0cb2830
+    [[kids]] 
+-> silence #line:012863b
+    Me: Toilet...?  #line:0c1d8b9
+    [[silence_four]] 
+===
+title: silence_four
+tags: 
+colorID: 0
+position: 284,-119
+---
+Date: I guess you're not really interested... #line:053c35d
+===
+title: sister
+tags: 
+colorID: 4
+position: 979,-351
+---
+Date: Hihi, she sounds nice. #line:0c32160
+Date: Maybe I will meet her one day.  #line:042eb75
+Date: Than we can all be lazy and witty together. Hihi. #line:019af80
+===
+title: kids
+tags: 
+colorID: 4
+position: 1414,170
+---
+Date: Whaaaaat? Hihi!  #line:0aff621
+Date: Now I really need to meet her!  #line:0325f09
+Date: She sounds so fun!  #line:0f0188a
+===

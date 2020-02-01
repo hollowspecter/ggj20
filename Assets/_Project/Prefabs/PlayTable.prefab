@@ -43,6 +43,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TheirSide
       objectReference: {fileID: 0}
+    - target: {fileID: 1703387434353893284, guid: 035eab909701040ef90c68e5083ad06e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3852133059373466638, guid: 035eab909701040ef90c68e5083ad06e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -201,6 +206,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OurSide
+      objectReference: {fileID: 0}
+    - target: {fileID: 1703387434353893284, guid: 035eab909701040ef90c68e5083ad06e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3852133059373466638, guid: 035eab909701040ef90c68e5083ad06e,
         type: 3}
