@@ -104,6 +104,9 @@
 		<property name="length">
 			<value>7.7098185941043083</value>
 		</property>
+		<property name="maxVoices">
+			<value>3</value>
+		</property>
 		<property name="looping">
 			<value>true</value>
 		</property>
