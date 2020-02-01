@@ -1,0 +1,206 @@
+title: band.Start
+tags: band
+colorID: 1
+position: 543,131
+---
+Me: Oh, wow! The band is just awesome!  #line:0015f83
+Me: I think they are a new indie band with instrumental-alternative-lounge-folk-rock music.  #line:03ce5c7
+Me: Have you heard of them? #line:0a50769
+[[band]] 
+===
+title: band
+tags: music
+colorID: 2
+position: 559,410
+---
+Date: Uh, you really seem sophisticated in music genres. #line:0941220
+Date: I never heard of that one, though... #line:04c7a1c
+Date: They seem cool, but what is so special about them?  #line:0d739cc
+
+-> It is Art. #line:078a92b
+    Me: You see, they pretend to be amateurs.  #line:0c013ca
+    Me: It's basically a deconstruction of music itself.  #line:0847a9f
+    Me: Back to the basics.  #line:0160933
+    Me: Almost less than the the basics you might say. #line:0c220a2
+    [[basics]] 
+-> It is comedy. #line:0c20d71
+    Me: If you really listen, you recognize the comedy aspect of it.  #line:088c5a9
+    Me: In the language of music, every instrument is telling a joke.  #line:0589bdc
+    Me: But it is very specific. #line:04dbcce
+    [[language]] 
+-> silence #line:01f1e78
+    Me: uh... #line:0828a69
+    [[silence_three]] 
+===
+title: basics
+tags: 
+colorID: 3
+position: 353,707
+---
+Date: Oh, wow! That sounds like a real form of art!  #line:0fb8ca0
+Date: I love art!  #line:00dfe4c
+Date: I also love playing my music very loud to annoy my neighbors. Hihi... #line:05ac6ae
+Date: Tell me more about the deconstruction of music!  #line:046060a
+
+-> They feel it! #line:0ddb8a3
+    Me: So, they break it down to every note and then just play what ever they feel in their heart.
+    Me: It is the purest of music. They strip all the talent and training away to enjoy it just like kids.  #line:0927fd4
+    [[think]] 
+-> They break it down! #line:0ca80d0
+    Me: Uh, it's kind of hard to explain, you know?  #line:0e1437f
+    Me: They just break the music down and then repair it again...  #line:0108aa8
+    Me: I can't really tell you... because...  #line:0474a4f
+    [[nojoke]] 
+-> silence #line:0e01a49
+    Me: uh... #line:08e562e
+    [[silence_three]] 
+===
+title: language
+tags: 
+colorID: 3
+position: 703,695
+---
+Date: And you can speak that language of music?  #line:0ba18a9
+Date: Could you... could you translate it for me? #line:0d42d7a
+Date: I love great jokes, hihi.  #line:0f82ff7
+
+-> Beethovens fruit? #line:087b3c3
+    Me: What is Beethovens favorite fruit?  #line:0f994c5
+    Me: BA-NA-NA-NAAAAA! #line:0a844df
+    [[jokegood]] 
+-> Treasure of a shrimp? #line:0c98be2
+    Me: Why wouldn't the shrimp share his treasure?  #line:00be15a
+    Me: Because he was a little shellfish! #line:07df800
+    [[jokebad]] 
+-> silence #line:0e4dabe
+    Me: Uhm, so... I can't really... tell...  #line:010d0d9
+    [[nojoke]] 
+===
+title: jokegood
+tags: 
+colorID: 4
+position: 617,966
+---
+Date: Whaaat? Hihi! #line:057b803
+Date: This is awesome?  #line:0914104
+Date: What else are they joking about in the music?  #line:0e1ffb4
+
+-> Chameleon joke.  #line:0d5d819
+    Me: What's the definition of a nervous breakdown?  #line:08531aa
+    Me: A chameleon on a tartan rug! #line:0fef20c
+    [[chameleon]]
+-> Silence #line:0cf7a12
+    Me: Uh... I... can't really tell...  #line:0117ba0
+    [[nojoke]] 
+===
+title: jokebad
+tags: bad joke
+colorID: 4
+position: 1241,843
+---
+Date: Hihi... but... wait...  #line:03d5952
+Date: That doesn't have anything to do with music?  #line:0e6bb62
+Date: Are making this up?  #line:0331dc8
+
+-> The truth is... #line:0edf14d
+    Me: Uhm... haha... yes.  #line:0fdcfcf
+    Me: But it would be fun if it was true, right? #line:0528ddc
+    [[truth]] 
+-> No! I mean it! #line:0986293
+    Me: No! Of course not!  #line:023a6e0
+    Me: They were telling this joke with their instruments! #line:0aa65f2
+    [[lie]] 
+-> silence_three #line:0da8698
+    Me: uh... #line:0b2cea1
+    [[silence_three]] 
+===
+title: nojoke
+tags: end
+colorID: 4
+position: 1034,574
+---
+Date: What? What do you mean, you can't tell?  #line:03bef73
+Date: Are you just making fun of me?  #line:08fef7d
+===
+title: truth
+tags: 
+colorID: 5
+position: 1096,1177
+---
+Date: Hihi! Yes! #line:0988ee2
+Date: Oh my, I almost believed you! Hihi! #line:031bd9b
+Date: You sly reptile! But I really love good jokes!  #line:0ca61f6
+
+-> Reptile joke. #line:041dbb9
+    Me: Okay, listen to this one: What's the coldest type of reptile?  #line:0c9f0aa
+    Me: A blizzard!  #line:03a59ad
+    [[blizzard]] 
+-> silence_three #line:08f30e3
+    Me: uh... #line:0b056fc
+    [[silence_three]] 
+===
+title: lie
+tags: angry
+colorID: 5
+position: 1353,1191
+---
+Date: Do you think I am stupid?  #line:08430eb
+Date: Stop lying to me!  #line:0133d1d
+Date: At least be honest... #line:0049269
+===
+title: blizzard
+tags: 
+colorID: 6
+position: 968,1423
+---
+Date: Hihi! A cold... Hihi!  #line:016b1e2
+Date: Love it!  #line:0fd2d73
+===
+title: chameleon
+tags: 
+colorID: 5
+position: 689,1229
+---
+Date: Hihi! Oh, no! #line:0030eab
+Date: That would be awful! Hihi!  #line:0b4c505
+Date: Another!  #line:0fbb8ef
+
+-> Reptile joke.  #line:0bca7ba
+    Me: Okay, listen to this one: What's the coldest type of reptile?  #line:0454f25
+    Me: A blizzard!  #line:0e25172
+    [[blizzard]]
+-> silence #line:0411095
+    Me: Uh... I can't tell...  #line:035ceae
+    [[nojoke]] 
+===
+title: think
+tags: 
+colorID: 4
+position: 64,673
+---
+Date: That sounds... interesting.  #line:0a2c0f6
+Date: Although I am not sure I can really appreciate it...  #line:0a79acc
+Date: I think I still like loud rock music a lot more. Hihi.  #line:086fae0
+
+-> I love dancing. #line:0e63c2c
+    Me: Hehe... yes...  #line:0fa6028
+    Me: I really love dancing, so let me know, when you want to annoy your neighbors again.  #line:03525e7
+    [[dancing]]
+-> silence #line:0613232
+    Me: uh... #line:0849dfe
+    [[silence_three]] 
+===
+title: dancing
+tags: plan
+colorID: 5
+position: -26,942
+---
+Date: Hihi, that sounds like a plan!  #line:01f25f0
+===
+title: silence_three
+tags: silence
+colorID: 0
+position: 1119,190
+---
+Are you trying to make fun of me...?! #line:0315ac2
+===

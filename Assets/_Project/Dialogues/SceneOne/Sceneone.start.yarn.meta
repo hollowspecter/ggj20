@@ -1,0 +1,116 @@
+fileFormatVersion: 2
+guid: 09b66639a590449448d1638fcd8608e3
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en
+  stringIDs:
+  - Sceneone.start-sceneone.start-0
+  - Sceneone.start-sceneone.start-1
+  - Sceneone.start-sceneone.start-2
+  - Sceneone.start-sceneone.start-3
+  - Sceneone.start-sceneone.start-4
+  - Sceneone.start-sceneone.start-5
+  - Sceneone.start-sceneone.start-6
+  - Sceneone.start-nervous-7
+  - Sceneone.start-nervous-8
+  - Sceneone.start-nervous-9
+  - Sceneone.start-nervous-10
+  - Sceneone.start-nervous-11
+  - Sceneone.start-nervous-12
+  - Sceneone.start-nervous-13
+  - Sceneone.start-compliment-14
+  - Sceneone.start-compliment-15
+  - Sceneone.start-compliment-16
+  - Sceneone.start-compliment-17
+  - Sceneone.start-compliment-18
+  - Sceneone.start-compliment-19
+  - Sceneone.start-selfcentered-20
+  - Sceneone.start-selfcentered-21
+  - Sceneone.start-selfcentered-22
+  - Sceneone.start-selfcentered-23
+  - Sceneone.start-selfcentered-24
+  - Sceneone.start-selfcentered-25
+  - Sceneone.start-selfcentered-26
+  - Sceneone.start-selfcentered-27
+  - Sceneone.start-fruits-28
+  - Sceneone.start-fruits-29
+  - Sceneone.start-fruits-30
+  - Sceneone.start-fruits-31
+  - Sceneone.start-fruits-32
+  - Sceneone.start-stung-33
+  - Sceneone.start-stung-34
+  - Sceneone.start-stung-35
+  - Sceneone.start-stung-36
+  - Sceneone.start-stung-37
+  - Sceneone.start-stung-38
+  - Sceneone.start-stung-39
+  - Sceneone.start-stung-40
+  - Sceneone.start-stung-41
+  - Sceneone.start-stung-42
+  - Sceneone.start-stung-43
+  - Sceneone.start-pie-44
+  - Sceneone.start-pie-45
+  - Sceneone.start-pie-46
+  - Sceneone.start-pie-47
+  - Sceneone.start-pie-48
+  - Sceneone.start-yellow-49
+  - Sceneone.start-yellow-50
+  - Sceneone.start-yellow-51
+  - Sceneone.start-yellow-52
+  - Sceneone.start-yellow-53
+  - Sceneone.start-green-54
+  - Sceneone.start-green-55
+  - Sceneone.start-green-56
+  - Sceneone.start-green-57
+  - Sceneone.start-green-58
+  - Sceneone.start-green-59
+  - Sceneone.start-green-60
+  - Sceneone.start-red-61
+  - Sceneone.start-red-62
+  - Sceneone.start-red-63
+  - Sceneone.start-red-64
+  - Sceneone.start-red-65
+  - Sceneone.start-hero-66
+  - Sceneone.start-hero-67
+  - Sceneone.start-hero-68
+  - Sceneone.start-hero-69
+  - Sceneone.start-idiot-70
+  - Sceneone.start-idiot-71
+  - Sceneone.start-idiot-72
+  - Sceneone.start-unsure-73
+  - Sceneone.start-unsure-74
+  - Sceneone.start-unsure-75
+  - Sceneone.start-yes-76
+  - Sceneone.start-yes-77
+  - Sceneone.start-yes-78
+  - Sceneone.start-no-79
+  - Sceneone.start-no-80
+  - Sceneone.start-good-81
+  - Sceneone.start-good-82
+  - Sceneone.start-meh-83
+  - Sceneone.start-meh-84
+  - Sceneone.start-meh-85
+  - Sceneone.start-sure-86
+  - Sceneone.start-sure-87
+  - Sceneone.start-sure-88
+  - Sceneone.start-nope-89
+  - Sceneone.start-nope-90
+  - Sceneone.start-nope-91
+  - Sceneone.start-cherry-92
+  - Sceneone.start-cherry-93
+  - Sceneone.start-cherry-94
+  - Sceneone.start-worry-95
+  - Sceneone.start-worry-96
+  - Sceneone.start-silence-97
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: 09b66639a590449448d1638fcd8608e3,
+    type: 3}
+  localizations: []

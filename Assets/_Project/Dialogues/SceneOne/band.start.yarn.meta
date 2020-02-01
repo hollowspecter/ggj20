@@ -1,0 +1,74 @@
+fileFormatVersion: 2
+guid: d8bc305b9702f4956984b1016d73f817
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en
+  stringIDs:
+  - band.start-band.Start-0
+  - band.start-band.Start-1
+  - band.start-band-2
+  - band.start-band-3
+  - band.start-band-4
+  - band.start-band-5
+  - band.start-band-6
+  - band.start-band-7
+  - band.start-basics-8
+  - band.start-basics-9
+  - band.start-basics-10
+  - band.start-basics-11
+  - band.start-basics-12
+  - band.start-basics-13
+  - band.start-basics-14
+  - band.start-language-15
+  - band.start-language-16
+  - band.start-language-17
+  - band.start-language-18
+  - band.start-language-19
+  - band.start-language-20
+  - band.start-jokegood-21
+  - band.start-jokegood-22
+  - band.start-jokegood-23
+  - band.start-jokegood-24
+  - band.start-jokegood-25
+  - band.start-jokebad-26
+  - band.start-jokebad-27
+  - band.start-jokebad-28
+  - band.start-jokebad-29
+  - band.start-jokebad-30
+  - band.start-jokebad-31
+  - band.start-nojoke-32
+  - band.start-nojoke-33
+  - band.start-truth-34
+  - band.start-truth-35
+  - band.start-truth-36
+  - band.start-truth-37
+  - band.start-truth-38
+  - band.start-lie-39
+  - band.start-lie-40
+  - band.start-lie-41
+  - band.start-blizzard-42
+  - band.start-blizzard-43
+  - band.start-chameleon-44
+  - band.start-chameleon-45
+  - band.start-chameleon-46
+  - band.start-chameleon-47
+  - band.start-chameleon-48
+  - band.start-think-49
+  - band.start-think-50
+  - band.start-think-51
+  - band.start-think-52
+  - band.start-think-53
+  - band.start-dancing-54
+  - band.start-silence-55
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: d8bc305b9702f4956984b1016d73f817,
+    type: 3}
+  localizations: []
