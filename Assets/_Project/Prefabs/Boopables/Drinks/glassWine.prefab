@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6825256215885142328}
   - component: {fileID: 2713417973405516283}
   - component: {fileID: 2353705435863028267}
+  - component: {fileID: -1281712377139434278}
   m_Layer: 0
   m_Name: glassWine
   m_TagString: Drink
@@ -128,3 +129,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7327363928247545277, guid: 319fe48d828818247bd43bbbbb6a6c98, type: 3}
+--- !u!114 &-1281712377139434278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8332521635011790616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 544f70995c80645d98933d9092ab6e6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 1
+  strength: {x: 1, y: 1, z: 1}
+  vibrato: 18
+  randomness: 50

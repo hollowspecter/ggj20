@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4199259536723410491}
   - component: {fileID: 4847027521834297486}
   - component: {fileID: 4256322253923332086}
+  - component: {fileID: 9084120927102013184}
   m_Layer: 0
   m_Name: plateDinner
   m_TagString: Food
@@ -131,3 +132,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -1429569874899344853, guid: 997c4cddaf358f540986893f198337f1, type: 3}
+--- !u!114 &9084120927102013184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6897585337841693424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 544f70995c80645d98933d9092ab6e6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 1
+  strength: {x: 1, y: 1, z: 1}
+  vibrato: 18
+  randomness: 50

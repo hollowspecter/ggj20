@@ -27,6 +27,8 @@
               <e p="Fire.cs" t="Include" />
               <e p="FireDisaster.cs" t="Include" />
               <e p="GiftDisaster.cs" t="Include" />
+              <e p="Shark.cs" t="Include" />
+              <e p="SharkSpawner.cs" t="Include" />
             </e>
             <e p="DateController.cs" t="Include" />
             <e p="Dialogue" t="Include">
@@ -34,6 +36,7 @@
               <e p="Voice.cs" t="Include" />
             </e>
             <e p="EasingFunction.cs" t="Include" />
+            <e p="LightFlicker.cs" t="Include" />
             <e p="RandomGifsGenerator.cs" t="Include" />
             <e p="SceneManager" t="Include">
               <e p="Distraction.cs" t="Include" />
@@ -44,9 +47,11 @@
             <e p="TestScript.cs" t="Include" />
             <e p="Tongue.cs" t="Include" />
             <e p="WaiterController.cs" t="Include" />
+            <e p="WobbleIt.cs" t="Include" />
           </e>
           <e p="Shaders" t="Include">
             <e p="Fire.shader" t="Include" />
+            <e p="Sharknado.shader" t="Include" />
           </e>
         </e>
         <e p="Breakable Windows" t="Include">

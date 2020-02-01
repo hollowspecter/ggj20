@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 9039416063950092710}
   - component: {fileID: 3839397919160103995}
   - component: {fileID: 3232989936700085827}
+  - component: {fileID: 6468681294118399060}
   m_Layer: 0
   m_Name: plantSmall2
   m_TagString: Untagged
@@ -128,3 +129,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2565378675570293008, guid: b9e2b7b59807cd644a13eed3213293d0, type: 3}
+--- !u!114 &6468681294118399060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8758638445167348159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 544f70995c80645d98933d9092ab6e6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 1
+  strength: {x: 1, y: 1, z: 1}
+  vibrato: 18
+  randomness: 50
