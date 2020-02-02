@@ -50,7 +50,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  endDialogue: {fileID: 2480198943629176163, guid: 9ac160efc39044cb09ccddec6624c2d8,
+  endDialogue: {fileID: 2480198943629176163, guid: 30d461f2ded344d65862db18d7f4f07e,
     type: 3}
   endNode: goodend.scenethree.start
   disasterTimer: 60
