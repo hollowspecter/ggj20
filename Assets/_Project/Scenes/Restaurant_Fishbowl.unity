@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 86dd413012c066c428ffe8c59910b8cd, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -22027,8 +22027,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa9240c15faab420a9af32f9e69f6feb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distractionDialogue: {fileID: 0}
-  distractionNode: tv.start
+  distractionDialogue: {fileID: 2480198943629176163, guid: ff3d3c7feb721404bbb27526aeeed4c6,
+    type: 3}
+  distractionNode: Fan.start
   onDistractionStart:
     m_PersistentCalls:
       m_Calls: []
@@ -34901,8 +34902,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa9240c15faab420a9af32f9e69f6feb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distractionDialogue: {fileID: 0}
-  distractionNode: tv.start
+  distractionDialogue: {fileID: 2480198943629176163, guid: a8c0489b136db4cc59ad77ef0b464b6a,
+    type: 3}
+  distractionNode: clouds.start
   onDistractionStart:
     m_PersistentCalls:
       m_Calls: []
@@ -35697,7 +35699,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 0e66bceb366bfa94fa1e3c483a46b5f3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.27
+      value: 3.44
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0e66bceb366bfa94fa1e3c483a46b5f3,
         type: 3}
@@ -35778,8 +35780,8 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1427650427}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &1427650430
-MeshCollider:
+--- !u!65 &1427650430
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -35788,10 +35790,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.48180923, y: 0.20734224, z: 0.6731974}
+  m_Center: {x: -0.03978679, y: 0.11134125, z: -0.009430621}
 --- !u!114 &1427650431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38539,13 +38540,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1598397302, guid: a63dc8774630c4c7b975b735a843ff98, type: 3}
-      propertyPath: distractions.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1598397302, guid: a63dc8774630c4c7b975b735a843ff98, type: 3}
       propertyPath: distractions.Array.data[0]
       value: 
       objectReference: {fileID: 1961701545}
+    - target: {fileID: 1598397302, guid: a63dc8774630c4c7b975b735a843ff98, type: 3}
+      propertyPath: distractions.Array.data[1]
+      value: 
+      objectReference: {fileID: 975765194}
+    - target: {fileID: 1598397302, guid: a63dc8774630c4c7b975b735a843ff98, type: 3}
+      propertyPath: distractions.Array.data[2]
+      value: 
+      objectReference: {fileID: 1249495858}
     - target: {fileID: 1598397302, guid: a63dc8774630c4c7b975b735a843ff98, type: 3}
       propertyPath: onSceneStart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -38586,14 +38591,6 @@ PrefabInstance:
       propertyPath: onSceneEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 37689678}
-    - target: {fileID: 1598397302, guid: a63dc8774630c4c7b975b735a843ff98, type: 3}
-      propertyPath: distractions.Array.data[1]
-      value: 
-      objectReference: {fileID: 975765194}
-    - target: {fileID: 1598397302, guid: a63dc8774630c4c7b975b735a843ff98, type: 3}
-      propertyPath: distractions.Array.data[2]
-      value: 
-      objectReference: {fileID: 1249495858}
     - target: {fileID: 572563310943224576, guid: a63dc8774630c4c7b975b735a843ff98,
         type: 3}
       propertyPath: m_LocalPosition.x

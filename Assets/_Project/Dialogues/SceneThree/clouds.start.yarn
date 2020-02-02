@@ -1,0 +1,74 @@
+title: clouds.start
+tags: 
+colorID: 1
+position: 583,188
+---
+Me: Wow, this cloud...LOOK! #line:09a2e96
+Me: It looks like a... #line:05bbb01
+
+-> A bee! #line:0e4001a
+    Me: A bee! #line:0ed2734
+    [[beecloud]] 
+-> A pineapple! #line:053197b
+    Me: A pineapple! #line:0f2ace4
+    [[pineapplecloud]] 
+-> A shark! #line:003c2d9
+    Me: A shark! #line:08aefe6
+    Me: Oh no... #line:0d750bc
+    [[sharknado]] 
+===
+title: beecloud
+tags: 
+colorID: 2
+position: 266,219
+---
+Date: Hihi, that reminds me of my beloved roasted bees.  #line:07a5581
+Date: I really don't like to look at clouds, but this is nice. Hihi. #line:0748124
+Date: Bzz... hihi #line:0797c08
+
+-> More about bees! #line:09a0c46
+    Me: You would be a great bee! #line:005d517
+    Me: Hopefully you would be a female bee or your life would be pretty bad. #line:0dc0c55
+    Me: No teeth and dying first in winter, hehe...  #line:05dc2e7
+    Me: Uhm... #line:0895e3a
+    [[morebees]] 
+-> silence #line:0bc7c0b
+    Me: Holy fucking shit, what is THIS...?!  #line:08c27ea
+    [[Cichy]] 
+===
+title: pineapplecloud
+tags: 
+colorID: 2
+position: 863,262
+---
+Date: A pineapple? #line:0160712
+Date: Hm... I don't like clouds that much. #line:09099ec
+Date: And I don't care for pineapples. #line:0077d24
+Date: I think they have a really weird color and I am kind of sure, they are alien eggs... #line:0a83dd8
+===
+title: sharknado
+tags: 
+colorID: 2
+position: 574,439
+---
+Date: Sharks...? #line:035363a
+Date: AAAAAAAAAH! #line:0525bce
+Date: SAVE ME!  #line:0013d52
+===
+title: Cichy
+tags: 
+colorID: 0
+position: 323,466
+---
+Date: What is wh- #line:059b6eb
+Date: AAAAAAAAAH! #line:08950d5
+Date: SAVE ME!  #line:09892ab
+===
+title: morebees
+tags: 
+colorID: 3
+position: 27,219
+---
+Date: Hihi...hi... #line:06dbcfc
+Date: ...what?  #line:0b0bbcf
+===

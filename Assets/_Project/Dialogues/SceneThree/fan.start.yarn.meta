@@ -1,0 +1,44 @@
+fileFormatVersion: 2
+guid: ff3d3c7feb721404bbb27526aeeed4c6
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en
+  stringIDs:
+  - fan.start-Fan.start-0
+  - fan.start-Fan.start-1
+  - fan.start-Fan.start-2
+  - fan.start-Fan.start-3
+  - fan.start-Fan.start-4
+  - fan.start-Fan.start-5
+  - fan.start-Fan.start-6
+  - fan.start-Fan.start-7
+  - fan.start-Fan.start-8
+  - fan.start-Fan.start-9
+  - fan.start-Fan.start-10
+  - fan.start-Fan.start-11
+  - fan.start-noirmovie-12
+  - fan.start-noirmovie-13
+  - fan.start-birdies-14
+  - fan.start-birdies-15
+  - fan.start-birdies-16
+  - fan.start-birdies-17
+  - fan.start-birdies-18
+  - fan.start-birdies-19
+  - fan.start-birdies-20
+  - fan.start-birdies-21
+  - fan.start-birdies-22
+  - fan.start-silenciosososos-23
+  - fan.start-awful-24
+  - fan.start-awful-25
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: ff3d3c7feb721404bbb27526aeeed4c6,
+    type: 3}
+  localizations: []

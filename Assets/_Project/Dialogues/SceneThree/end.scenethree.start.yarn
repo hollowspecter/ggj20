@@ -1,0 +1,39 @@
+title: goodend.scenethree.start
+tags: 
+colorID: 0
+position: 583,188
+---
+Me: So... hehe... I really enjoyed... #line:046702d
+Me: Your presence... #line:0bef997
+Me: What... what do you think?  #line:059d6c9
+Date: Yes!  #line:04afdbe
+Date: I think you are super weird and I really like that.  #line:0a1056b
+Date: Hihi. #line:029b445
+Date: It is also nice, when someone listens to you so well. #line:0aa02eb
+Date: I feel like I only have to keep looking at you and everything is going to be okay.  #line:005d9f6
+Date: Hihi. #line:0c112bc
+Me: Hehe... yes... that...  #line:062906e
+Me: I am so... relaxed right now...  #line:0a024cd
+Me: Or maybe I am just too tired to think. #line:0cc3b17
+Date: Hihi.  #line:06fc4e7
+Date: Come here...hihi...  #line:04563ec
+===
+title: badend.scenethree.start
+tags: 
+colorID: 0
+position: 583,188
+---
+Me: So... Hehe... I think the restaurant is sink- #line:02807d3
+Me: Uh... closing.  #line:06252a1
+Me: Do you want to... #line:0358bd8
+Me: I don't know...  #line:0d33ef6
+Me: Meet again? Hehe... #line:02cd8a3
+Date: Well... #line:0ea8a33
+Date: I guess we tried to get to know each other.  #line:0eac1e4
+Date: I am just not sure, you know...  #line:0f356b1
+Date: This was all really weird and I am not sure if it was you or... #line:0bb36be
+Date: Maybe we can stay friends...? #line:06caf95
+<<dab Date>> 
+Date: Hihi... #line:05850da
+Date: See you at the revolution!  #line:0161584
+===
