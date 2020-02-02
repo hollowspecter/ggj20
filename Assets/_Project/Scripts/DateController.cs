@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Yarn.Unity;
 using Random = UnityEngine.Random;
+using DG.Tweening;
 
 public class DateController : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class DateController : MonoBehaviour
     [SerializeField] protected List<Transform> eyes;
     [SerializeField] private float unattentiveEyeRollAmount = 1f;
     [SerializeField] private float unattentiveEyeRollFrequency = 1f;
+    private float unattentiveEyeRollCooldown = 0.0f;
 
     protected DialogueRunner dialogueRunner;
     protected SceneManager sceneManager;
@@ -105,16 +107,43 @@ public class DateController : MonoBehaviour
 
     private void UpdateEyes()
     {
+        bool lookAround = Mathf.Approximately(unattentiveEyeRollCooldown, unattentiveEyeRollFrequency);
+        
         foreach (var eye in eyes)
         {
-            if (IsAttentive)
+            if (IsAttentive && lookAround)
             {
-                eye.LookAt(Camera.main.transform);
+                eye.DOLookAt(CameraManager.instance.currentControlledCamera.transform.position,0.5f);
             }
-            else
+            else if(lookAround)
             {
-                eye.rotation = Quaternion.Slerp(eye.rotation, UnityEngine.Random.rotation, Time.deltaTime * unattentiveEyeRollFrequency);
+                Quaternion old = eye.rotation;
+            eye.LookAt(CameraManager.instance.currentControlledCamera.transform);
+                float randomX = Random.Range(20.0f, 45.0f);
+                if (Random.Range(0.0f, 1.0f) >= .5f)
+                    randomX *= -1.0f;
+                Quaternion x = Quaternion.AngleAxis(randomX, Vector3.up);
+
+
+                float randomY = Random.Range(20.0f, 45.0f);
+                if (Random.Range(0.0f, 1.0f) >= .5f)
+                    randomY *= -1.0f;
+
+                Quaternion y =Quaternion.AngleAxis(randomY, Vector3.right);
+
+                Quaternion q = eye.rotation * y * x;
+                eye.rotation = old;
+                eye.DORotate(q.eulerAngles, 0.5f);
             }
+        }
+        if (lookAround)
+        {
+            lookAround = false;
+            unattentiveEyeRollCooldown = 0.0f;
+        }
+        else
+        {
+            unattentiveEyeRollCooldown = Mathf.Clamp(unattentiveEyeRollCooldown + Time.deltaTime, 0.0f, unattentiveEyeRollFrequency);
         }
     }
 
