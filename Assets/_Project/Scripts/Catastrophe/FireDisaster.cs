@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class FireDisaster : MonoBehaviour
@@ -16,9 +17,9 @@ public class FireDisaster : MonoBehaviour
 
     public void KillAllFires()
     {
-        foreach (var item in activeFires)
+        for (int i = 0; i < activeFires.Count; i++)
         {
-            Destroy(item.gameObject);
+            Destroy(activeFires[i].gameObject);
         }
     }
 }
