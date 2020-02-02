@@ -213,10 +213,11 @@ public class DateController : MonoBehaviour
         isDisasterRunning = false;
     }
 
-    public void Dab(string command)
+    [YarnCommand("dab")]
+    public void Dab(string[] parameters)
     {
-        if(command.Equals("Dab"))
-            animator.SetTrigger(anim_DabID);
+        Debug.Log("Dab!");
+        animator.SetTrigger(anim_DabID);
     }
 
     #endregion
