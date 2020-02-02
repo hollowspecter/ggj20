@@ -137,6 +137,7 @@
 		<relationship name="effects">
 			<destination>{89c58b6b-b1c5-4682-8908-2d5e9aefbaf8}</destination>
 			<destination>{a87038f8-f42d-4505-98b8-b58ef71fc7d1}</destination>
+			<destination>{35fd4721-437f-4a97-ae62-e6d6d5ff9ab8}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{5af58cfc-ac74-4834-8d4a-30edc7b8a258}" />
@@ -165,6 +166,11 @@
 		</property>
 		<property name="maximumDistance">
 			<value>45</value>
+		</property>
+	</object>
+	<object class="GainEffect" id="{35fd4721-437f-4a97-ae62-e6d6d5ff9ab8}">
+		<property name="gain">
+			<value>1</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{27ad6a3b-8fb8-4271-8c1d-cd7a7b253bef}">

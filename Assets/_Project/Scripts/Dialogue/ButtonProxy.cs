@@ -15,7 +15,10 @@ public class ButtonProxy : MonoBehaviour
 
     public void PressButton()
     {
-        button.onClick?.Invoke();
+        if (button != null)
+        {
+            button.onClick?.Invoke();
+        }
     }
 
 }
