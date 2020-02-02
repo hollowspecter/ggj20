@@ -186,7 +186,7 @@ public class Tongue : MonoBehaviour
             case State.Holding:
                 {
                     // Stick tongue to mouth.
-                    transform.position = mouthStart.position;
+                    transform.position = mouthStart.position + mouthStart.forward * 0.5f + mouthStart.up * -0.2f;
                     transform.rotation = transform.rotation * (mouthStart.rotation * Quaternion.Inverse(previousMouthRotation));
 
                     if (Input.GetButtonDown("Fire1") && currentAttachable != null)
