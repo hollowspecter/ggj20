@@ -31,6 +31,7 @@ public class GiftDisaster : MonoBehaviour
         }
     }
 
+    // TODO cue this when date comments on the gift
     public void LetGoOfGift()
     {
         if (giftRigidbody != null)
