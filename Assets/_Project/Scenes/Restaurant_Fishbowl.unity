@@ -17507,6 +17507,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd045f99b7de44431b1be75df962644e, type: 3}
+--- !u!114 &345880679 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1038379992, guid: fd045f99b7de44431b1be75df962644e,
+    type: 3}
+  m_PrefabInstance: {fileID: 345880678}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695849904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877b9cb8da12c49daa5a726f3ccf4298, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &345880680 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2633393961668236263, guid: fd045f99b7de44431b1be75df962644e,
+    type: 3}
+  m_PrefabInstance: {fileID: 345880678}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2633393961325652867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56afc97dae6a546dca795f7c25c92ab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &366050402
 GameObject:
   m_ObjectHideFlags: 0
@@ -36597,6 +36621,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 329419951}
     - target: {fileID: 1598397302, guid: a63dc8774630c4c7b975b735a843ff98, type: 3}
+      propertyPath: onSceneStart.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 345880679}
+    - target: {fileID: 1598397302, guid: a63dc8774630c4c7b975b735a843ff98, type: 3}
       propertyPath: onDisasterStart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 523771116}
@@ -36705,6 +36733,11 @@ PrefabInstance:
       propertyPath: onDisasterEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2633393961325652867}
+    - target: {fileID: 572563311664095215, guid: a63dc8774630c4c7b975b735a843ff98,
+        type: 3}
+      propertyPath: onDisasterEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 345880680}
     - target: {fileID: 5565943682229511732, guid: a63dc8774630c4c7b975b735a843ff98,
         type: 3}
       propertyPath: distractions.Array.data[0]
