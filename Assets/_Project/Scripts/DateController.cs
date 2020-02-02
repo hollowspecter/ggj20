@@ -79,6 +79,8 @@ public class DateController : MonoBehaviour
         }
     }
 
+    public float PanicMeter => panicMeter;
+
     #endregion
 
 

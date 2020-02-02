@@ -1,0 +1,148 @@
+title: scenethree.start
+tags: 
+colorID: 1
+position: 583,188
+---
+Date: By the way, this place is really... fascinating.  #line:059c17c
+Date: And the waiter is lovely.   #line:099b008
+Date: Too bad it will all be gone, when the world ends.  #line:0ccdf4b
+Date: I mean, not our world, hihi. Just for the stupid humans.  #line:0b6b62d
+Date: Are you part of the revolution too?  #line:0835165
+
+-> I like humans. #line:0e73ff7
+    Me: Yes, this place is really... something...he...he... #line:0e09a0c
+    Me: But I am kind of sad, that probably most of the humans will be gone. #line:0c1afe8
+    Me: Some of them make good pets. Although they eat A LOT! #line:088d810
+    [[prohumans]] 
+-> Humans are stupid.  #line:08bff50
+    Me: Yes, this place is really... something...he...he... #line:00abbec
+    Me: And I can't wait for the humans to be gone! #line:0b1b955
+    Me: We are the rightful rulers of this world. #line:051084b
+    Me: No one is as smart, beautiful and nice as reptiles.  #line:0f6bf10
+    Me: I mean some of us can even clone ourselves, something humans have yet to achieve.  #line:0f5eccf
+    [[conhumans]] 
+===
+title: prohumans
+tags: 
+colorID: 2
+position: 310,186
+---
+Date: Don't be sad for those who are too stupid to survive.  #line:0dc7341
+Date: They have the thumb! The thumb! Can you imagine what we could do with that?  #line:036259e
+Date: If you just take, take, take, of course there will be consequences.  #line:0442c2f
+Date: Look what happened to our ancestors, the great dinosaurs and they didn't even do anything bad.  #line:04df81c
+
+-> Doubt that. #line:09e9f85
+    Me: Are you sure? That sound all a bit vague... #line:06b5945
+    Me: I also thought, dinosaurs are the ancestors of birds... #line:036a5cc
+    [[doubt]] 
+-> Yes, but too judgmental. #line:0c246f0
+    Me: Yes! That's what I always thought too! #line:063c43b
+    Me: But I also think it was just a big coincidence and nobody deserves to die just like that.  #line:09969db
+    [[toojudgy]] 
+    
+===
+title: conhumans
+tags: 
+colorID: 2
+position: 853,173
+---
+Date: Hihi, yes! The humans biology is so simple.  #line:0d63cd2
+Date: They can only move both eyes together and have you ever see them climbin trees?  #line:0bae591
+Date: Hihihihi!  #line:0fd01b1
+Date: I am so happy, you see this like me.  #line:06467f1
+Date: First thing I will erase as soon as the humans are gone, are those clouds.  #line:08921bc
+Date: They totally have the wrong color...  #line:0a63087
+
+-> Humans are hilarious! #line:0241cd0
+    Me: Yes, humans are hilarious!  #line:0252a49
+    Me: I have so many plans too! #line:001ec28
+    Me: We will repair the forests and make everything humid and nice.  #line:03f645c
+    Me: It will be so good!  #line:01636d0
+    [[hilarious]] 
+-> Seems undoable. #line:08d159a
+    Me: The clouds...?  #line:0aae67a
+    Me: I don't think you can change that, to be honest.  #line:064bc42
+    Me: Maybe this is going a bit far... #line:032657d
+    [[undoable]] 
+===
+title: doubt
+tags: 
+colorID: 3
+position: 70,98
+---
+Date: BIRDS?!  #line:0f7f37e
+Date: I hate birds! #line:0a3f905
+Date: Ugh, as if birds were cool enough.  #line:0bc0897
+Date: We are supposed to be the rulers of this world! #line:0eaa138
+Date: Damn this meteor!  #line:0b04d5c
+===
+title: toojudgy
+tags: 
+colorID: 3
+position: 72,366
+---
+Date: Hm... if you say so... #line:00f4b59
+Date: I still believe, that our day will come.  #line:045fed0
+Date: Time at least is against those humans.  #line:0e1772e
+Date: Hihi.  #line:01a5971
+===
+title: hilarious
+tags: 
+colorID: 3
+position: 1105,12
+---
+Date: Oh yes! Hihi! #line:0721e0e
+Date: We will live in the green trees and eat all the roasted bees and fruits we want! #line:0998cc3
+Date: I could imagine a life like that with you, hihi... #line:0f6fef7
+
+-> Can't wait! #line:0335b6a
+    Me: That sounds lovely, hehe... #line:0a2bea1
+    Me: Can't wait for the world to burn...  #line:0ee6837
+    Me: He... he... #line:0630a3b
+    [[burnworld]] 
+-> Sounds unreal. #line:0594b33
+    Me: Sounds like paradise and a little bit unreal.  #line:0691b10
+    Me: But I guess it is okay to dream. Hehe. #line:01d4c51
+    [[dream]] 
+===
+title: undoable
+tags: 
+colorID: 3
+position: 1061,408
+---
+Date: Hm... if you say so... #line:0ad1493
+Date: I still believe, that our day will come.  #line:02c5a65
+Date: Time at least is against those humans.  #line:08efd9f
+Date: Hihi.  #line:07c321a
+[[instructions3]]
+===
+title: burnworld
+tags: 
+colorID: 4
+position: 1392,20
+---
+Date: Hihi!  #line:0388e2b
+Date: As long as we don't burn, hihi.  #line:0e2a788
+Date: And we have to get rid of the too much water problem. #line:0e69f1b
+Date: But one day at a time!  #line:024a3bb
+[[instructions3]]
+===
+title: dream
+tags: 
+colorID: 4
+position: 1366,294
+---
+Date: Hm... if you say so... #line:02bde01
+Date: I still believe, that our day will come.  #line:0f4d2e8
+Date: Time at least is against those humans.  #line:0b68872
+Date: Hihi.  #line:0c63c70
+[[instructions3]]
+===
+title: instructions3
+tags: 
+colorID: 4
+position: 1366,294
+---
+Instructions: Careful, a sharknado!!!! Aren't you supposed to boop sharks on the nose to make them scared?
+===

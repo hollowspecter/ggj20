@@ -12,6 +12,9 @@ public class SceneData : MonoBehaviour
     public string endNode;
     public float disasterTimer = 60f;
     public float disasterMeter = 0.03f; // can be changed from afar :)
+    public bool triggerBadDialogueByPanicMeter = false;
+    public float panicMeterThresholdForBad = 0.7f;
+    public string badDialogueEndNode = "";
 
     public UnityEvent onSceneStart;
     public UnityEvent onDisasterStart;
@@ -34,6 +37,11 @@ public class SceneData : MonoBehaviour
             ToggleDistractions(true);
             disasterRunning = true;
         });
+
+        if (triggerBadDialogueByPanicMeter)
+        {
+            onDisasterEnd.AddListener(CheckPanicMeterForEndDialogue);
+        }
     }
 
     private void Update()
@@ -64,6 +72,14 @@ public class SceneData : MonoBehaviour
         if (disasterRunning)
         {
             endDisasterEarly = true;
+        }
+    }
+
+    private void CheckPanicMeterForEndDialogue()
+    {
+        if (FindObjectOfType<DateController>().PanicMeter > panicMeterThresholdForBad)
+        {
+            endNode = badDialogueEndNode;
         }
     }
 }
