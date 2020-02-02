@@ -4921,9 +4921,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56093bad90ec045f292a292545128534, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firePrefab: {fileID: 7339851432243320561}
   spreadRangeMinmax: {x: 1, y: 3}
-  spreadTimeMinMax: {x: 30, y: 60}
+  spreadTimeMinMax: {x: 10, y: 30}
   size: 1
   increaseSpeed: 0.2
   extinguishThreshold: 0.5

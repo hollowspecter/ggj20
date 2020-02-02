@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Fire : MonoBehaviour
 {
-    public GameObject firePrefab;
     public Vector2 spreadRangeMinmax = new Vector2(0.5f, 3f);
     public Vector2 spreadTimeMinMax = new Vector2(10f, 30f);
     public float size = 1f;
@@ -13,16 +12,19 @@ public class Fire : MonoBehaviour
     public Transform playerTransform;
     public LayerMask inflammableLayer;
 
+    private FireDisaster fireDisaster;
     private float nextFireTime = 0f;
 
     private void Awake()
     {
-        ResetSpreadTimer();
+        fireDisaster = FindObjectOfType<FireDisaster>();
 
         if (playerTransform == null)
         {
             playerTransform = GameObject.FindWithTag("Player").transform;
         }
+
+        ResetSpreadTimer();
     }
 
     private void OnEnable()
@@ -82,8 +84,10 @@ public class Fire : MonoBehaviour
             spawnPosition = hit.point;
         }
 
+        Debug.Log("Spawning fire @ " + spawnPosition);
+
         // spawn a fire there
-        var fireTransform = Instantiate(firePrefab, spawnPosition, Quaternion.identity, null).GetComponent<Transform>();
+        var fireTransform = Instantiate(fireDisaster.firePrefab, spawnPosition, Quaternion.identity, null).GetComponent<Transform>();
         fireTransform.rotation = Quaternion.LookRotation(-hit.normal, Vector3.up);
     }
 }
