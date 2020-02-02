@@ -13,12 +13,17 @@ public class GiftDisaster : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (giftRigidbody != null) return;
+
         if (other.TryGetComponent<Attachable>(out var gift))
         {
             Debug.Log("Received a gift! " + gift.name);
             Destroy(gift); // get rid of attachable
-            other.attachedRigidbody.isKinematic = true;
             giftRigidbody = other.attachedRigidbody;
+            giftRigidbody.isKinematic = true;
+            giftRigidbody.Sleep();
+            // TODO this doesnt work :(
+            giftRigidbody.velocity = Vector3.zero;
 
             if (goodGifts.Contains(gift.gameObject))
             {
@@ -31,12 +36,12 @@ public class GiftDisaster : MonoBehaviour
         }
     }
 
-    // TODO cue this when date comments on the gift
     public void LetGoOfGift()
     {
         if (giftRigidbody != null)
         {
             giftRigidbody.isKinematic = false;
+            giftRigidbody.WakeUp();
         }
     }
 }
