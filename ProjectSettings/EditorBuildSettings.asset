@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_Project/Scenes/MainMenu.unity
+    guid: 3688737160eef4941824603aac0d6127
+  - enabled: 1
+    path: Assets/_Project/Scenes/Restaurant_Fishbowl.unity
+    guid: 353e0fae8a08efe42bc808dd7beb2ad2
   m_configObjects: {}

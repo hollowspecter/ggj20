@@ -160,7 +160,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56afc97dae6a546dca795f7c25c92ab7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goodGifts: []
+  goodGifts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   onGoodGiftReceived:
     m_PersistentCalls:
       m_Calls:
