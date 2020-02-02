@@ -23,7 +23,6 @@ public class SharknadoDisaster : MonoBehaviour
     private void Update()
     {
         sceneData.disasterMeter = numberOfSharks * panicPerSharkPerSecond;
-        Debug.Log("Distance to Point " + currentPoint + ": " + Vector3.Distance(transform.position, points[currentPoint].position));
         var t = (Time.time - startLerpTime) / lerpDuration;
         transform.position = Vector3.Lerp(points[currentPoint - 1].position, points[currentPoint].position, EasingFunction.EaseInOutQuad(0f, 1f, t));
 
