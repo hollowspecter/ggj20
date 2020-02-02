@@ -17823,6 +17823,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1015515082}
     m_Modifications:
+    - target: {fileID: 6493561967269242859, guid: 50b45d5ce4a1143ec8ef82443a8af57f,
+        type: 3}
+      propertyPath: OverrideMinDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493561967269242859, guid: 50b45d5ce4a1143ec8ef82443a8af57f,
+        type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6528194374179560048, guid: 50b45d5ce4a1143ec8ef82443a8af57f,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -36827,6 +36837,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 572563310943224577, guid: a63dc8774630c4c7b975b735a843ff98,
+        type: 3}
+      propertyPath: currentSceneIndex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 572563310943224579, guid: a63dc8774630c4c7b975b735a843ff98,
         type: 3}
