@@ -6,12 +6,12 @@ public class MainMenu : MonoBehaviour
 
     public string mainSceneName;
     
-    void StartGame()
+    public void StartGame()
     {
-        // SceneManager.LoadScene(mainSceneName, LoadSceneMode.Single);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(mainSceneName, LoadSceneMode.Single);
     }
     
-    void ExitGame()
+    public void ExitGame()
     {
         Application.Quit();
     }
