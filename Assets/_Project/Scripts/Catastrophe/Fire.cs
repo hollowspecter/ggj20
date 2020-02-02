@@ -73,21 +73,22 @@ public class Fire : MonoBehaviour
         var hits = Physics.SphereCastAll(transform.position, radius, Vector3.one, 100f, inflammableLayer);
         if (hits.Length == 0) return;
 
-        Vector3 spawnPosition = playerTransform.position;
-        RaycastHit hit = new RaycastHit();
-        while (Vector3.Distance(spawnPosition, playerTransform.position) < 2f)
+        // choose random 
+        var pointToHit = hits[Random.Range(0, hits.Length)].point;
+        // raycast from the player to that point to select spawn point.
+        Physics.Raycast(playerTransform.position, (pointToHit - playerTransform.position), out var hit, 100f, inflammableLayer);
+
+        // check if player is too close to fire.
+        if (Vector3.Distance(playerTransform.position, hit.point) < 2f)
         {
-            // choose random 
-            var pointToHit = hits[Random.Range(0, hits.Length)].point;
-            // raycast from the player to that point to select spawn point.
-            Physics.Raycast(playerTransform.position, (pointToHit - playerTransform.position), out hit, 100f, inflammableLayer);
-            spawnPosition = hit.point;
+            Debug.LogError("Error while spawning fire.");
+            return;
         }
 
-        Debug.Log("Spawning fire @ " + spawnPosition);
+        Debug.Log("Spawning fire @ " + hit.point);
 
         // spawn a fire there
-        var fireTransform = Instantiate(fireDisaster.firePrefab, spawnPosition, Quaternion.identity, null).GetComponent<Transform>();
+        var fireTransform = Instantiate(fireDisaster.firePrefab, hit.point, Quaternion.identity, null).GetComponent<Transform>();
         fireTransform.rotation = Quaternion.LookRotation(-hit.normal, Vector3.up);
     }
 }
