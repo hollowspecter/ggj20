@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{52671b04-f2c8-4c52-81f2-1e48bf2f2abf}">
+		<property name="assetPath">
+			<value>shark_boop_03.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.42857142857142855</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f39ecda5-40f1-49c0-8c17-db0661e90480}</destination>
+		</relationship>
+	</object>
+</objects>
