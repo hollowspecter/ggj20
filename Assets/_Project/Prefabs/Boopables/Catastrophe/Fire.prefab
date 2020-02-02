@@ -4923,7 +4923,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePrefab: {fileID: 7339851432243320561}
   spreadRangeMinmax: {x: 1, y: 3}
-  spreadTimeMinMax: {x: 10, y: 30}
+  spreadTimeMinMax: {x: 30, y: 60}
   size: 1
   increaseSpeed: 0.2
   extinguishThreshold: 0.5
