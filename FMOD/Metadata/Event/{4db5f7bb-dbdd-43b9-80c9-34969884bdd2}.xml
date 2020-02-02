@@ -101,6 +101,9 @@
 		<property name="maxVoices">
 			<value>1</value>
 		</property>
+		<property name="volume">
+			<value>-10</value>
+		</property>
 		<relationship name="sounds">
 			<destination>{0367f456-94fc-4876-a818-dda7b4322622}</destination>
 			<destination>{bc14baee-8aa4-4c6c-bd28-b83cb573df34}</destination>
@@ -113,6 +116,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{52dd9add-d5fb-4f81-a054-f2e0a4c1f035}">
+		<property name="volume">
+			<value>-2.5</value>
+		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
