@@ -1429,6 +1429,7 @@ MonoBehaviour:
   timeScalePreparing: 0.8
   canvasReticle: {fileID: 6074654548554612055}
   tongueEvent: event:/Tongue/TongueSounds
+  objectShootEvent: event:/Tongue/TrowObject
 --- !u!153 &8432941948716423599
 ConfigurableJoint:
   m_ObjectHideFlags: 0
