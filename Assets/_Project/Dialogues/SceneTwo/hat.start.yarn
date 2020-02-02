@@ -1,0 +1,58 @@
+title: hat.start
+tags: 
+colorID: 1
+position: 574,302
+---
+Me: What a stylish hat over there! #line:000ed2f
+
+-> Same as my aunts'! #line:068794d
+    Me: My aunt had one of those and wore it every day. #line:0eb39bd
+    Me: Can you believe? #line:01ec732
+    [[aunthat]] 
+-> I love hats! #line:0ac32ed
+    Me: I just love hats... #line:06320a4
+    [[lovehats]] 
+-> silence #line:07cdb63
+    Me: Weird... #line:089bf6d
+    [[stilte]] 
+===
+title: aunthat
+tags: 
+colorID: 2
+position: 242,215
+---
+Date: Aha... I really needed to know that about your aunt...  #line:0f37bef
+===
+title: lovehats
+tags: 
+colorID: 2
+position: 847,211
+---
+Date: Hihi...  #line:0a345d2
+Date: I also like hats. But I like neckties more.  #line:04c0e03
+Date: I have a whole collection, hihi. #line:048a968
+
+-> What's your favorite? #line:04f179a
+    Me: Hehe, what? #line:0bc19dd
+    Me: You need to show it to me! #line:0c330e3
+    Me: What is your favorite motive?  #line:049e61b
+    [[necktie]] 
+-> silence #line:078f1c8
+    Me: Weird... #line:0208131
+    [[stilte]] 
+===
+title: stilte
+tags: 
+colorID: 0
+position: 601,-10
+---
+Date: What the heck are you doing?!  #line:0d09856
+===
+title: necktie
+tags: 
+colorID: 3
+position: 1113,225
+---
+Date: Hihi, I will show it to you! #line:0c37c76
+Date: My favorite one is pink with yellow ducks, hihi. #line:0807fb1
+===

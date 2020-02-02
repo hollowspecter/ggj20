@@ -96,13 +96,16 @@
 			<value>true</value>
 		</property>
 		<property name="triggerProbability">
-			<value>40</value>
-		</property>
-		<property name="isAsync">
-			<value>true</value>
+			<value>30</value>
 		</property>
 		<property name="length">
 			<value>7.7098185941043083</value>
+		</property>
+		<property name="maxVoices">
+			<value>3</value>
+		</property>
+		<property name="volume">
+			<value>10</value>
 		</property>
 		<property name="looping">
 			<value>true</value>
@@ -118,10 +121,14 @@
 			<destination>{ee3da884-5368-4c80-b75e-660e09caf1c0}</destination>
 			<destination>{f9a1097e-fbd3-45ec-b653-1b02c3a2339e}</destination>
 		</relationship>
+		<relationship name="playPercentages">
+			<destination>{3584501b-9a7c-40f4-a949-11e817a0150b}</destination>
+			<destination>{8b98f0e8-9b93-4b87-955a-0bed6ee2f98d}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{8593ae8a-0319-4d96-8ed0-013cacf22d82}">
 		<property name="volume">
-			<value>-14.5</value>
+			<value>-40</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>
@@ -186,6 +193,22 @@
 	<object class="SingleSound" id="{f9a1097e-fbd3-45ec-b653-1b02c3a2339e}">
 		<relationship name="audioFile">
 			<destination>{ddcab4e4-986f-4690-9565-8f000c79fa26}</destination>
+		</relationship>
+	</object>
+	<object class="PlayPercentage" id="{3584501b-9a7c-40f4-a949-11e817a0150b}">
+		<property name="percentage">
+			<value>16.666666</value>
+		</property>
+		<relationship name="sound">
+			<destination>{59316bc1-0abe-448f-82d0-a605f9c48070}</destination>
+		</relationship>
+	</object>
+	<object class="PlayPercentage" id="{8b98f0e8-9b93-4b87-955a-0bed6ee2f98d}">
+		<property name="percentage">
+			<value>10</value>
+		</property>
+		<relationship name="sound">
+			<destination>{f9a1097e-fbd3-45ec-b653-1b02c3a2339e}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{e46c5d88-cfc5-4afd-bda5-03d3ddfec34f}">

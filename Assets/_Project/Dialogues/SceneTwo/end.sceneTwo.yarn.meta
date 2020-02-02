@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 804efa5b0dd0b484a8ebab6ca87e0788
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en
+  stringIDs:
+  - goodend.scenetwo.start-goodend.scenetwo.start-0
+  - goodend.scenetwo.start-goodend.scenetwo.start-1
+  - goodend.scenetwo.start-goodend.scenetwo.start-2
+  - goodend.scenetwo.start-goodend.scenetwo.start-3
+  - goodend.scenetwo.start-goodend.scenetwo.start-4
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: 804efa5b0dd0b484a8ebab6ca87e0788,
+    type: 3}
+  localizations: []

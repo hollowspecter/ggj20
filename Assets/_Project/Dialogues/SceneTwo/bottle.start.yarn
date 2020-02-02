@@ -1,0 +1,86 @@
+title: Bottle.start
+tags: 
+colorID: 1
+position: 583,212
+---
+    Me: Oh, uh, do you see this nice bottle of wine?  #line:02467a1
+-> Wine connoisseur. #line:08c8327
+    Me: I actually always thought about being a wine connoisseur.  #line:05eeb27
+    [[connoisseur]] 
+-> Weird wine. #line:02ace90
+    Me: I heard they found weird bacteria in the wine.  #line:0125b70
+    Me: They will live inside you and uh... eat your brain.  #line:05ee4af
+    [[weirdwine]] 
+-> silence #line:035360b
+    Me: No...  #line:0a4588c
+    [[silencio]] 
+===
+title: connoisseur
+tags: 
+colorID: 2
+position: 540,-38
+---
+Date: Uh, so you already know a lot about wine?  #line:0f16ba2
+Date: And probably also like it a lot? Hihi.  #line:0b4eb25
+Date: Tell me about this wine! #line:083e3f4
+
+-> lie #line:05a5719
+    Me: So, uh... It is a... special... red... wine...  #line:0b74dd1
+    [[specialwine]] 
+-> Weird wine. #line:02a575b
+    Me: So, I actually don't know a lot about wine yet. #line:080b6fb
+    Me: I just thought it would be cool, to know a lot about it. #line:0309265
+    Me: But I heard they found weird bacteria in the wine.  #line:0c8253c
+    Me: They will live inside you and uh... eat your brain.  #line:0f06995
+    [[weirdwine]] 
+-> silence #line:06efeee
+    Me: No...  #line:0e05dda
+    [[silencio]] 
+===
+title: weirdwine
+tags: 
+colorID: 2
+position: 896,157
+---
+Date: Hihi, that sounds awesomely gross!  #line:0a619ee
+Date: I think I have a relative that died of that, after the bacteria made her become a winemaker.  #line:06b4bf4
+Date: To create more space and victims for the bacteria I think, you know?  #line:0fecc98
+Date: Let's drink it and stop being responsible for our behaviour. Hihi.  #line:0ba4f8e
+
+-> Sounds good! #line:048ec31
+    Me: Uhm, yes. Hehe...  #line:0db93d4
+    Me: Cheers!  #line:0c37a9a
+    Me: To great, brainless adventures... I guess. #line:0399c4b
+    [[soundsgood]] 
+
+-> silence #line:013584d
+    Me: No...  #line:0360268
+    [[silencio]] 
+===
+title: silencio
+tags: 
+colorID: 0
+position: 758,513
+---
+Date: Oh no! #line:08683d0
+Date: What is happening here?  #line:0264595
+===
+title: specialwine
+tags: 
+colorID: 3
+position: 167,196
+---
+Date: A... red wine?  #line:020a8dc
+Date: I could have told you that.  #line:0776d5d
+Date: You don't know anything about wine, do you?  #line:0e2841b
+Date: And here I thought you could tell me something interesting... #line:08aedc0
+===
+title: soundsgood
+tags: 
+colorID: 3
+position: 1224,146
+---
+Date: Yes!!! #line:01b7155
+Date: Hihi, you are so much fun! #line:0f49ae1
+Date: Cheers! To all the brainless making alcohol.  #line:0df171c
+===

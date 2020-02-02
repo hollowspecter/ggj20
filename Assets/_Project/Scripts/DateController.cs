@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Yarn.Unity;
 using Random = UnityEngine.Random;
+using DG.Tweening;
 
 public class DateController : MonoBehaviour
 {
@@ -18,13 +19,21 @@ public class DateController : MonoBehaviour
     [SerializeField] protected Renderer skinRenderer;
     [SerializeField] protected Gradient panicGradient;
     [SerializeField] protected List<Transform> eyes;
-    [SerializeField] private float unattentiveEyeRollAmount = 1f;
-    [SerializeField] private float unattentiveEyeRollFrequency = 1f;
+    [SerializeField] protected List<Transform> defaultEyes;
+
+    [Range(0.0f, 45.0f)] [SerializeField] private float unattentiveEyeRollMin = 0.0f;
+    [Range(0.0f, 45.0f)] [SerializeField] private float unattentiveEyeRollMax = 45.0f;
+    [Range(0.0f, 10.0f)] [SerializeField] private float unattentiveEyeRollIntervall = 1f;
+    [Range(0.0f, 3.0f)] [SerializeField] private float unattentiveEyeRollDuration = 0.5f;
+    private float unattentiveEyeRollCooldown = 0.0f;
 
     protected DialogueRunner dialogueRunner;
     protected SceneManager sceneManager;
+    protected Animator animator;
     protected bool isDisasterRunning;
 
+    private int anim_PanicID = Animator.StringToHash("Panic");
+    private int anim_DabID = Animator.StringToHash("Dab");
     #endregion
 
 
@@ -73,10 +82,17 @@ public class DateController : MonoBehaviour
         }
     }
 
+    public float PanicMeter => panicMeter;
+
     #endregion
 
 
     #region Unity methods
+
+    private void Awake()
+    {
+        animator = GetComponentInChildren<Animator>();
+    }
 
     protected void OnEnable()
     {
@@ -105,16 +121,42 @@ public class DateController : MonoBehaviour
 
     private void UpdateEyes()
     {
-        foreach (var eye in eyes)
+        bool lookAround = Mathf.Approximately(unattentiveEyeRollCooldown, unattentiveEyeRollIntervall);
+
+        for (int i = 0; i < eyes.Count; ++i)
         {
-            if (IsAttentive)
-            {
-                eye.LookAt(Camera.main.transform);
+            var eye = eyes[i];
+            var defaultEye = defaultEyes[i];
+            if (IsAttentive && lookAround)
+            { 
+                eye.DOLookAt(CameraManager.instance.currentControlledCamera.transform.position, unattentiveEyeRollDuration).SetEase(Ease.InOutSine);
             }
-            else
+            else if (lookAround)
             {
-                eye.rotation = Quaternion.Slerp(eye.rotation, UnityEngine.Random.rotation, Time.deltaTime * unattentiveEyeRollFrequency);
+                float randomX = Random.Range(unattentiveEyeRollMin, unattentiveEyeRollMax);
+                if (Random.Range(0.0f, 1.0f) >= .5f)
+                    randomX *= -1.0f;
+                Quaternion x = Quaternion.AngleAxis(randomX, Vector3.up);
+
+
+                float randomY = Random.Range(unattentiveEyeRollMin, unattentiveEyeRollMax);
+                if (Random.Range(0.0f, 1.0f) >= .5f)
+                    randomY *= -1.0f;
+
+                Quaternion y = Quaternion.AngleAxis(randomY, Vector3.right);
+
+                Quaternion q = defaultEye.rotation * y * x;
+                eye.DORotate(q.eulerAngles, unattentiveEyeRollDuration).SetEase(Ease.InOutSine);
             }
+        }
+        if (lookAround)
+        {
+            lookAround = false;
+            unattentiveEyeRollCooldown = 0.0f;
+        }
+        else
+        {
+            unattentiveEyeRollCooldown = Mathf.Clamp(unattentiveEyeRollCooldown + Time.deltaTime, 0.0f, unattentiveEyeRollIntervall);
         }
     }
 
@@ -152,6 +194,7 @@ public class DateController : MonoBehaviour
         }
 
         panicMeter = Mathf.Clamp01(panicMeter);
+        animator.SetFloat(anim_PanicID, panicMeter);
     }
 
     private void UpdateSkinColor()
@@ -168,6 +211,12 @@ public class DateController : MonoBehaviour
     protected void OnDistasterEnd()
     {
         isDisasterRunning = false;
+    }
+
+    public void Dab(string command)
+    {
+        if(command.Equals("Dab"))
+            animator.SetTrigger(anim_DabID);
     }
 
     #endregion

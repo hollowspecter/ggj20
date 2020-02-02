@@ -43,13 +43,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e352826a07c07442cabbb21d6febfb7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startDialogue: {fileID: 0}
-  startNode: Test
+  startDialogue: {fileID: 2480198943629176163, guid: 86bb96e78ded4474ca3cb25a6be5bff6,
+    type: 3}
+  startNode: scenethree.start
   distractions: []
   endDialogue: {fileID: 0}
   endNode: Test
   disasterTimer: 60
   disasterMeter: 0.03
+  triggerBadDialogueByPanicMeter: 0
+  panicMeterThresholdForBad: 0.9
+  badDialogueEndNode: 
   onSceneStart:
     m_PersistentCalls:
       m_Calls:
@@ -67,6 +71,17 @@ MonoBehaviour:
       - m_Target: {fileID: 0}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: KillAllFires
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -109,7 +124,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
   onDisasterEnd:
     m_PersistentCalls:
@@ -131,6 +146,17 @@ MonoBehaviour:
       - m_Target: {fileID: 0}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: StartFrenchKiss
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -309,6 +335,7 @@ MonoBehaviour:
   scenes:
   - {fileID: 572563311664095215}
   - {fileID: 5565943682229511732}
+  - {fileID: 1598397302}
   onSceneStart:
     m_PersistentCalls:
       m_Calls:
@@ -343,6 +370,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  currentSceneIndex: 2
 --- !u!1 &572563311664095214
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,9 +423,12 @@ MonoBehaviour:
   - {fileID: 0}
   endDialogue: {fileID: 2480198943629176163, guid: 0556985a6affa4f49aff93763c91ecca,
     type: 3}
-  endNode: goodend.sceneone.start
+  endNode: badend.sceneone.start
   disasterTimer: 60
   disasterMeter: 0.03
+  triggerBadDialogueByPanicMeter: 0
+  panicMeterThresholdForBad: 0.7
+  badDialogueEndNode: 
   onSceneStart:
     m_PersistentCalls:
       m_Calls: []
@@ -421,6 +452,17 @@ MonoBehaviour:
       - m_Target: {fileID: 0}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: LetGoOfGift
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -475,14 +517,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e352826a07c07442cabbb21d6febfb7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startDialogue: {fileID: 0}
-  startNode: Test
-  distractions: []
-  endDialogue: {fileID: 2480198943629176163, guid: d3595c87a5aa24757af29151af04d399,
+  startDialogue: {fileID: 2480198943629176163, guid: 1c1014ee3b11b428bbceef0e22edae6c,
     type: 3}
-  endNode: Test
+  startNode: scenetwo.start
+  distractions:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  endDialogue: {fileID: 2480198943629176163, guid: 804efa5b0dd0b484a8ebab6ca87e0788,
+    type: 3}
+  endNode: goodend.scenetwo.start
   disasterTimer: 60
   disasterMeter: 0.03
+  triggerBadDialogueByPanicMeter: 1
+  panicMeterThresholdForBad: 0.7
+  badDialogueEndNode: badend.scenetwo.start
   onSceneStart:
     m_PersistentCalls:
       m_Calls: []

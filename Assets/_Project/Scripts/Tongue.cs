@@ -34,6 +34,8 @@ public class Tongue : MonoBehaviour
     public CinemachineVirtualCamera vcamPreparing;
     [SerializeField] protected float timeScalePreparing = 0.8f;
     [SerializeField] protected Canvas canvasReticle;
+    [FMODUnity.EventRef] public string tongueEvent;
+    [FMODUnity.EventRef] public string objectShootEvent;
     protected bool doRetractAttachablesAutomatically = true;
     private float tongueShootDuration;
     protected float timeWhenShot;
@@ -44,6 +46,8 @@ public class Tongue : MonoBehaviour
     private Vector3 tongueTargetPosition;
     private Boopable boopableThatWeAreGoingToHit;
     private Quaternion previousMouthRotation;
+    FMOD.Studio.EventInstance tongueFmodInstance;
+    private FMOD.Studio.PARAMETER_ID isFoodOnTongueID, touchID;
 
     #region Unity methods
 
@@ -56,6 +60,13 @@ public class Tongue : MonoBehaviour
         vcamPreparing.enabled = false;
         vcamNormal.enabled = true;
         canvasReticle.enabled = false;
+
+        var eventDescription = FMODUnity.RuntimeManager.GetEventDescription(tongueEvent);
+        eventDescription.getParameterDescriptionByName("isFoodOnTongue",out var isFoodOnTogueParamDescr);
+        isFoodOnTongueID = isFoodOnTogueParamDescr.id;
+        eventDescription.getParameterDescriptionByName("touchButNoFood", out var touchParamDescr);
+        touchID = touchParamDescr.id;
+
     }
 
     private void FixedUpdate()
@@ -66,7 +77,7 @@ public class Tongue : MonoBehaviour
 
     private void Update()
     {
-        canvasReticle.enabled = currentState == State.Prepare;
+        CameraManager.instance.currentCameraController.reticleCanvas.enabled = currentState == State.Prepare;
 
         switch (currentState)
         {
@@ -77,6 +88,8 @@ public class Tongue : MonoBehaviour
                     if (Input.GetButtonDown("Fire1"))
                     {
                         Shoot();
+                        tongueFmodInstance = FMODUnity.RuntimeManager.CreateInstance(tongueEvent);
+                        tongueFmodInstance.start();
                     }
                     else if (Input.GetButtonDown("Fire2"))
                     {
@@ -102,6 +115,7 @@ public class Tongue : MonoBehaviour
                         }
 
                         Retract();
+                        tongueFmodInstance.triggerCue();
                     }
                 }
                 break;
@@ -138,10 +152,13 @@ public class Tongue : MonoBehaviour
                         if (currentAttachable != null)
                         {
                             currentState = State.Holding;
+                            tongueFmodInstance.setParameterByID(isFoodOnTongueID, 0f);
                         }
                         else
                         {
                             currentState = State.In;
+                            tongueFmodInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                            tongueFmodInstance.release();
                         }
                     }
                 }
@@ -175,6 +192,9 @@ public class Tongue : MonoBehaviour
                     if (Input.GetButtonDown("Fire1") && currentAttachable != null)
                     {
                         currentState = State.In;
+                        tongueFmodInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                        tongueFmodInstance.release();
+                        FMODUnity.RuntimeManager.PlayOneShot(objectShootEvent);
 
                         if (TryGetComponent<FixedJoint>(out var joint))
                         {
@@ -225,8 +245,8 @@ public class Tongue : MonoBehaviour
 
     private void Shoot()
     {
-        print("cam: " + CameraManager.instance.currentControlledCamera);
-        print("forward: " + CameraManager.instance.currentControlledCamera.transform.forward);
+        //print("cam: " + CameraManager.instance.currentControlledCamera);
+        //print("forward: " + CameraManager.instance.currentControlledCamera.transform.forward);
         if (currentState != State.In && currentState != State.Prepare)
             return;
 
@@ -234,6 +254,8 @@ public class Tongue : MonoBehaviour
 
         if (Physics.Raycast(mouthStart.position, CameraManager.instance.currentControlledCamera.transform.forward, out var raycastHit, tongueMaxLength, boopableLayerMask, QueryTriggerInteraction.Collide))
         {
+            tongueFmodInstance.triggerCue();
+            tongueFmodInstance.setParameterByID(touchID, 1f);
             //Debug.Log("Hit object: " + raycastHit.collider.name + " @ " + Time.frameCount);
             if (raycastHit.collider.TryGetComponent<Boopable>(out var boopable))
             {

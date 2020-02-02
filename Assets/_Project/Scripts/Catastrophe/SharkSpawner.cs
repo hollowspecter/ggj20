@@ -9,13 +9,13 @@ public class SharkSpawner : MonoBehaviour
     public float xRotationOffsetRange = 20f;
     public float yRotationOffsetRange = 20f;
     public Vector2 forceMinMax = new Vector2(10f,30f);
-    public Transform[] points;
+
 
     private float nextSharkSpawnTime;
     private float originalZRotation;
     private float originalXRotation;
     private float originalYRotation;
-    private int currentPoint = 0;
+   
 
     private void Start()
     {
@@ -35,10 +35,7 @@ public class SharkSpawner : MonoBehaviour
         }
     }
 
-    public void GoToNextPoint()
-    {
-        currentPoint++;
-    }
+
 
     private void ResetSpawnTimer()
     {
