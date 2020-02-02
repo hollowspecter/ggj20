@@ -18,6 +18,11 @@ public class Fire : MonoBehaviour
     private void Awake()
     {
         ResetSpreadTimer();
+
+        if (playerTransform == null)
+        {
+            playerTransform = GameObject.FindWithTag("Player").transform;
+        }
     }
 
     private void OnEnable()
@@ -47,7 +52,6 @@ public class Fire : MonoBehaviour
     {
         // reduce. if it is reduced to almost small enough, delete!
         transform.localScale = transform.localScale - Vector3.one * _value;
-        Debug.Log("Reduce!");
 
         if (transform.localScale.magnitude < extinguishThreshold)
         {
@@ -69,6 +73,11 @@ public class Fire : MonoBehaviour
         var pointToHit = hits[Random.Range(0, hits.Length)].point;
 
         // raycast from the player to that point
+        //Vector3 flamePosition = playerTransform.position;
+        //while (Vector3.Distance(flamePosition, playerTransform.position) < 2f)
+        //{
+
+        //}
         Physics.Raycast(playerTransform.position, (pointToHit - playerTransform.position), out var hit, 100f, inflammableLayer);
 
         // spawn a fire there

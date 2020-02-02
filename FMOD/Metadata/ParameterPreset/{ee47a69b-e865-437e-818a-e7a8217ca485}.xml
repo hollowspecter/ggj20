@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{ee47a69b-e865-437e-818a-e7a8217ca485}">
+		<property name="name">
+			<value>touchButNoFood</value>
+		</property>
+		<relationship name="folder">
+			<destination>{0b611068-2acf-44dd-ba3d-bcf72de8475f}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{cb218f7b-0f31-4949-b0ad-fdc498820f0d}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{cb218f7b-0f31-4949-b0ad-fdc498820f0d}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>True</value>
+			<value>False</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
