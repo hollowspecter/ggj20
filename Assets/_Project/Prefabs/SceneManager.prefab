@@ -43,13 +43,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e352826a07c07442cabbb21d6febfb7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startDialogue: {fileID: 0}
-  startNode: Test
+  startDialogue: {fileID: 2480198943629176163, guid: 86bb96e78ded4474ca3cb25a6be5bff6,
+    type: 3}
+  startNode: scenethree.start
   distractions: []
   endDialogue: {fileID: 0}
   endNode: Test
   disasterTimer: 60
   disasterMeter: 0.03
+  triggerBadDialogueByPanicMeter: 0
+  panicMeterThresholdForBad: 0.9
+  badDialogueEndNode: 
   onSceneStart:
     m_PersistentCalls:
       m_Calls:
@@ -422,6 +426,9 @@ MonoBehaviour:
   endNode: badend.sceneone.start
   disasterTimer: 60
   disasterMeter: 0.03
+  triggerBadDialogueByPanicMeter: 0
+  panicMeterThresholdForBad: 0.7
+  badDialogueEndNode: 
   onSceneStart:
     m_PersistentCalls:
       m_Calls: []
@@ -517,11 +524,14 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  endDialogue: {fileID: 2480198943629176163, guid: d3595c87a5aa24757af29151af04d399,
+  endDialogue: {fileID: 2480198943629176163, guid: 804efa5b0dd0b484a8ebab6ca87e0788,
     type: 3}
-  endNode: Test
+  endNode: goodend.scenetwo.start
   disasterTimer: 60
   disasterMeter: 0.03
+  triggerBadDialogueByPanicMeter: 1
+  panicMeterThresholdForBad: 0.7
+  badDialogueEndNode: badend.scenetwo.start
   onSceneStart:
     m_PersistentCalls:
       m_Calls: []

@@ -1,0 +1,89 @@
+fileFormatVersion: 2
+guid: 86bb96e78ded4474ca3cb25a6be5bff6
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en
+  stringIDs:
+  - scenethree.start-scenethree.start-0
+  - scenethree.start-scenethree.start-1
+  - scenethree.start-scenethree.start-2
+  - scenethree.start-scenethree.start-3
+  - scenethree.start-scenethree.start-4
+  - scenethree.start-scenethree.start-5
+  - scenethree.start-scenethree.start-6
+  - scenethree.start-scenethree.start-7
+  - scenethree.start-scenethree.start-8
+  - scenethree.start-scenethree.start-9
+  - scenethree.start-scenethree.start-10
+  - scenethree.start-scenethree.start-11
+  - scenethree.start-scenethree.start-12
+  - scenethree.start-scenethree.start-13
+  - scenethree.start-scenethree.start-14
+  - scenethree.start-prohumans-15
+  - scenethree.start-prohumans-16
+  - scenethree.start-prohumans-17
+  - scenethree.start-prohumans-18
+  - scenethree.start-prohumans-19
+  - scenethree.start-prohumans-20
+  - scenethree.start-prohumans-21
+  - scenethree.start-prohumans-22
+  - scenethree.start-prohumans-23
+  - scenethree.start-prohumans-24
+  - scenethree.start-conhumans-25
+  - scenethree.start-conhumans-26
+  - scenethree.start-conhumans-27
+  - scenethree.start-conhumans-28
+  - scenethree.start-conhumans-29
+  - scenethree.start-conhumans-30
+  - scenethree.start-conhumans-31
+  - scenethree.start-conhumans-32
+  - scenethree.start-conhumans-33
+  - scenethree.start-conhumans-34
+  - scenethree.start-conhumans-35
+  - scenethree.start-conhumans-36
+  - scenethree.start-conhumans-37
+  - scenethree.start-conhumans-38
+  - scenethree.start-conhumans-39
+  - scenethree.start-doubt-40
+  - scenethree.start-doubt-41
+  - scenethree.start-doubt-42
+  - scenethree.start-doubt-43
+  - scenethree.start-doubt-44
+  - scenethree.start-toojudgy-45
+  - scenethree.start-toojudgy-46
+  - scenethree.start-toojudgy-47
+  - scenethree.start-toojudgy-48
+  - scenethree.start-hilarious-49
+  - scenethree.start-hilarious-50
+  - scenethree.start-hilarious-51
+  - scenethree.start-hilarious-52
+  - scenethree.start-hilarious-53
+  - scenethree.start-hilarious-54
+  - scenethree.start-hilarious-55
+  - scenethree.start-hilarious-56
+  - scenethree.start-hilarious-57
+  - scenethree.start-hilarious-58
+  - scenethree.start-undoable-59
+  - scenethree.start-undoable-60
+  - scenethree.start-undoable-61
+  - scenethree.start-undoable-62
+  - scenethree.start-burnworld-63
+  - scenethree.start-burnworld-64
+  - scenethree.start-burnworld-65
+  - scenethree.start-burnworld-66
+  - scenethree.start-dream-67
+  - scenethree.start-dream-68
+  - scenethree.start-dream-69
+  - scenethree.start-dream-70
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: 86bb96e78ded4474ca3cb25a6be5bff6,
+    type: 3}
+  localizations: []
