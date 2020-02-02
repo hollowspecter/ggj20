@@ -1417,7 +1417,7 @@ GameObject:
   - component: {fileID: 5392805953044783329}
   - component: {fileID: 4720936033625518310}
   m_Layer: 9
-  m_Name: TongueEnd
+  m_Name: TongueEnd -- add boop event for game end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -109,7 +109,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
   onDisasterEnd:
     m_PersistentCalls:
@@ -131,6 +131,17 @@ MonoBehaviour:
       - m_Target: {fileID: 0}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: StartFrenchKiss
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -479,7 +490,10 @@ MonoBehaviour:
   startDialogue: {fileID: 2480198943629176163, guid: 1c1014ee3b11b428bbceef0e22edae6c,
     type: 3}
   startNode: scenetwo.start
-  distractions: []
+  distractions:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   endDialogue: {fileID: 2480198943629176163, guid: d3595c87a5aa24757af29151af04d399,
     type: 3}
   endNode: Test
