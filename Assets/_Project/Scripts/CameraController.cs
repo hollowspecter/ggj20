@@ -38,7 +38,6 @@ public class CameraController : MonoBehaviour
 
         transform.eulerAngles = currentRotation;
         prepareCam.transform.eulerAngles = currentRotation;
-
         if (isRightEye)
         {
             if (targetRotation.y <= yConstraint.x)
