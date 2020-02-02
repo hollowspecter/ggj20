@@ -16,6 +16,9 @@ public class Voice : MonoBehaviour
 
     public void Talk()
     {
-        voiceEmitter?.Play();
+        try
+        {
+            voiceEmitter?.Play();
+        } catch(System.Exception e) { }
     }
 }

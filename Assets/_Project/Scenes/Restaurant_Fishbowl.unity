@@ -17428,7 +17428,7 @@ PrefabInstance:
       objectReference: {fileID: 1407441382}
     - target: {fileID: 195404940, guid: fd045f99b7de44431b1be75df962644e, type: 3}
       propertyPath: speed
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1038379992, guid: fd045f99b7de44431b1be75df962644e, type: 3}
       propertyPath: sceneData
@@ -17823,6 +17823,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1015515082}
     m_Modifications:
+    - target: {fileID: 6493561967269242859, guid: 50b45d5ce4a1143ec8ef82443a8af57f,
+        type: 3}
+      propertyPath: OverrideMinDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493561967269242859, guid: 50b45d5ce4a1143ec8ef82443a8af57f,
+        type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6528194374179560048, guid: 50b45d5ce4a1143ec8ef82443a8af57f,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -21717,7 +21727,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1203108650}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1097514881
 GameObject:
@@ -33823,8 +33833,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 537980957}
-  - {fileID: 1407441382}
   - {fileID: 1077010209}
+  - {fileID: 1407441382}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -34437,7 +34447,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1203108650}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1411510022
 PrefabInstance:
@@ -36827,6 +36837,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 572563310943224577, guid: a63dc8774630c4c7b975b735a843ff98,
+        type: 3}
+      propertyPath: currentSceneIndex
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 572563310943224579, guid: a63dc8774630c4c7b975b735a843ff98,
         type: 3}
