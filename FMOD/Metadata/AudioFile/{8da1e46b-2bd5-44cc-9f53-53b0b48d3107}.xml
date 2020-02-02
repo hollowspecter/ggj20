@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{8da1e46b-2bd5-44cc-9f53-53b0b48d3107}">
+		<property name="assetPath">
+			<value>talking_kazoo_medium_01.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.42857142857142855</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f39ecda5-40f1-49c0-8c17-db0661e90480}</destination>
+		</relationship>
+	</object>
+</objects>

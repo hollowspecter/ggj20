@@ -29,8 +29,11 @@ public class DateController : MonoBehaviour
 
     protected DialogueRunner dialogueRunner;
     protected SceneManager sceneManager;
+    protected Animator animator;
     protected bool isDisasterRunning;
 
+    private int anim_PanicID = Animator.StringToHash("Panic");
+    private int anim_DabID = Animator.StringToHash("Dab");
     #endregion
 
 
@@ -79,10 +82,17 @@ public class DateController : MonoBehaviour
         }
     }
 
+    public float PanicMeter => panicMeter;
+
     #endregion
 
 
     #region Unity methods
+
+    private void Awake()
+    {
+        animator = GetComponentInChildren<Animator>();
+    }
 
     protected void OnEnable()
     {
@@ -184,6 +194,7 @@ public class DateController : MonoBehaviour
         }
 
         panicMeter = Mathf.Clamp01(panicMeter);
+        animator.SetFloat(anim_PanicID, panicMeter);
     }
 
     private void UpdateSkinColor()
@@ -200,6 +211,12 @@ public class DateController : MonoBehaviour
     protected void OnDistasterEnd()
     {
         isDisasterRunning = false;
+    }
+
+    public void Dab(string command)
+    {
+        if(command.Equals("Dab"))
+            animator.SetTrigger(anim_DabID);
     }
 
     #endregion
