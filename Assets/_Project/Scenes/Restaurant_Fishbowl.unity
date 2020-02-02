@@ -244,6 +244,26 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 243562768864635445, guid: 701bceec0c2704becb1bea11deed48e4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 243562768864635445, guid: 701bceec0c2704becb1bea11deed48e4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 243562768864635445, guid: 701bceec0c2704becb1bea11deed48e4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 243562768864635445, guid: 701bceec0c2704becb1bea11deed48e4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1962411285170135108, guid: 701bceec0c2704becb1bea11deed48e4,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
@@ -292,7 +312,7 @@ PrefabInstance:
     - target: {fileID: 5569526900581592293, guid: 701bceec0c2704becb1bea11deed48e4,
         type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: 0.27999687
+      value: 0.27999878
       objectReference: {fileID: 0}
     - target: {fileID: 5766392962183749816, guid: 701bceec0c2704becb1bea11deed48e4,
         type: 3}
@@ -33758,7 +33778,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh75832
+  m_Name: pb_Mesh78484
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -34228,7 +34248,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh75496
+  m_Name: pb_Mesh78156
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -35993,7 +36013,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh75756
+  m_Name: pb_Mesh78408
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
