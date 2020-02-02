@@ -1,0 +1,75 @@
+fileFormatVersion: 2
+guid: 1c1014ee3b11b428bbceef0e22edae6c
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en
+  stringIDs:
+  - scenetwo.start-scenetwo.start-0
+  - scenetwo.start-scenetwo.start-1
+  - scenetwo.start-scenetwo.start-2
+  - scenetwo.start-scenetwo.start-3
+  - scenetwo.start-scenetwo.start-4
+  - scenetwo.start-scenetwo.start-5
+  - scenetwo.start-scenetwo.start-6
+  - scenetwo.start-scenetwo.start-7
+  - scenetwo.start-scenetwo.start-8
+  - scenetwo.start-scenetwo.start-9
+  - scenetwo.start-scenetwo.start-10
+  - scenetwo.start-scenetwo.start-11
+  - scenetwo.start-scenetwo.start-12
+  - scenetwo.start-banker-13
+  - scenetwo.start-banker-14
+  - scenetwo.start-banker-15
+  - scenetwo.start-banker-16
+  - scenetwo.start-banker-17
+  - scenetwo.start-banker-18
+  - scenetwo.start-banker-19
+  - scenetwo.start-banker-20
+  - scenetwo.start-banker-21
+  - scenetwo.start-banker-22
+  - scenetwo.start-banker-23
+  - scenetwo.start-artist-24
+  - scenetwo.start-artist-25
+  - scenetwo.start-artist-26
+  - scenetwo.start-artist-27
+  - scenetwo.start-artist-28
+  - scenetwo.start-artist-29
+  - scenetwo.start-artist-30
+  - scenetwo.start-artist-31
+  - scenetwo.start-artist-32
+  - scenetwo.start-artist-33
+  - scenetwo.start-artist-34
+  - scenetwo.start-artist-35
+  - scenetwo.start-plummer-36
+  - scenetwo.start-plummer-37
+  - scenetwo.start-plummer-38
+  - scenetwo.start-plummer-39
+  - scenetwo.start-plummer-40
+  - scenetwo.start-plummer-41
+  - scenetwo.start-plummer-42
+  - scenetwo.start-plummer-43
+  - scenetwo.start-plummer-44
+  - scenetwo.start-plummer-45
+  - scenetwo.start-plummer-46
+  - scenetwo.start-plummer-47
+  - scenetwo.start-plummer-48
+  - scenetwo.start-dreamyes-49
+  - scenetwo.start-dreamyes-50
+  - scenetwo.start-dreamyes-51
+  - scenetwo.start-dreamno-52
+  - scenetwo.start-dreamno-53
+  - scenetwo.start-dreamno-54
+  - scenetwo.start-dreamno-55
+  - scenetwo.start-dreamno-56
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: 1c1014ee3b11b428bbceef0e22edae6c,
+    type: 3}
+  localizations: []

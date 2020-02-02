@@ -1,0 +1,107 @@
+title: scenetwo.start
+tags: 
+colorID: 1
+position: 583,188
+---
+Date: By the way, what do you do for a living?  #line:01dc618
+
+-> I'm a banker. #line:0bdbb4b
+    Me: I am a banker. Hehe. #line:00577b9
+    Me: Most of the time I have to look really neat and talk a little more... posh. Hehe... #line:049b90b
+    [[banker]] 
+-> I'm an artist. #line:0713f87
+    Me: I am an artist, actually.  #line:07e7b1e
+    Me: I invent fashion for snails.  #line:0980033
+    Me: Hats, a shoe, movable glasses, you know what I mean. #line:07424f0
+    [[artist]] 
+-> I'm a plummer. #line:0f1eec3
+    Me: I am a plummer.  #line:0fcdf4b
+    Me: It may seem weird, but I played this one game as a child a lot.  #line:0703eb2
+    Me: It was about this really cool plummer brothers and it inspired me. #line:0f27fc2
+    Me: So I go into the sewers now myself and fight plantlife and evil turtles. #line:0a4d5b0
+    [[plummer]] 
+===
+title: banker
+tags: 
+colorID: 2
+position: 301,171
+---
+Date: Oh... That sounds like a very strict life.  #line:0ea2065
+Date: And you always have to be so serious.  #line:09c97e4
+Date: Do you like it? Is it what you have dreamed of?  #line:0e07550
+
+-> I live my dream. #line:081c858
+    Me: I worked really hard for it, but I like the nice life. Hehe.  #line:01f3bf8
+    Me: It allowed me to buy my own pool which keeps me moist.  #line:07750fc
+    Me: All. Day. Long. #line:03c13ea
+    [[dreamyes]] 
+-> I'm not living my dream. #line:08e3c27
+    Me: So... my mother wanted me to be successful.  #line:08fc277
+    Me: I guess I never thought about what I wanted.  #line:0606774
+    Me: Maybe I should start making own decision. Hehe... #line:0705257
+    [[dreamno]] 
+    
+===
+title: artist
+tags: 
+colorID: 2
+position: 569,440
+---
+Date: Fashion? For snails? That sounds exciting. #line:0897576
+Date: I am an artist myself, you know?  #line:05944cc
+Date: But I draw and mostly for myself.  #line:0ccdda7
+Date: Do you like your job? Is it what you have dreamed of?  #line:0934160
+
+-> I'm living my dream.  #line:0793900
+    Me: Being a fashion designer was always my dream.  #line:0731fde
+    Me: I don't get a lot of money, but I love what I do.  #line:07cc2c2
+    Me: But it can be very stressful sometimes.  #line:04f39ef
+    [[dreamyes]] 
+-> I don't live my dream.  #line:011044b
+    Me: Sometimes it's really hard, because it is not as creative as I want it to be.  #line:058c7ad
+    Me: Sometimes I just work a lot for other people.  #line:0a176fd
+    Me: And sometimes I am not sure that I still want this at all.  #line:04d8049
+    [[dreamno]] 
+===
+title: plummer
+tags: 
+colorID: 2
+position: 839,158
+---
+Date: How practical!  #line:0678388
+Date: I guess you save a lot of money, when stuff breaks in your home.  #line:0c5ae7b
+Date: But, are you happy?  #line:0cb0b43
+Date: I think every job is perfekt, as long as you really love what you do.  #line:0d555dc
+Date: So... is this your dreamjob? #line:056cfca
+
+-> I'm living my dream.  #line:06b7b94
+    Me: Yes! Some people say it's easy or simple, but I want to see them doing my job for one day! #line:0dfe7c3
+    Me: I love this work and to learn more about it.  #line:0fa67ab
+    Me: Little things about it already excite me and I think that is all that matters.  #line:0bab6bb
+    [[dreamyes]] 
+-> I'm not living my dream.  #line:0cc4601
+    Me: At first it was a quick solution.  #line:0924de9
+    Me: And I kind of liked it.  #line:0727a55
+    Me: But now, all I feel is tired. Ah, hehe... I just don't know.  #line:08d19df
+    [[dreamno]] 
+===
+title: dreamyes
+tags: 
+colorID: 3
+position: 178,475
+---
+Date: I am really happy for you.  #line:080e099
+Date: Although I think you should always try to aspire more.  #line:0f66027
+Date: Don't you think so?  #line:0c81b69
+===
+title: dreamno
+tags: 
+colorID: 3
+position: 416,-160
+---
+Date: Oh, that sounds hard.  #line:0adae75
+Date: But I think the important part is to never give up.  #line:0387744
+Date: My father always said:  #line:037883a
+Date: It is not important to know what you like, as long as you know what you don't like.  #line:08e03a0
+Date: Hihi.  #line:05d53d6
+===

@@ -343,6 +343,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  currentSceneIndex: 0
 --- !u!1 &572563311664095214
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,7 +396,7 @@ MonoBehaviour:
   - {fileID: 0}
   endDialogue: {fileID: 2480198943629176163, guid: 0556985a6affa4f49aff93763c91ecca,
     type: 3}
-  endNode: goodend.sceneone.start
+  endNode: badend.sceneone.start
   disasterTimer: 60
   disasterMeter: 0.03
   onSceneStart:
@@ -475,8 +476,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e352826a07c07442cabbb21d6febfb7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startDialogue: {fileID: 0}
-  startNode: Test
+  startDialogue: {fileID: 2480198943629176163, guid: 1c1014ee3b11b428bbceef0e22edae6c,
+    type: 3}
+  startNode: scenetwo.start
   distractions: []
   endDialogue: {fileID: 2480198943629176163, guid: d3595c87a5aa24757af29151af04d399,
     type: 3}

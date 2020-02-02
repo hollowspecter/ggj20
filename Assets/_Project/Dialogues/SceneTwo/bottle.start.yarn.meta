@@ -1,0 +1,57 @@
+fileFormatVersion: 2
+guid: b997071b369624914a0278355e1aa248
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en
+  stringIDs:
+  - bottle.start-Bottle.start-0
+  - bottle.start-Bottle.start-1
+  - bottle.start-Bottle.start-2
+  - bottle.start-Bottle.start-3
+  - bottle.start-Bottle.start-4
+  - bottle.start-Bottle.start-5
+  - bottle.start-Bottle.start-6
+  - bottle.start-Bottle.start-7
+  - bottle.start-connoisseur-8
+  - bottle.start-connoisseur-9
+  - bottle.start-connoisseur-10
+  - bottle.start-connoisseur-11
+  - bottle.start-connoisseur-12
+  - bottle.start-connoisseur-13
+  - bottle.start-connoisseur-14
+  - bottle.start-connoisseur-15
+  - bottle.start-connoisseur-16
+  - bottle.start-connoisseur-17
+  - bottle.start-connoisseur-18
+  - bottle.start-connoisseur-19
+  - bottle.start-weirdwine-20
+  - bottle.start-weirdwine-21
+  - bottle.start-weirdwine-22
+  - bottle.start-weirdwine-23
+  - bottle.start-weirdwine-24
+  - bottle.start-weirdwine-25
+  - bottle.start-weirdwine-26
+  - bottle.start-weirdwine-27
+  - bottle.start-weirdwine-28
+  - bottle.start-weirdwine-29
+  - bottle.start-silencio-30
+  - bottle.start-silencio-31
+  - bottle.start-specialwine-32
+  - bottle.start-specialwine-33
+  - bottle.start-specialwine-34
+  - bottle.start-specialwine-35
+  - bottle.start-soundsgood-36
+  - bottle.start-soundsgood-37
+  - bottle.start-soundsgood-38
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: b997071b369624914a0278355e1aa248,
+    type: 3}
+  localizations: []
