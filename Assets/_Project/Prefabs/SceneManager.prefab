@@ -320,6 +320,7 @@ MonoBehaviour:
   scenes:
   - {fileID: 572563311664095215}
   - {fileID: 5565943682229511732}
+  - {fileID: 1598397302}
   onSceneStart:
     m_PersistentCalls:
       m_Calls:
@@ -354,7 +355,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  currentSceneIndex: 0
+  currentSceneIndex: 2
 --- !u!1 &572563311664095214
 GameObject:
   m_ObjectHideFlags: 0
