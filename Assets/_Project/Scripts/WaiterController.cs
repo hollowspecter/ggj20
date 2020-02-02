@@ -44,12 +44,12 @@ public class WaiterController : MonoBehaviour
     public FMODUnity.StudioEventEmitter scooterEvent;
 
     Dictionary<string, List<Transform>> Orders = new Dictionary<string, List<Transform>>();
+
     // Start is called before the first frame update
     void Start()
     {
         navAgent = GetComponent<NavMeshAgent>();
         GoToWaypoint(WaiterWaypoint.Kitchen);
-        scooterEvent.Play();
 
         Orderables.Add("Drink", new List<GameObject>());
         Orders.Add("Drink", new List<Transform>());
@@ -78,6 +78,7 @@ public class WaiterController : MonoBehaviour
         {
             Orderables["CutleryRight"].Add(rightCutlery);
         }
+        scooterEvent.Play();
     }
 
     // Update is called once per frame
