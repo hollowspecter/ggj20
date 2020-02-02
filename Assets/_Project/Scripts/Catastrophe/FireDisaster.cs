@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FireDisaster : MonoBehaviour
 {
+    public GameObject firePrefab;
     public static List<Fire> activeFires = new List<Fire>();
     public SceneData sceneData;
     public float panicPerFirePerSecond = 0.01f;
