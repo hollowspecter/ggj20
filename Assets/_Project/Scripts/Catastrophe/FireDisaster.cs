@@ -17,9 +17,15 @@ public class FireDisaster : MonoBehaviour
 
     public void KillAllFires()
     {
-        for (int i = 0; i < activeFires.Count; i++)
+        //for (int i = 0; i < activeFires.Count; i++)
+        //{
+        //    Destroy(activeFires[i].gameObject);
+        //}
+
+        var fires = FindObjectsOfType<Fire>();
+        for (int i = 0; i < fires.Length; i++)
         {
-            Destroy(activeFires[i].gameObject);
+            Destroy(fires[i].gameObject);
         }
     }
 }
