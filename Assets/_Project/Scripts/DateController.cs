@@ -19,8 +19,12 @@ public class DateController : MonoBehaviour
     [SerializeField] protected Renderer skinRenderer;
     [SerializeField] protected Gradient panicGradient;
     [SerializeField] protected List<Transform> eyes;
-    [SerializeField] private float unattentiveEyeRollAmount = 1f;
-    [SerializeField] private float unattentiveEyeRollFrequency = 1f;
+    [SerializeField] protected List<Transform> defaultEyes;
+
+    [Range(0.0f, 45.0f)] [SerializeField] private float unattentiveEyeRollMin = 0.0f;
+    [Range(0.0f, 45.0f)] [SerializeField] private float unattentiveEyeRollMax = 45.0f;
+    [Range(0.0f, 10.0f)] [SerializeField] private float unattentiveEyeRollIntervall = 1f;
+    [Range(0.0f, 3.0f)] [SerializeField] private float unattentiveEyeRollDuration = 0.5f;
     private float unattentiveEyeRollCooldown = 0.0f;
 
     protected DialogueRunner dialogueRunner;
@@ -107,33 +111,32 @@ public class DateController : MonoBehaviour
 
     private void UpdateEyes()
     {
-        bool lookAround = Mathf.Approximately(unattentiveEyeRollCooldown, unattentiveEyeRollFrequency);
-        
-        foreach (var eye in eyes)
+        bool lookAround = Mathf.Approximately(unattentiveEyeRollCooldown, unattentiveEyeRollIntervall);
+
+        for (int i = 0; i < eyes.Count; ++i)
         {
+            var eye = eyes[i];
+            var defaultEye = defaultEyes[i];
             if (IsAttentive && lookAround)
-            {
-                eye.DOLookAt(CameraManager.instance.currentControlledCamera.transform.position,0.5f);
+            { 
+                eye.DOLookAt(CameraManager.instance.currentControlledCamera.transform.position, unattentiveEyeRollDuration).SetEase(Ease.InOutSine);
             }
-            else if(lookAround)
+            else if (lookAround)
             {
-                Quaternion old = eye.rotation;
-            eye.LookAt(CameraManager.instance.currentControlledCamera.transform);
-                float randomX = Random.Range(20.0f, 45.0f);
+                float randomX = Random.Range(unattentiveEyeRollMin, unattentiveEyeRollMax);
                 if (Random.Range(0.0f, 1.0f) >= .5f)
                     randomX *= -1.0f;
                 Quaternion x = Quaternion.AngleAxis(randomX, Vector3.up);
 
 
-                float randomY = Random.Range(20.0f, 45.0f);
+                float randomY = Random.Range(unattentiveEyeRollMin, unattentiveEyeRollMax);
                 if (Random.Range(0.0f, 1.0f) >= .5f)
                     randomY *= -1.0f;
 
-                Quaternion y =Quaternion.AngleAxis(randomY, Vector3.right);
+                Quaternion y = Quaternion.AngleAxis(randomY, Vector3.right);
 
-                Quaternion q = eye.rotation * y * x;
-                eye.rotation = old;
-                eye.DORotate(q.eulerAngles, 0.5f);
+                Quaternion q = defaultEye.rotation * y * x;
+                eye.DORotate(q.eulerAngles, unattentiveEyeRollDuration).SetEase(Ease.InOutSine);
             }
         }
         if (lookAround)
@@ -143,7 +146,7 @@ public class DateController : MonoBehaviour
         }
         else
         {
-            unattentiveEyeRollCooldown = Mathf.Clamp(unattentiveEyeRollCooldown + Time.deltaTime, 0.0f, unattentiveEyeRollFrequency);
+            unattentiveEyeRollCooldown = Mathf.Clamp(unattentiveEyeRollCooldown + Time.deltaTime, 0.0f, unattentiveEyeRollIntervall);
         }
     }
 

@@ -152,7 +152,7 @@ public class Tongue : MonoBehaviour
                         if (currentAttachable != null)
                         {
                             currentState = State.Holding;
-                            tongueFmodInstance.setParameterByID(isFoodOnTongueID, 1f);
+                            tongueFmodInstance.setParameterByID(isFoodOnTongueID, 0f);
                         }
                         else
                         {
