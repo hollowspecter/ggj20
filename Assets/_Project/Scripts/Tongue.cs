@@ -66,7 +66,7 @@ public class Tongue : MonoBehaviour
 
     private void Update()
     {
-        canvasReticle.enabled = currentState == State.Prepare;
+        CameraManager.instance.currentCameraController.reticleCanvas.enabled = currentState == State.Prepare;
 
         switch (currentState)
         {
@@ -224,8 +224,8 @@ public class Tongue : MonoBehaviour
 
     private void Shoot()
     {
-        print("cam: " + CameraManager.instance.currentControlledCamera);
-        print("forward: " + CameraManager.instance.currentControlledCamera.transform.forward);
+        //print("cam: " + CameraManager.instance.currentControlledCamera);
+        //print("forward: " + CameraManager.instance.currentControlledCamera.transform.forward);
         if (currentState != State.In && currentState != State.Prepare)
             return;
 
