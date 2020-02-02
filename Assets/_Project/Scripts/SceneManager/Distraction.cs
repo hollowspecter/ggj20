@@ -15,6 +15,8 @@ public class Distraction : MonoBehaviour
     private Yarn.Unity.DialogueRunner dialogueRunner;
     private bool wasStarted = false;
 
+    Transform playerT;
+
     private void Awake()
     {
         dialogueRunner = FindObjectOfType<Yarn.Unity.DialogueRunner>();
@@ -29,6 +31,9 @@ public class Distraction : MonoBehaviour
             onDistractionEnd?.Invoke();
             Destroy(gameObject);
         }
+
+        transform.LookAt(Camera.main.transform.position, Vector3.up);
+        transform.Rotate(Vector3.up, 180.0f, Space.Self);
     }
 
     private void StartDialogue()

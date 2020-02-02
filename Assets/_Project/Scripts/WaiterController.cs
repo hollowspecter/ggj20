@@ -82,35 +82,38 @@ public class WaiterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!navAgent.pathPending)
+        if (!navAgent.pathPending && !hasArrived)
         {
             if (navAgent.remainingDistance <= navAgent.stoppingDistance)
             {
                 if (!navAgent.hasPath || Mathf.Approximately(navAgent.velocity.sqrMagnitude, 0.0f))
                 {
-                    switch (currentWaypoint)
-                    {
-                        case WaiterWaypoint.Kitchen:
-                            hasArrived = true;
-                            break;
-                        case WaiterWaypoint.PlayerTable:
-                            ArriveAtTable();
-                            break;
-                        default:
-                            break;
-                    }
+                    ArriveAtWaypoint();
+
                 }
             }
         }
     }
 
-
-    void ArriveAtTable()
+    void ArriveAtWaypoint()
     {
-        if (!hasArrived)
+        hasArrived = true;
+        switch (currentWaypoint)
         {
-            hasArrived = true;
-            StartCoroutine("PlaceOrders");
+            case WaiterWaypoint.Kitchen:
+                foreach(var oList in Orders.Values)
+                {
+                    if (oList.Count > 0)
+                    {
+                        GoToWaypoint(WaiterWaypoint.PlayerTable);
+                    }
+                }
+                break;
+            case WaiterWaypoint.PlayerTable:
+                StartCoroutine("PlaceOrders");
+                break;
+            default:
+                break;
         }
     }
 
@@ -139,7 +142,6 @@ public class WaiterController : MonoBehaviour
     {
         if (!Orders[OrderType].Contains(spawn))
         {
-            Debug.Log("NEW ORDER");
             Orders[OrderType].Add(spawn);
             GoToWaypoint(WaiterWaypoint.PlayerTable);
         }
@@ -156,9 +158,11 @@ public class WaiterController : MonoBehaviour
                 int random = Random.Range(0, max);
                 GameObject GO = Orderables[orderType][random];
 
-                GO = Instantiate<GameObject>(GO, _transform.position, _transform.rotation);
+                GO = Instantiate<GameObject>(GO, _transform.position + Vector3.up, _transform.rotation);
                 GO.transform.localScale = _transform.lossyScale;
-                yield return new WaitForSeconds(0.5f);
+                var wobble = GO.GetComponent<WobbleIt>();
+                wobble?.Wobble();
+                yield return new WaitForSeconds(Random.Range(0.3f,0.6f));
             }
         }
         foreach (var orderList in Orders.Values)
