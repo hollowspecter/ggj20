@@ -26,11 +26,14 @@
 		<property name="threshold">
 			<value>-40.5</value>
 		</property>
+		<property name="ratio">
+			<value>7.5999999</value>
+		</property>
 		<property name="attackTime">
-			<value>3.60000014</value>
+			<value>0.100000001</value>
 		</property>
 		<property name="releaseTime">
-			<value>42</value>
+			<value>10</value>
 		</property>
 		<relationship name="sidechains">
 			<destination>{302ba4fd-cb34-43f9-9f1a-f3ed32c0837c}</destination>
