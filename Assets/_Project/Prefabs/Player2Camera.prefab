@@ -1065,7 +1065,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouthstart: {fileID: 5766392960789404749}
   isRightEye: 1
-  xConstraint: {x: -65, y: 30}
+  xConstraint: {x: -65, y: 60}
   yConstraint: {x: -10, y: 170}
   mouseSensitivity: 1
   smoothness: 10
@@ -1747,7 +1747,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouthstart: {fileID: 8562512425204754205}
   isRightEye: 0
-  xConstraint: {x: -65, y: 30}
+  xConstraint: {x: -65, y: 60}
   yConstraint: {x: -170, y: 10}
   mouseSensitivity: 1
   smoothness: 10
