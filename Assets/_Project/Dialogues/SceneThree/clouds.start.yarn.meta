@@ -1,0 +1,49 @@
+fileFormatVersion: 2
+guid: a8c0489b136db4cc59ad77ef0b464b6a
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en
+  stringIDs:
+  - clouds.start-clouds.start-0
+  - clouds.start-clouds.start-1
+  - clouds.start-clouds.start-2
+  - clouds.start-clouds.start-3
+  - clouds.start-clouds.start-4
+  - clouds.start-clouds.start-5
+  - clouds.start-clouds.start-6
+  - clouds.start-clouds.start-7
+  - clouds.start-clouds.start-8
+  - clouds.start-beecloud-9
+  - clouds.start-beecloud-10
+  - clouds.start-beecloud-11
+  - clouds.start-beecloud-12
+  - clouds.start-beecloud-13
+  - clouds.start-beecloud-14
+  - clouds.start-beecloud-15
+  - clouds.start-beecloud-16
+  - clouds.start-beecloud-17
+  - clouds.start-beecloud-18
+  - clouds.start-pineapplecloud-19
+  - clouds.start-pineapplecloud-20
+  - clouds.start-pineapplecloud-21
+  - clouds.start-pineapplecloud-22
+  - clouds.start-sharknado-23
+  - clouds.start-sharknado-24
+  - clouds.start-sharknado-25
+  - clouds.start-Cichy-26
+  - clouds.start-Cichy-27
+  - clouds.start-Cichy-28
+  - clouds.start-morebees-29
+  - clouds.start-morebees-30
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: a8c0489b136db4cc59ad77ef0b464b6a,
+    type: 3}
+  localizations: []

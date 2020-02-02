@@ -40,7 +40,10 @@ Date: Do you like it? Is it what you have dreamed of?  #line:0e07550
     Me: I guess I never thought about what I wanted.  #line:0606774
     Me: Maybe I should start making own decision. Hehe... #line:0705257
     [[dreamno]] 
-    
+-> Silence
+    Me: Uhm...... what
+    Date: Thanks for listening...
+    [[instructions2]]
 ===
 title: artist
 tags: 
@@ -62,6 +65,10 @@ Date: Do you like your job? Is it what you have dreamed of?  #line:0934160
     Me: Sometimes I just work a lot for other people.  #line:0a176fd
     Me: And sometimes I am not sure that I still want this at all.  #line:04d8049
     [[dreamno]] 
+-> Silence
+    Me: Uhm...... what
+    Date: Thanks for listening...
+    [[instructions2]]
 ===
 title: plummer
 tags: 
@@ -83,7 +90,11 @@ Date: So... is this your dreamjob? #line:056cfca
     Me: At first it was a quick solution.  #line:0924de9
     Me: And I kind of liked it.  #line:0727a55
     Me: But now, all I feel is tired. Ah, hehe... I just don't know.  #line:08d19df
-    [[dreamno]] 
+    [[dreamno]]
+-> Silence
+    Me: Uhm...... what
+    Date: Thanks for listening...
+    [[instructions2]]
 ===
 title: dreamyes
 tags: 
