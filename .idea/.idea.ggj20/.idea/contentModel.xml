@@ -21,6 +21,7 @@
           <e p="Scripts" t="Include">
             <e p="Attachable.cs" t="Include" />
             <e p="Boopable.cs" t="Include" />
+            <e p="ButtonFun.cs" t="Include" />
             <e p="CameraController.cs" t="Include" />
             <e p="CameraManager.cs" t="Include" />
             <e p="Catastrophe" t="Include">
@@ -28,15 +29,18 @@
               <e p="FireDisaster.cs" t="Include" />
               <e p="GiftDisaster.cs" t="Include" />
               <e p="Shark.cs" t="Include" />
+              <e p="SharknadoDisaster.cs" t="Include" />
               <e p="SharkSpawner.cs" t="Include" />
             </e>
             <e p="DateController.cs" t="Include" />
+            <e p="DateTongue.cs" t="Include" />
             <e p="Dialogue" t="Include">
               <e p="ButtonProxy.cs" t="Include" />
               <e p="Voice.cs" t="Include" />
             </e>
             <e p="EasingFunction.cs" t="Include" />
             <e p="LightFlicker.cs" t="Include" />
+            <e p="MainMenu.cs" t="Include" />
             <e p="RandomGifsGenerator.cs" t="Include" />
             <e p="SceneManager" t="Include">
               <e p="Distraction.cs" t="Include" />
