@@ -18097,6 +18097,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2282196600618781417, guid: 17bbcbd6430dd491ab77e4cbd893c173,
+        type: 3}
+      propertyPath: CollisionModule.plane0
+      value: 
+      objectReference: {fileID: 964167252}
+    - target: {fileID: 2282196600618781417, guid: 17bbcbd6430dd491ab77e4cbd893c173,
+        type: 3}
+      propertyPath: CollisionModule.m_Bounce.scalar
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282196600618781417, guid: 17bbcbd6430dd491ab77e4cbd893c173,
+        type: 3}
+      propertyPath: CollisionModule.m_Dampen.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282196600618781417, guid: 17bbcbd6430dd491ab77e4cbd893c173,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3284035672235563499, guid: 17bbcbd6430dd491ab77e4cbd893c173,
         type: 3}
       propertyPath: m_Name
@@ -18164,8 +18184,28 @@ PrefabInstance:
       objectReference: {fileID: 964167252}
     - target: {fileID: 5471951569301233377, guid: 17bbcbd6430dd491ab77e4cbd893c173,
         type: 3}
-      propertyPath: playOnAwake
-      value: 0
+      propertyPath: SubModule.subEmitters.Array.data[0].emitProbability
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5471951569301233377, guid: 17bbcbd6430dd491ab77e4cbd893c173,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5471951569301233377, guid: 17bbcbd6430dd491ab77e4cbd893c173,
+        type: 3}
+      propertyPath: CollisionModule.m_EnergyLossOnCollision.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5471951569301233377, guid: 17bbcbd6430dd491ab77e4cbd893c173,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.minScalar
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5471951569301233377, guid: 17bbcbd6430dd491ab77e4cbd893c173,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17bbcbd6430dd491ab77e4cbd893c173, type: 3}
@@ -33758,7 +33798,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh75832
+  m_Name: pb_Mesh87462
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -34228,7 +34268,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh75496
+  m_Name: pb_Mesh87134
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -35993,7 +36033,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh75756
+  m_Name: pb_Mesh87386
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
