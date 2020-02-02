@@ -31,6 +31,7 @@ public class DateController : MonoBehaviour
     protected SceneManager sceneManager;
     protected Animator animator;
     protected bool isDisasterRunning;
+    public ParticleSystem ps_SceneDone;
 
     private int anim_PanicID = Animator.StringToHash("Panic");
     private int anim_DabID = Animator.StringToHash("Dab");
@@ -100,6 +101,7 @@ public class DateController : MonoBehaviour
         {
             SceneManager.onDisasterStart.AddListener(OnDistasterStart);
             SceneManager.onDisasterEnd.AddListener(OnDistasterEnd);
+            SceneManager.onDisasterEnd.AddListener(ShootParticles);
         }
     }
 
@@ -109,6 +111,7 @@ public class DateController : MonoBehaviour
         {
             SceneManager.onDisasterStart.RemoveListener(OnDistasterStart);
             SceneManager.onDisasterEnd.RemoveListener(OnDistasterEnd);
+            SceneManager.onDisasterEnd.RemoveListener(ShootParticles);
         }
     }
 
@@ -165,6 +168,10 @@ public class DateController : MonoBehaviour
 
     #region Date methods
 
+    public void ShootParticles()
+    {
+        ps_SceneDone.Play();
+    }
     Vector3 AddNoiseOnAngle(float min, float max)
     {
         // Find random angle between min & max inclusive
