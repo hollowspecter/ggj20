@@ -107,7 +107,7 @@ NavMeshSettings:
     serializedVersion: 2
     agentTypeID: 0
     agentRadius: 0.5
-    agentHeight: 2
+    agentHeight: 4
     agentSlope: 45
     agentClimb: 0.4
     ledgeDropHeight: 0
@@ -495,7 +495,7 @@ PrefabInstance:
     - target: {fileID: 5569526900581592293, guid: 701bceec0c2704becb1bea11deed48e4,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 0.05200064
+      value: 0.052000403
       objectReference: {fileID: 0}
     - target: {fileID: 5766392962183749816, guid: 701bceec0c2704becb1bea11deed48e4,
         type: 3}
@@ -34344,7 +34344,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh95986
+  m_Name: pb_Mesh279444
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -34746,7 +34746,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh95598
+  m_Name: pb_Mesh279176
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -36200,7 +36200,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh95904
+  m_Name: pb_Mesh279386
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
