@@ -8,13 +8,13 @@ Date: Hihi...  #line:07a8d73
 <<dab Date>>
 Date: I am so curious about this place. I have never been here. #line:0940c32
 
--> Nervous #line:0ec96ba
+-> I'm nervous #line:0ec96ba
     Me: H-hey. Uhm... yeah, green is good, right... So you found the place...? Of course you did, you are here. Haha... #line:059eb39
     [[nervous]]
--> Compliment #line:00d369d
+-> Make compliment #line:00d369d
     Me: I am so happy that you said yes to go on a date with me...Hehe... Your eyes are the prettiest! So big! #line:015be8d
     [[compliment]]
--> Selfcentered #line:0631f5a
+-> Talk about me #line:0631f5a
     Me: So, hello... Thank you! I always keep my skin moist and then rub it in sand to get rid of old skin. #line:03c7f6f
     Me: You should try it! Also, this place has the most stars on omnivore.com, so I really wanted to try it. #line:099d46e
     [[selfcentered]]
@@ -32,13 +32,13 @@ Date: You are so cute! Hihi.  #line:09962fa
 Date: So... do you know if they have roasted bees here? They are so delicious! Also with honey!  #line:03ae0c2
 Date: Do you like sweets? #line:087ab9e
 
--> Fruits #line:015fb0e
+-> I like fruits #line:015fb0e
     Me: Oh, hehe... yes, I love sweets. Especially pie. With aaaall the fruits. Fruits are the best thing in the world! #line:094d013
     [[fruits]]
 -> Roasted bees? #line:06a135d
     Me: I never tried roasted bees, they sound weird. Will you not get stung? #line:0fde7c6
     [[stung]]
--> Pie #line:0db210a
+-> I like pie #line:0db210a
     Me: Well, I just like pies. Do you like pies? #line:006bbc9
     [[pie]]
 -> Silence #line:0917a36
@@ -53,13 +53,13 @@ position: 561,204
 Date: Uhm... okay... #line:0a52ca1
 Date: Can you instead tell me something about you?  #line:0973c0c
 
--> Yellow #line:0448fb6
+-> I like sunbathing #line:0448fb6
     Me: My favorite thing is sunbathing, feeling the wonderful warmth of the sun on me... and I guess I like yellow. #line:09518bb
     [[yellow]]
--> Green #line:028352c
+-> I like trees #line:028352c
     Me: I love hanging around and watch trees grow and how the wind is waving in the leaves, hehe... And I really like green. #line:0c4d765
     [[green]]
--> Red #line:07df95d
+-> I like cherries #line:07df95d
     Me: I really love cherries and red, like some of the scales in your shiny skin. #line:01bdab4
     [[red]]
 -> Silence #line:0a2570b
@@ -98,7 +98,7 @@ position: -92,363
 Date: Oh yes! Yes! We should have fruits for dessert! #line:0921d97
 Date: Maybe they even have fruit salad! #line:020c0b0
 
--> Very good #line:059e6ec
+-> Yes fruits! #line:059e6ec
     Me: Oh yes! Let's do it! Give me all the fruits! #line:0710836
     Me: They are all so delicious and juicy and flavourful and just the best. Fruits are basically my reason to live! #line:0e57f9b
     [[good]]
@@ -125,14 +125,14 @@ Date: My grandma always said: No risk, no risk.  #line:04e856d
 Date: And then she got trampled by an elephant while trying to ride it.  #line:0b7942e
 Date: Ha... she died, as she lived.  #line:080a5d1
 
--> Hero #line:077a809
+-> What a hero #line:077a809
     Me: I actually never saw it from that perspective. That sounds awesome! She sounds like a real adventurer! #line:041717e
     [[hero]]
--> Idiot #line:07df9b9
+-> What an idiot #line:07df9b9
     Me: Hm... okay... I am not sure that sounds like a relaxed meal, haha... And about riding an elephant... #line:01897ac
     Me: What did she want to achieve with that? That sounds like foolhardiness to me... #line:05c92af
     [[idiot]]
--> Unsure #line:08f9a1f
+-> Uhm.. #line:08f9a1f
     Me: That really sounds... risky... haha... Do you also ride elephants? #line:0b786ff
     [[unsure]]
 -> Silence #line:0d4ab2d
@@ -185,7 +185,7 @@ Date: Awesome! And so much green!  #line:08464f8
 Date: I love green!  #line:0ca88cd
 Date: Like so much! But sometimes, when I am scared or angry, I can become red, I really hate red.  #line:05d31af
 
--> Like cherry #line:02de37b
+-> Make a compliment #line:02de37b
     Me: I am sure you would also look beautiful in red. Like a nice... cherry. #line:04f3da1
     [[cherry]]
 -> Don't worry #line:0c03254
@@ -203,7 +203,7 @@ position: -421,109
 Date: Ugh! I hate red!  #line:02e65fd
 Date: It always appears, when I am angry or scared and I really don't like it.  #line:0f79a59
 
--> Like cherry #line:0bd7269
+-> Make a compliment #line:0bd7269
     Me: I am sure you would also look beautiful in red. Like a nice... cherry. #line:087f1fc
     [[cherry]]
 -> Don't worry #line:0df4f32
