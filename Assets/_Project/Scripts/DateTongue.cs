@@ -10,6 +10,7 @@ public class DateTongue : MonoBehaviour
     [SerializeField] private List<Transform> tongueRopeTransforms = new List<Transform>();
     [SerializeField] private Transform frenchKissTarget;
     [SerializeField] private float tongueSpeed = 1f;
+    public FMODUnity.StudioEventEmitter frenchKissing;
 
     private bool isFrenchKissing;
 
@@ -73,5 +74,6 @@ public class DateTongue : MonoBehaviour
     public void StartFrenchKiss()
     {
         isFrenchKissing = true;
+        frenchKissing.Play();
     }
 }
