@@ -1,0 +1,42 @@
+fileFormatVersion: 2
+guid: 08ed9f720b7af415e9416566638a29e1
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en
+  stringIDs:
+  - cake.start-cake.start-0
+  - cake.start-cake.start-1
+  - cake.start-cake.start-2
+  - cake.start-cake.start-3
+  - cake.start-cake.start-4
+  - cake.start-cake.start-5
+  - cake.start-cake.start-6
+  - cake.start-cake.start-7
+  - cake.start-cake.start-8
+  - cake.start-cake.start-9
+  - cake.start-lookstasty-10
+  - cake.start-lookstasty-11
+  - cake.start-lookstasty-12
+  - cake.start-lookstasty-13
+  - cake.start-birthdaycake-14
+  - cake.start-birthdaycake-15
+  - cake.start-birthdaycake-16
+  - cake.start-birthdaycake-17
+  - cake.start-birthdaycake-18
+  - cake.start-birthdaycake-19
+  - cake.start-birthdaycake-20
+  - cake.start-Cichy-21
+  - cake.start-Cichy-22
+  - cake.start-funny-23
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: 08ed9f720b7af415e9416566638a29e1,
+    type: 3}
+  localizations: []

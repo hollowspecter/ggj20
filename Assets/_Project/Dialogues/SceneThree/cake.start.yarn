@@ -1,0 +1,61 @@
+title: cake.start
+tags: 
+colorID: 1
+position: 573,259
+---
+Me: Look! Cake!  #line:0fe6f8e
+
+-> Looks Tasty! #line:0907f4b
+    Me: You wanna try it? #line:004b5bd
+    Me: It looks so tasty!  #line:0da693c
+    [[lookstasty]] 
+-> Your birthday? #line:0d3ad18
+    Me: Cake reminds me... #line:0daeb8b
+    Me: Uhm... #line:0efaaad
+    Me: When is your birthday? Hehe... #line:02b92df
+    [[birthdaycake]] 
+-> silence #line:0296e00
+    Me: Holy fucking shit, what is THIS...?!  #line:0697645
+    [[Cichy]] 
+===
+title: lookstasty
+tags: 
+colorID: 2
+position: 318,192
+---
+Date: Ugh... Cake was invented my humans... #line:048af70
+Date: We should invent something better! #line:0caa3fa
+Date: Like... brownies! But in green! #line:0418db4
+Date: Greenies! Hihi! #line:0c768a8
+===
+title: birthdaycake
+tags: 
+colorID: 2
+position: 833,206
+---
+Date: Hihi, my birthday is in July. I am a Leo. #line:0a9e68d
+Date: But I like to call myself a panther. Hihi. #line:03bce0f
+Date: Because I am a Pantherchameleon...hihi...hihi... #line:09ed596
+
+-> Funny. #line:0bd746d
+    Me: Hehe...  #line:054681f
+    [[funny]] 
+-> silence #line:05465eb
+    Me: Holy fucking shit, what is THIS...?!  #line:0fc57b2
+    [[Cichy]] 
+===
+title: Cichy
+tags: 
+colorID: 0
+position: 583,-9
+---
+Date: Wa- #line:0a45213
+Date: Are you going crazy?! #line:0030c51
+===
+title: funny
+tags: 
+colorID: 3
+position: 1073,222
+---
+Date: Hihi... #line:05d7743
+===
