@@ -1,0 +1,90 @@
+title: cactus.start
+tags: 
+colorID: 1
+position: 583,188
+---
+Me: This cactus!  #line:075eaab
+Me: You know what it reminds me of?  #line:0cebeba
+
+-> Love! #line:0c6f6e2
+    Me: Love! #line:0f85866
+    Me: It looks nice, but if you get too close, it hurts incredible bad.  #line:01aa424
+    Me: And it's super hard to get red of the stings. Hehe... #line:0ab0474
+    [[love]] 
+-> The desert!  #line:05a6352
+    Me: The desert! #line:0cf144d
+    Me: I always wanted to go there, but it is so hot.  #line:016c2aa
+    Me: I think my sensitive skin could not take it.  #line:0213f72
+    Me: Have you been to the desert?  #line:013735c
+    [[desert]] 
+-> silence #line:0062781
+    Me: Oh-oh!  #line:0f02c72
+    [[silencieux]] 
+===
+title: love
+tags: 
+colorID: 2
+position: 294,193
+---
+Date: You sound really sad.  #line:0669658
+Date: You know, I believe in love. I believe in being vulnerable and in hope.  #line:05d352d
+Date: But first you have to be open. Try to be optimistic.  #line:01ed856
+Date: Love will not heal anything if you not let yourself heal first. Hihi.  #line:0587a79
+Date: Now let's smile together again! #line:06b960c
+
+-> Thank you. #line:04cb461
+    Me: Thank you... That was... actually helpful. #line:006ebbc
+    Me: Hehe...  #line:01770e8
+    Me: Yeah! Let's have some fun and be optimistic.  #line:0463fe6
+    [[thankyou]] 
+-> I didn't mean it. #line:069255c
+    Me: I didn't mean it like that. #line:029d0ed
+    Me: Don't be so sentimental, not everybody has to be open with feelings and stuff.  #line:03e0244
+    Me: I am fine.  #line:007eed1
+    [[nofeelings]] 
+-> silence #line:0562856
+    Me: Oh-oh... #line:03a464a
+    [[silencieux]] 
+
+===
+title: desert
+tags: 
+colorID: 2
+position: 398,583
+---
+Date: Uhm... uh... So much sand?  #line:004ea86
+Date: I would rather go to the jungle.  #line:063c859
+Date: More humid and actually nice...  #line:017f612
+===
+title: silencieux
+tags: 
+colorID: 0
+position: 564,-79
+---
+Date: It is so hot in here...hihi... #line:066efe4
+Date: Is it burning or is it m- #line:0ca872a
+Date: Aaah! Help! Fire!  #line:0dcd425
+===
+title: thankyou
+tags: 
+colorID: 3
+position: -38,96
+---
+Date: Yes!  #line:08b0284
+Date: What do you want to talk about? #line:099ba93
+
+-> The desert! #line:0e53c0b
+    Me: Apropos cactus! Have you ever been to the desert? #line:0e5123c
+    [[desert]] 
+-> silence #line:0227810
+    Me: Oh-oh... #line:0266ecc
+    [[silencieux]] 
+===
+title: nofeelings
+tags: 
+colorID: 3
+position: -27,421
+---
+Date: Sure... #line:0487c80
+Date: *cough* Hypocrite... *cough*  #line:0debaf8
+===

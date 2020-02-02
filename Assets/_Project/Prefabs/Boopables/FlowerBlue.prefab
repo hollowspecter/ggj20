@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 6851728451809126450}
   - component: {fileID: 4326078349692956762}
   - component: {fileID: 5285490862101868622}
+  - component: {fileID: -1271658586892459125}
   m_Layer: 0
-  m_Name: Primrose_Blue
+  m_Name: FlowerBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -127,3 +128,19 @@ CapsuleCollider:
   m_Height: 0.38517112
   m_Direction: 1
   m_Center: {x: 0.08790305, y: 0.19243607, z: -0.058602758}
+--- !u!114 &-1271658586892459125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5838273233086789705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 544f70995c80645d98933d9092ab6e6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 1
+  strength: {x: 1, y: 1, z: 1}
+  vibrato: 18
+  randomness: 50

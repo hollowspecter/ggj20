@@ -1,0 +1,60 @@
+fileFormatVersion: 2
+guid: 3eb906855de4846a6ae29a3240e63be5
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en
+  stringIDs:
+  - cactus.start-cactus.start-0
+  - cactus.start-cactus.start-1
+  - cactus.start-cactus.start-2
+  - cactus.start-cactus.start-3
+  - cactus.start-cactus.start-4
+  - cactus.start-cactus.start-5
+  - cactus.start-cactus.start-6
+  - cactus.start-cactus.start-7
+  - cactus.start-cactus.start-8
+  - cactus.start-cactus.start-9
+  - cactus.start-cactus.start-10
+  - cactus.start-cactus.start-11
+  - cactus.start-cactus.start-12
+  - cactus.start-love-13
+  - cactus.start-love-14
+  - cactus.start-love-15
+  - cactus.start-love-16
+  - cactus.start-love-17
+  - cactus.start-love-18
+  - cactus.start-love-19
+  - cactus.start-love-20
+  - cactus.start-love-21
+  - cactus.start-love-22
+  - cactus.start-love-23
+  - cactus.start-love-24
+  - cactus.start-love-25
+  - cactus.start-love-26
+  - cactus.start-love-27
+  - cactus.start-desert-28
+  - cactus.start-desert-29
+  - cactus.start-desert-30
+  - cactus.start-silencieux-31
+  - cactus.start-silencieux-32
+  - cactus.start-silencieux-33
+  - cactus.start-thankyou-34
+  - cactus.start-thankyou-35
+  - cactus.start-thankyou-36
+  - cactus.start-thankyou-37
+  - cactus.start-thankyou-38
+  - cactus.start-thankyou-39
+  - cactus.start-nofeelings-40
+  - cactus.start-nofeelings-41
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: 3eb906855de4846a6ae29a3240e63be5,
+    type: 3}
+  localizations: []
