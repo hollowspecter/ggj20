@@ -15,21 +15,16 @@ public class SharknadoDisaster : MonoBehaviour
     private float startLerpTime = 0f;
     private float lerpDuration = 0f;
 
-    private void Start()
+    private void Awake()
     {
-        sharknado.transform.position = points[currentPoint].position;
+        sharknado.transform.position = points[0].position;
     }
 
     private void Update()
     {
         sceneData.disasterMeter = numberOfSharks * panicPerSharkPerSecond;
         var t = (Time.time - startLerpTime) / lerpDuration;
-        transform.position = Vector3.Lerp(points[currentPoint - 1].position, points[currentPoint].position, EasingFunction.EaseInOutQuad(0f, 1f, t));
-
-        if (t >= 1)
-        {
-            GoToNextPoint();
-        }
+        sharknado.transform.position = Vector3.Lerp(points[currentPoint - 1].position, points[currentPoint].position, t);
     }
 
     public void GoToNextPoint()
