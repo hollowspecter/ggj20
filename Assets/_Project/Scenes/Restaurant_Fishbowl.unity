@@ -35499,6 +35499,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Waiter
       objectReference: {fileID: 0}
+    - target: {fileID: 1167973648718013393, guid: f1ffe342213454810ac43e9aaf9fe763,
+        type: 3}
+      propertyPath: m_Radius
+      value: 1.25
+      objectReference: {fileID: 0}
     - target: {fileID: 1167973648718013405, guid: f1ffe342213454810ac43e9aaf9fe763,
         type: 3}
       propertyPath: m_LocalPosition.x
