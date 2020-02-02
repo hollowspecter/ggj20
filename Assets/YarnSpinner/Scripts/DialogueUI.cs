@@ -243,7 +243,7 @@ namespace Yarn.Unity {
         {
             // "Perform" the command
             Debug.Log ("Command: " + command.Text);
-
+            onComplete?.Invoke();
             yield break;
         }
 
