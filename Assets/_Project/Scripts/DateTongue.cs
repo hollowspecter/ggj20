@@ -74,6 +74,6 @@ public class DateTongue : MonoBehaviour
     public void StartFrenchKiss()
     {
         isFrenchKissing = true;
-        frenchKissing.Play();
+        //frenchKissing.Play();
     }
 }
