@@ -6,7 +6,6 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public class WaiterController : MonoBehaviour
 {
-
     public enum WaiterWaypoint
     {
         None,
@@ -42,6 +41,7 @@ public class WaiterController : MonoBehaviour
 
     Dictionary<string, List<GameObject>> Orderables = new Dictionary<string, List<GameObject>>();
 
+    public FMODUnity.StudioEventEmitter scooterEvent;
 
     Dictionary<string, List<Transform>> Orders = new Dictionary<string, List<Transform>>();
     // Start is called before the first frame update
@@ -49,6 +49,7 @@ public class WaiterController : MonoBehaviour
     {
         navAgent = GetComponent<NavMeshAgent>();
         GoToWaypoint(WaiterWaypoint.Kitchen);
+        scooterEvent.Play();
 
         Orderables.Add("Drink", new List<GameObject>());
         Orders.Add("Drink", new List<Transform>());
@@ -89,7 +90,7 @@ public class WaiterController : MonoBehaviour
                 if (!navAgent.hasPath || Mathf.Approximately(navAgent.velocity.sqrMagnitude, 0.0f))
                 {
                     ArriveAtWaypoint();
-
+                    scooterEvent.Stop();
                 }
             }
         }
@@ -144,6 +145,7 @@ public class WaiterController : MonoBehaviour
         {
             Orders[OrderType].Add(spawn);
             GoToWaypoint(WaiterWaypoint.PlayerTable);
+            scooterEvent.Play();
         }
     }
 
