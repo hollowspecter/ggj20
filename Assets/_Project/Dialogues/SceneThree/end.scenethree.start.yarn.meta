@@ -1,0 +1,44 @@
+fileFormatVersion: 2
+guid: 30d461f2ded344d65862db18d7f4f07e
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en
+  stringIDs:
+  - end.scenethree.start-goodend.scenethree.start-0
+  - end.scenethree.start-goodend.scenethree.start-1
+  - end.scenethree.start-goodend.scenethree.start-2
+  - end.scenethree.start-goodend.scenethree.start-3
+  - end.scenethree.start-goodend.scenethree.start-4
+  - end.scenethree.start-goodend.scenethree.start-5
+  - end.scenethree.start-goodend.scenethree.start-6
+  - end.scenethree.start-goodend.scenethree.start-7
+  - end.scenethree.start-goodend.scenethree.start-8
+  - end.scenethree.start-goodend.scenethree.start-9
+  - end.scenethree.start-goodend.scenethree.start-10
+  - end.scenethree.start-goodend.scenethree.start-11
+  - end.scenethree.start-goodend.scenethree.start-12
+  - end.scenethree.start-goodend.scenethree.start-13
+  - end.scenethree.start-badend.scenethree.start-14
+  - end.scenethree.start-badend.scenethree.start-15
+  - end.scenethree.start-badend.scenethree.start-16
+  - end.scenethree.start-badend.scenethree.start-17
+  - end.scenethree.start-badend.scenethree.start-18
+  - end.scenethree.start-badend.scenethree.start-19
+  - end.scenethree.start-badend.scenethree.start-20
+  - end.scenethree.start-badend.scenethree.start-21
+  - end.scenethree.start-badend.scenethree.start-22
+  - end.scenethree.start-badend.scenethree.start-23
+  - end.scenethree.start-badend.scenethree.start-24
+  - end.scenethree.start-badend.scenethree.start-25
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: 30d461f2ded344d65862db18d7f4f07e,
+    type: 3}
+  localizations: []

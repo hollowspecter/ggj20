@@ -1,0 +1,64 @@
+title: Fan.start
+tags: 
+colorID: 1
+position: 583,188
+---
+Me: What is this? #line:0526389
+Me: Uhm... this... there! Up there!  #line:02fad69
+Me: The Fan!  #line:09158d2
+
+-> Noid Movie! #line:04796b4
+    Me: It is like in this old noid movies! #line:0c665ff
+    Me: I love them!  #line:093b892
+    Me: So dark and mysterious, hehe... #line:0e7a105
+    [[noirmovie]] 
+-> Birds! #line:0c88428
+    Me: It reminds me of birds, high in the sky.  #line:09ea998
+    Me: Flying sounds nice, right?  #line:0d62ab7
+    [[birdies]] 
+-> silence #line:0e3a8c1
+    Me: Shit! Shit! Shit! Shit! #line:01f84c5
+    [[silenciosososos]] 
+===
+title: noirmovie
+tags: 
+colorID: 2
+position: 309,152
+---
+Date: Like me... #line:042a509
+<<dab Date>> 
+Date: Hihi... #line:0255b7e
+===
+title: birdies
+tags: 
+colorID: 2
+position: 849,153
+---
+Date: Flying would be awesome! #line:0424c5a
+Date: But on the other claw...  #line:0b58ba9
+Date: I once fell off my tree and it was really horrible.  #line:0a0fae2
+Date: I think I lost my ability to see the color orange that day... #line:0b9f96c
+
+-> Awful! #line:012f8a9
+    Me: Oh no... That sound awful! #line:07d82d9
+    Me: But... How do you see orange things then? #line:0e4a68c
+    [[awful]] 
+-> silence #line:0cf0005
+    Me: Shit! Shit! Shit! Shit! #line:07ef19a
+    [[silenciosososos]] 
+===
+title: silenciosososos
+tags: 
+colorID: 0
+position: 586,437
+---
+Date: What, in the name of the great chameleon are you doing? #line:0f1ffaf
+===
+title: awful
+tags: 
+colorID: 3
+position: 911,434
+---
+Date: I see them in yellow and red.  #line:091ebd1
+Date: Hihi... #line:0c7d558
+===

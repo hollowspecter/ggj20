@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: 9ac160efc39044cb09ccddec6624c2d8
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en
+  stringIDs:
+  - badend.scenethree.start-badend.scenethree.start-0
+  - badend.scenethree.start-badend.scenethree.start-1
+  - badend.scenethree.start-badend.scenethree.start-2
+  - badend.scenethree.start-badend.scenethree.start-3
+  - badend.scenethree.start-badend.scenethree.start-4
+  - badend.scenethree.start-badend.scenethree.start-5
+  - badend.scenethree.start-badend.scenethree.start-6
+  - badend.scenethree.start-badend.scenethree.start-7
+  - badend.scenethree.start-badend.scenethree.start-8
+  - badend.scenethree.start-badend.scenethree.start-9
+  - badend.scenethree.start-badend.scenethree.start-10
+  - badend.scenethree.start-badend.scenethree.start-11
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: 9ac160efc39044cb09ccddec6624c2d8,
+    type: 3}
+  localizations: []

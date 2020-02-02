@@ -48,13 +48,16 @@ MonoBehaviour:
   startNode: scenethree.start
   distractions:
   - {fileID: 0}
-  endDialogue: {fileID: 0}
-  endNode: Test
+  - {fileID: 0}
+  - {fileID: 0}
+  endDialogue: {fileID: 2480198943629176163, guid: 9ac160efc39044cb09ccddec6624c2d8,
+    type: 3}
+  endNode: goodend.scenethree.start
   disasterTimer: 60
   disasterMeter: 0.03
-  triggerBadDialogueByPanicMeter: 0
+  triggerBadDialogueByPanicMeter: 1
   panicMeterThresholdForBad: 0.9
-  badDialogueEndNode: 
+  badDialogueEndNode: badend.scenethree.start
   onSceneStart:
     m_PersistentCalls:
       m_Calls:
