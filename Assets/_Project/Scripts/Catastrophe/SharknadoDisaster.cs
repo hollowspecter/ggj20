@@ -28,7 +28,7 @@ public class SharknadoDisaster : MonoBehaviour
         transform.position = Vector3.Lerp(points[currentPoint - 1].position, points[currentPoint].position, EasingFunction.EaseInOutQuad(0f, 1f, t));
     }
 
-    public void GoToNextPoint(float _duration)
+    public void GoToNextPoint()
     {
         currentPoint++;
         startLerpTime = Time.time;

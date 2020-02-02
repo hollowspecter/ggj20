@@ -181,6 +181,7 @@ public class Tongue : MonoBehaviour
                             Destroy(joint);
                         }
                         currentAttachable.Rigidbody.AddForce(CameraManager.instance.currentControlledCamera.transform.forward * attachableShootForce, ForceMode.Impulse);
+                        currentAttachable.GetComponent<WobbleIt>().Wobble();
                         currentAttachable = null;
                     }
                 }
