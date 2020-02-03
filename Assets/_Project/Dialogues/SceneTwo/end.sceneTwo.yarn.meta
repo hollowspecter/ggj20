@@ -10,14 +10,23 @@ ScriptedImporter:
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
   baseLanguageID: en
   stringIDs:
-  - goodend.scenetwo.start-goodend.scenetwo.start-0
-  - goodend.scenetwo.start-goodend.scenetwo.start-1
-  - goodend.scenetwo.start-goodend.scenetwo.start-2
-  - goodend.scenetwo.start-goodend.scenetwo.start-3
-  - goodend.scenetwo.start-goodend.scenetwo.start-4
-  compilationStatus: 1
+  - line:08b3f24
+  - line:0df6fed
+  - line:01b929e
+  - line:0a6ac06
+  - line:01e4deb
+  - line:0af50ae
+  - line:04c0494
+  - line:0b376df
+  - line:08a1e82
+  - line:0903e01
+  - line:0d96e63
+  - line:0e2a83f
+  compilationStatus: 0
   isSuccesfullyCompiled: 1
   compilationErrorMessage: 
   baseLanguage: {fileID: 7128917941130120860, guid: 804efa5b0dd0b484a8ebab6ca87e0788,
     type: 3}
-  localizations: []
+  localizations:
+  - languageName: en
+    text: {fileID: 4900000, guid: 63640c0ef45edf4409bb267b87666f54, type: 3}

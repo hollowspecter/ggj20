@@ -1,0 +1,94 @@
+id,text,file,node,lineNumber
+line:0015f83,"Me: Oh, wow! The band is just awesome!  ",band.start,band.Start,6
+line:03ce5c7,"Me: I think they are a new indie band with instrumental-alternative-lounge-folk-rock music.  ",band.start,band.Start,7
+line:0a50769,"Me: Have you heard of them? ",band.start,band.Start,8
+line:0941220,"Date: Uh, you really seem sophisticated in music genres. ",band.start,band,16
+line:04c7a1c,"Date: I never heard of that one, though... ",band.start,band,17
+line:0d739cc,"Date: They seem cool, but what is so special about them?  ",band.start,band,18
+line:078a92b,It is Art.,band.start,band,20
+line:0c20d71,It is comedy.,band.start,band,26
+line:01f1e78,silence,band.start,band,31
+line:0c013ca,"Me: You see, they pretend to be amateurs.  ",band.start,band,21
+line:0847a9f,"Me: It's basically a deconstruction of music itself.  ",band.start,band,22
+line:0160933,"Me: Back to the basics.  ",band.start,band,23
+line:0c220a2,"Me: Almost less than the the basics you might say. ",band.start,band,24
+line:088c5a9,"Me: If you really listen, you recognize the comedy aspect of it.  ",band.start,band,27
+line:0589bdc,"Me: In the language of music, every instrument is telling a joke.  ",band.start,band,28
+line:04dbcce,"Me: But it is very specific. ",band.start,band,29
+line:0828a69,"Me: uh... ",band.start,band,32
+line:0fb8ca0,"Date: Oh, wow! That sounds like a real form of art!  ",band.start,basics,40
+line:00dfe4c,"Date: I love art!  ",band.start,basics,41
+line:05ac6ae,"Date: I also love playing my music very loud to annoy my neighbors. Hihi... ",band.start,basics,42
+line:046060a,"Date: Tell me more about the deconstruction of music!  ",band.start,basics,44
+line:0ddb8a3,They feel it!,band.start,basics,46
+line:0ca80d0,They break it down!,band.start,basics,50
+line:0e01a49,silence,band.start,basics,55
+line:07f2e80,"Me: So, they break it down to every note and then just play what ever they feel in their heart. ",band.start,basics,47
+line:0927fd4,"Me: It is the purest of music. They strip all the talent and training away to enjoy it just like kids.  ",band.start,basics,48
+line:0e1437f,"Me: Uh, it's kind of hard to explain, you know?  ",band.start,basics,51
+line:0108aa8,"Me: They just break the music down and then repair it again...  ",band.start,basics,52
+line:0474a4f,"Me: I can't really tell you... because...  ",band.start,basics,53
+line:08e562e,"Me: uh... ",band.start,basics,56
+line:0ba18a9,"Date: And you can speak that language of music?  ",band.start,language,64
+line:0d42d7a,"Date: Could you... could you translate it for me? ",band.start,language,65
+line:0f82ff7,"Date: I love great jokes, hihi.  ",band.start,language,66
+line:087b3c3,Beethovens fruit?,band.start,language,68
+line:0c98be2,Treasure of a shrimp?,band.start,language,72
+line:0e4dabe,silence,band.start,language,76
+line:0f994c5,"Me: What is Beethovens favorite fruit?  ",band.start,language,69
+line:0a844df,"Me: BA-NA-NA-NAAAAA! ",band.start,language,70
+line:00be15a,"Me: Why wouldn't the shrimp share his treasure?  ",band.start,language,73
+line:07df800,"Me: Because he was a little shellfish! ",band.start,language,74
+line:010d0d9,"Me: Uhm, so... I can't really... tell...  ",band.start,language,77
+line:057b803,"Date: Whaaat? Hihi! ",band.start,jokegood,86
+line:0914104,"Date: This is awesome?  ",band.start,jokegood,87
+line:0e1ffb4,"Date: What else are they joking about in the music?  ",band.start,jokegood,88
+line:0d5d819,Chameleon joke.,band.start,jokegood,90
+line:0cf7a12,Silence,band.start,jokegood,94
+line:08531aa,"Me: What's the definition of a nervous breakdown?  ",band.start,jokegood,91
+line:0fef20c,"Me: A chameleon on a tartan rug! ",band.start,jokegood,92
+line:0117ba0,"Me: Uh... I... can't really tell...  ",band.start,jokegood,95
+line:03d5952,"Date: Hihi... but... wait...  ",band.start,jokebad,103
+line:0e6bb62,"Date: That doesn't have anything to do with music?  ",band.start,jokebad,104
+line:0331dc8,"Date: Are making this up?  ",band.start,jokebad,105
+line:0edf14d,The truth is...,band.start,jokebad,107
+line:0986293,No! I mean it!,band.start,jokebad,111
+line:0da8698,silence_three,band.start,jokebad,115
+line:0fdcfcf,"Me: Uhm... haha... yes.  ",band.start,jokebad,108
+line:0528ddc,"Me: But it would be fun if it was true, right? ",band.start,jokebad,109
+line:023a6e0,"Me: No! Of course not!  ",band.start,jokebad,112
+line:0aa65f2,"Me: They were telling this joke with their instruments! ",band.start,jokebad,113
+line:0b2cea1,"Me: uh... ",band.start,jokebad,116
+line:03bef73,"Date: What? What do you mean, you can't tell?  ",band.start,nojoke,124
+line:08fef7d,"Date: Are you just making fun of me?  ",band.start,nojoke,125
+line:0988ee2,"Date: Hihi! Yes! ",band.start,truth,132
+line:031bd9b,"Date: Oh my, I almost believed you! Hihi! ",band.start,truth,133
+line:0ca61f6,"Date: You sly reptile! But I really love good jokes!  ",band.start,truth,134
+line:041dbb9,Reptile joke.,band.start,truth,136
+line:08f30e3,silence_three,band.start,truth,140
+line:0c9f0aa,"Me: Okay, listen to this one: What's the coldest type of reptile?  ",band.start,truth,137
+line:03a59ad,"Me: A blizzard!  ",band.start,truth,138
+line:0b056fc,"Me: uh... ",band.start,truth,141
+line:08430eb,"Date: Do you think I am stupid?  ",band.start,lie,149
+line:0133d1d,"Date: Stop lying to me!  ",band.start,lie,150
+line:0049269,"Date: At least be honest... ",band.start,lie,151
+line:016b1e2,"Date: Hihi! A cold... Hihi!  ",band.start,blizzard,158
+line:0fd2d73,"Date: Love it!  ",band.start,blizzard,159
+line:0030eab,"Date: Hihi! Oh, no! ",band.start,chameleon,166
+line:0b4c505,"Date: That would be awful! Hihi!  ",band.start,chameleon,167
+line:0fbb8ef,"Date: Another!  ",band.start,chameleon,168
+line:0bca7ba,Reptile joke.,band.start,chameleon,170
+line:0411095,silence,band.start,chameleon,174
+line:0454f25,"Me: Okay, listen to this one: What's the coldest type of reptile?  ",band.start,chameleon,171
+line:0e25172,"Me: A blizzard!  ",band.start,chameleon,172
+line:035ceae,"Me: Uh... I can't tell...  ",band.start,chameleon,175
+line:0a2c0f6,"Date: That sounds... interesting.  ",band.start,think,183
+line:0a79acc,"Date: Although I am not sure I can really appreciate it...  ",band.start,think,184
+line:086fae0,"Date: I think I still like loud rock music a lot more. Hihi.  ",band.start,think,185
+line:0e63c2c,I love dancing.,band.start,think,187
+line:0613232,silence,band.start,think,191
+line:0fa6028,"Me: Hehe... yes...  ",band.start,think,188
+line:03525e7,"Me: I really love dancing, so let me know, when you want to annoy your neighbors again.  ",band.start,think,189
+line:0849dfe,"Me: uh... ",band.start,think,192
+line:01f25f0,"Date: Hihi, that sounds like a plan!  ",band.start,dancing,200
+line:0315ac2,"Date: Are you trying to make fun of me...?! ",band.start,silence_three,207

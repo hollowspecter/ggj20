@@ -1,0 +1,34 @@
+id,text,file,node,lineNumber
+line:09a2e96,"Me: Wow, this cloud...LOOK! ",clouds.start,clouds.start,6
+line:05bbb01,"Me: It looks like a... ",clouds.start,clouds.start,7
+line:0e4001a,A bee!,clouds.start,clouds.start,9
+line:053197b,A pineapple!,clouds.start,clouds.start,12
+line:003c2d9,A shark!,clouds.start,clouds.start,15
+line:0bacad0,Silence,clouds.start,clouds.start,19
+line:0ed2734,"Me: A bee! ",clouds.start,clouds.start,10
+line:0f2ace4,"Me: A pineapple! ",clouds.start,clouds.start,13
+line:08aefe6,"Me: A shark! ",clouds.start,clouds.start,16
+line:0d750bc,"Me: Oh no... ",clouds.start,clouds.start,17
+line:01ae381,"Me: ehmmm.... ",clouds.start,clouds.start,20
+line:07a5581,"Date: Hihi, that reminds me of my beloved roasted bees.  ",clouds.start,beecloud,27
+line:0748124,"Date: I really don't like to look at clouds, but this is nice. Hihi. ",clouds.start,beecloud,28
+line:0797c08,"Date: Bzz... hihi ",clouds.start,beecloud,29
+line:09a0c46,More about bees!,clouds.start,beecloud,31
+line:0bc7c0b,silence,clouds.start,beecloud,37
+line:005d517,"Me: You would be a great bee! ",clouds.start,beecloud,32
+line:0dc0c55,"Me: Hopefully you would be a female bee or your life would be pretty bad. ",clouds.start,beecloud,33
+line:05dc2e7,"Me: No teeth and dying first in winter, hehe...  ",clouds.start,beecloud,34
+line:0895e3a,"Me: Uhm... ",clouds.start,beecloud,35
+line:08c27ea,"Me: Holy fucking shit, what is THIS...?!  ",clouds.start,beecloud,38
+line:0160712,"Date: A pineapple? ",clouds.start,pineapplecloud,46
+line:09099ec,"Date: Hm... I don't like clouds that much. ",clouds.start,pineapplecloud,47
+line:0077d24,"Date: And I don't care for pineapples. ",clouds.start,pineapplecloud,48
+line:0a83dd8,"Date: I think they have a really weird color and I am kind of sure, they are alien eggs... ",clouds.start,pineapplecloud,49
+line:035363a,"Date: Sharks...? ",clouds.start,sharknado,56
+line:0525bce,"Date: AAAAAAAAAH! ",clouds.start,sharknado,57
+line:0013d52,"Date: SAVE ME!  ",clouds.start,sharknado,58
+line:059b6eb,"Date: What is wh- ",clouds.start,Cichy2,65
+line:08950d5,"Date: AAAAAAAAAH! ",clouds.start,Cichy2,66
+line:09892ab,"Date: SAVE ME!  ",clouds.start,Cichy2,67
+line:06dbcfc,"Date: Hihi...hi... ",clouds.start,morebees,74
+line:0b0bbcf,"Date: ...what?  ",clouds.start,morebees,75

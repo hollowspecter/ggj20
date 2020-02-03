@@ -1,0 +1,69 @@
+id,text,file,node,lineNumber
+line:01dc618,"Date: By the way, what do you do for a living?  ",scenetwo.start,scenetwo.start,6
+line:0bdbb4b,I'm a banker.,scenetwo.start,scenetwo.start,8
+line:0713f87,I'm an artist.,scenetwo.start,scenetwo.start,12
+line:0f1eec3,I'm a plummer.,scenetwo.start,scenetwo.start,17
+line:00577b9,"Me: I am a banker. Hehe. ",scenetwo.start,scenetwo.start,9
+line:049b90b,"Me: Most of the time I have to look really neat and talk a little more... posh. Hehe... ",scenetwo.start,scenetwo.start,10
+line:07e7b1e,"Me: I am an artist, actually.  ",scenetwo.start,scenetwo.start,13
+line:0980033,"Me: I invent fashion for snails.  ",scenetwo.start,scenetwo.start,14
+line:07424f0,"Me: Hats, a shoe, movable glasses, you know what I mean. ",scenetwo.start,scenetwo.start,15
+line:0fcdf4b,"Me: I am a plummer.  ",scenetwo.start,scenetwo.start,18
+line:0703eb2,"Me: It may seem weird, but I played this one game as a child a lot.  ",scenetwo.start,scenetwo.start,19
+line:0f27fc2,"Me: It was about this really cool plummer brothers and it inspired me. ",scenetwo.start,scenetwo.start,20
+line:0a4d5b0,"Me: So I go into the sewers now myself and fight plantlife and evil turtles. ",scenetwo.start,scenetwo.start,21
+line:0ea2065,"Date: Oh... That sounds like a very strict life.  ",scenetwo.start,banker,29
+line:09c97e4,"Date: And you always have to be so serious.  ",scenetwo.start,banker,30
+line:0e07550,"Date: Do you like it? Is it what you have dreamed of?  ",scenetwo.start,banker,31
+line:081c858,I live my dream.,scenetwo.start,banker,33
+line:08e3c27,I'm not living my dream.,scenetwo.start,banker,38
+line:0e76c10,Silence,scenetwo.start,banker,43
+line:01f3bf8,"Me: I worked really hard for it, but I like the nice life. Hehe.  ",scenetwo.start,banker,34
+line:07750fc,"Me: It allowed me to buy my own pool which keeps me moist.  ",scenetwo.start,banker,35
+line:03c13ea,"Me: All. Day. Long. ",scenetwo.start,banker,36
+line:08fc277,"Me: So... my mother wanted me to be successful.  ",scenetwo.start,banker,39
+line:0606774,"Me: I guess I never thought about what I wanted.  ",scenetwo.start,banker,40
+line:0705257,"Me: Maybe I should start making own decision. Hehe... ",scenetwo.start,banker,41
+line:0de81ae,"Me: Uhm...... what ",scenetwo.start,banker,44
+line:0bf698b,"Date: Thanks for listening... ",scenetwo.start,banker,45
+line:0897576,"Date: Fashion? For snails? That sounds exciting. ",scenetwo.start,artist,53
+line:05944cc,"Date: I am an artist myself, you know?  ",scenetwo.start,artist,54
+line:0ccdda7,"Date: But I draw and mostly for myself.  ",scenetwo.start,artist,55
+line:0934160,"Date: Do you like your job? Is it what you have dreamed of?  ",scenetwo.start,artist,56
+line:0793900,I'm living my dream.,scenetwo.start,artist,58
+line:011044b,I don't live my dream.,scenetwo.start,artist,63
+line:05404c1,Silence,scenetwo.start,artist,68
+line:0731fde,"Me: Being a fashion designer was always my dream.  ",scenetwo.start,artist,59
+line:07cc2c2,"Me: I don't get a lot of money, but I love what I do.  ",scenetwo.start,artist,60
+line:04f39ef,"Me: But it can be very stressful sometimes.  ",scenetwo.start,artist,61
+line:058c7ad,"Me: Sometimes it's really hard, because it is not as creative as I want it to be.  ",scenetwo.start,artist,64
+line:0a176fd,"Me: Sometimes I just work a lot for other people.  ",scenetwo.start,artist,65
+line:04d8049,"Me: And sometimes I am not sure that I still want this at all.  ",scenetwo.start,artist,66
+line:04c224b,"Me: Uhm...... what ",scenetwo.start,artist,69
+line:0cb3f08,"Date: Thanks for listening... ",scenetwo.start,artist,70
+line:0678388,"Date: How practical!  ",scenetwo.start,plummer,78
+line:0c5ae7b,"Date: I guess you save a lot of money, when stuff breaks in your home.  ",scenetwo.start,plummer,79
+line:0cb0b43,"Date: But, are you happy?  ",scenetwo.start,plummer,80
+line:0d555dc,"Date: I think every job is perfekt, as long as you really love what you do.  ",scenetwo.start,plummer,81
+line:056cfca,"Date: So... is this your dreamjob? ",scenetwo.start,plummer,82
+line:06b7b94,I'm living my dream.,scenetwo.start,plummer,84
+line:0cc4601,I'm not living my dream.,scenetwo.start,plummer,89
+line:01980a5,Silence,scenetwo.start,plummer,94
+line:0dfe7c3,"Me: Yes! Some people say it's easy or simple, but I want to see them doing my job for one day! ",scenetwo.start,plummer,85
+line:0fa67ab,"Me: I love this work and to learn more about it.  ",scenetwo.start,plummer,86
+line:0bab6bb,"Me: Little things about it already excite me and I think that is all that matters.  ",scenetwo.start,plummer,87
+line:0924de9,"Me: At first it was a quick solution.  ",scenetwo.start,plummer,90
+line:0727a55,"Me: And I kind of liked it.  ",scenetwo.start,plummer,91
+line:08d19df,"Me: But now, all I feel is tired. Ah, hehe... I just don't know.  ",scenetwo.start,plummer,92
+line:0cb1240,"Me: Uhm...... what ",scenetwo.start,plummer,95
+line:0013dcb,"Date: Thanks for listening... ",scenetwo.start,plummer,96
+line:080e099,"Date: I am really happy for you.  ",scenetwo.start,dreamyes,104
+line:0f66027,"Date: Although I think you should always try to aspire more.  ",scenetwo.start,dreamyes,105
+line:0c81b69,"Date: Don't you think so?  ",scenetwo.start,dreamyes,106
+line:0adae75,"Date: Oh, that sounds hard.  ",scenetwo.start,dreamno,114
+line:0387744,"Date: But I think the important part is to never give up.  ",scenetwo.start,dreamno,115
+line:037883a,"Date: My father always said:  ",scenetwo.start,dreamno,116
+line:08e03a0,"Date: It is not important to know what you like, as long as you know what you don't like.  ",scenetwo.start,dreamno,117
+line:05d53d6,"Date: Hihi.  ",scenetwo.start,dreamno,118
+line:09c1f1a,"Instructions: Careful! A fire broke out! Make sure your date is fine, distract them so ",scenetwo.start,instructions2,126
+line:05f00b3,"Instructions: they don't notice it. Try to put it out! ",scenetwo.start,instructions2,127

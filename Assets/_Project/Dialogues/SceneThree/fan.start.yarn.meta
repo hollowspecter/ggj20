@@ -10,35 +10,37 @@ ScriptedImporter:
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
   baseLanguageID: en
   stringIDs:
-  - fan.start-Fan.start-0
-  - fan.start-Fan.start-1
-  - fan.start-Fan.start-2
-  - fan.start-Fan.start-3
-  - fan.start-Fan.start-4
-  - fan.start-Fan.start-5
-  - fan.start-Fan.start-6
-  - fan.start-Fan.start-7
-  - fan.start-Fan.start-8
-  - fan.start-Fan.start-9
-  - fan.start-Fan.start-10
-  - fan.start-Fan.start-11
-  - fan.start-noirmovie-12
-  - fan.start-noirmovie-13
-  - fan.start-birdies-14
-  - fan.start-birdies-15
-  - fan.start-birdies-16
-  - fan.start-birdies-17
-  - fan.start-birdies-18
-  - fan.start-birdies-19
-  - fan.start-birdies-20
-  - fan.start-birdies-21
-  - fan.start-birdies-22
-  - fan.start-silenciosososos-23
-  - fan.start-awful-24
-  - fan.start-awful-25
-  compilationStatus: 1
+  - line:0526389
+  - line:02fad69
+  - line:09158d2
+  - line:04796b4
+  - line:0c88428
+  - line:0e3a8c1
+  - line:0c665ff
+  - line:093b892
+  - line:0e7a105
+  - line:09ea998
+  - line:0d62ab7
+  - line:01f84c5
+  - line:042a509
+  - line:0255b7e
+  - line:0424c5a
+  - line:0b58ba9
+  - line:0a0fae2
+  - line:0b9f96c
+  - line:012f8a9
+  - line:0cf0005
+  - line:07d82d9
+  - line:0e4a68c
+  - line:07ef19a
+  - line:0f1ffaf
+  - line:091ebd1
+  - line:0c7d558
+  compilationStatus: 0
   isSuccesfullyCompiled: 1
   compilationErrorMessage: 
   baseLanguage: {fileID: 7128917941130120860, guid: ff3d3c7feb721404bbb27526aeeed4c6,
     type: 3}
-  localizations: []
+  localizations:
+  - languageName: en
+    text: {fileID: 4900000, guid: 27dc7710ba4f8ad4badb86bfc2830472, type: 3}

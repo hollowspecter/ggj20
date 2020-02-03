@@ -10,33 +10,35 @@ ScriptedImporter:
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
   baseLanguageID: en
   stringIDs:
-  - cake.start-cake.start-0
-  - cake.start-cake.start-1
-  - cake.start-cake.start-2
-  - cake.start-cake.start-3
-  - cake.start-cake.start-4
-  - cake.start-cake.start-5
-  - cake.start-cake.start-6
-  - cake.start-cake.start-7
-  - cake.start-cake.start-8
-  - cake.start-cake.start-9
-  - cake.start-lookstasty-10
-  - cake.start-lookstasty-11
-  - cake.start-lookstasty-12
-  - cake.start-lookstasty-13
-  - cake.start-birthdaycake-14
-  - cake.start-birthdaycake-15
-  - cake.start-birthdaycake-16
-  - cake.start-birthdaycake-17
-  - cake.start-birthdaycake-18
-  - cake.start-birthdaycake-19
-  - cake.start-birthdaycake-20
-  - cake.start-Cichy-21
-  - cake.start-Cichy-22
-  - cake.start-funny-23
-  compilationStatus: 1
+  - line:0fe6f8e
+  - line:0907f4b
+  - line:0d3ad18
+  - line:0296e00
+  - line:004b5bd
+  - line:0da693c
+  - line:0daeb8b
+  - line:0efaaad
+  - line:02b92df
+  - line:0697645
+  - line:048af70
+  - line:0caa3fa
+  - line:0418db4
+  - line:0c768a8
+  - line:0a9e68d
+  - line:03bce0f
+  - line:09ed596
+  - line:0bd746d
+  - line:05465eb
+  - line:054681f
+  - line:0fc57b2
+  - line:0a45213
+  - line:0030c51
+  - line:05d7743
+  compilationStatus: 0
   isSuccesfullyCompiled: 1
   compilationErrorMessage: 
   baseLanguage: {fileID: 7128917941130120860, guid: 08ed9f720b7af415e9416566638a29e1,
     type: 3}
-  localizations: []
+  localizations:
+  - languageName: en
+    text: {fileID: 4900000, guid: b0b9f4c44876c884fadcda99da1b5d1c, type: 3}

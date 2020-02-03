@@ -342,8 +342,8 @@ tags:
 colorID: 0
 position: 1213,-311
 ---
-Date: Hey, didn't you say something about a gift?
-Date: I really wonder, what it could be!
-Date: Can I have it now?
-Instructions: Give your date the gift! Make sure to show it to them really closely!
+Date: Hey, didn't you say something about a gift? #line:09a98c5
+Date: I really wonder, what it could be! #line:0bd9cb0
+Date: Can I have it now? #line:0ddd516
+Instructions: Give your date the gift! Make sure to show it to them really closely! #line:0646894
 ===

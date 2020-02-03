@@ -1,0 +1,43 @@
+id,text,file,node,lineNumber
+line:002cfaa,"Me: Look! There is my favorite show on the telly! ",tv.start,tv.start,6
+line:0c5fb5a,"Me: When I was a little reptile, I loved to eat my worm-flakes while watching [i]Roving Reptiles[/i]. ",tv.start,tv.start,7
+line:0415d7f,What was your favorite?,tv.start,tv.start,9
+line:049bf30,"Me: What was your favorite hero of the [i]Roving Reptiles[/i]? ",tv.start,tv.start,10
+line:028a7d9,"Date: Oh, wow! I also loved this as a child.  ",tv.start,tv_favorite,19
+line:010a7b5,"Date: My favorite was always Tom the Turtle. He was just so nice and chill. And yours? ",tv.start,tv_favorite,20
+line:0bff1d7,The strong Iguana!,tv.start,tv_favorite,22
+line:0e81afa,The clever Snake!,tv.start,tv_favorite,27
+line:0c22347,The lazy Lizard,tv.start,tv_favorite,31
+line:0d62ed7,silence,tv.start,tv_favorite,35
+line:06d2468,"Me: Igor the Iguana! ",tv.start,tv_favorite,23
+line:0236379,"Me: I love Igor the Iguana, he is so strong.  ",tv.start,tv_favorite,24
+line:0ebe449,"Me: He can punch everyone! ",tv.start,tv_favorite,25
+line:03daa33,"Me: Susan the Snake! ",tv.start,tv_favorite,28
+line:0890c33,"Me: She always impressed me by figuring out a solution for everything.  ",tv.start,tv_favorite,29
+line:00319db,"Me: Lina the Lizard! ",tv.start,tv_favorite,32
+line:0f31d08,"Me: She was enjoying the easy life but always saved the day with wise hints. ",tv.start,tv_favorite,33
+line:02cae16,"Me: My...what...? ",tv.start,tv_favorite,36
+line:0f68fce,"Date: Hm... I think he was pretty boring...  ",tv.start,igor,44
+line:04e5b4c,"Date: Being strong is not really fun and pretty standard. ",tv.start,igor,45
+line:0b8cd31,"Date: Oh, yes! She was my sisters favorite too.  ",tv.start,susan,52
+line:082ab82,"Date: A real smartass. Hihi.  ",tv.start,susan,53
+line:06a896f,My sister.,tv.start,susan,55
+line:0a5cb97,silence,tv.start,susan,59
+line:06f3f53,"Me: I also have a sister.  ",tv.start,susan,56
+line:0541ccb,"Me: But she is more like Lina the lazy Lizard, hehe.  ",tv.start,susan,57
+line:0346991,"Me: Ouch! Ugh... ",tv.start,susan,60
+line:05a7c50,"Date: Hihi, I also like Lina very much! ",tv.start,Lina,68
+line:08bc856,"Date: Remember when she won in hide and seek because she fell asleep on the toilet?  ",tv.start,Lina,69
+line:0eb85c6,My sister did that!,tv.start,Lina,71
+line:012863b,silence,tv.start,Lina,76
+line:08e3baa,"Me: Hehe, yes. Thas was so funny!  ",tv.start,Lina,72
+line:08893c2,"Me: She also reminds me very much of my sister.  ",tv.start,Lina,73
+line:0cb2830,"Me: I swear, that happened to her too, when we were kids, hehe.  ",tv.start,Lina,74
+line:0c1d8b9,"Me: Toilet...?  ",tv.start,Lina,77
+line:053c35d,"Date: I guess you're not really interested... ",tv.start,silence_four,85
+line:0c32160,"Date: Hihi, she sounds nice. ",tv.start,sister,92
+line:042eb75,"Date: Maybe I will meet her one day.  ",tv.start,sister,93
+line:019af80,"Date: Than we can all be lazy and witty together. Hihi. ",tv.start,sister,95
+line:0aff621,"Date: Whaaaaat? Hihi!  ",tv.start,kids,102
+line:0325f09,"Date: Now I really need to meet her!  ",tv.start,kids,103
+line:0f0188a,"Date: She sounds so fun!  ",tv.start,kids,104

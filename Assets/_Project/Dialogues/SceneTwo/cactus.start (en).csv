@@ -1,0 +1,43 @@
+id,text,file,node,lineNumber
+line:075eaab,"Me: This cactus!  ",cactus.start,cactus.start,6
+line:0cebeba,"Me: You know what it reminds me of?  ",cactus.start,cactus.start,7
+line:0c6f6e2,Love!,cactus.start,cactus.start,9
+line:05a6352,The desert!,cactus.start,cactus.start,14
+line:0062781,silence,cactus.start,cactus.start,20
+line:0f85866,"Me: Love! ",cactus.start,cactus.start,10
+line:01aa424,"Me: It looks nice, but if you get too close, it hurts incredible bad.  ",cactus.start,cactus.start,11
+line:0ab0474,"Me: And it's super hard to get red of the stings. Hehe... ",cactus.start,cactus.start,12
+line:0cf144d,"Me: The desert! ",cactus.start,cactus.start,15
+line:016c2aa,"Me: I always wanted to go there, but it is so hot.  ",cactus.start,cactus.start,16
+line:0213f72,"Me: I think my sensitive skin could not take it.  ",cactus.start,cactus.start,17
+line:013735c,"Me: Have you been to the desert?  ",cactus.start,cactus.start,18
+line:0f02c72,"Me: Oh-oh!  ",cactus.start,cactus.start,21
+line:0669658,"Date: You sound really sad.  ",cactus.start,love,29
+line:05d352d,"Date: You know, I believe in love. I believe in being vulnerable and in hope.  ",cactus.start,love,30
+line:01ed856,"Date: But first you have to be open. Try to be optimistic.  ",cactus.start,love,31
+line:0587a79,"Date: Love will not heal anything if you not let yourself heal first. Hihi.  ",cactus.start,love,32
+line:06b960c,"Date: Now let's smile together again! ",cactus.start,love,33
+line:04cb461,Thank you.,cactus.start,love,35
+line:069255c,I didn't mean it.,cactus.start,love,40
+line:0562856,silence,cactus.start,love,45
+line:006ebbc,"Me: Thank you... That was... actually helpful. ",cactus.start,love,36
+line:01770e8,"Me: Hehe...  ",cactus.start,love,37
+line:0463fe6,"Me: Yeah! Let's have some fun and be optimistic.  ",cactus.start,love,38
+line:029d0ed,"Me: I didn't mean it like that. ",cactus.start,love,41
+line:03e0244,"Me: Don't be so sentimental, not everybody has to be open with feelings and stuff.  ",cactus.start,love,42
+line:007eed1,"Me: I am fine.  ",cactus.start,love,43
+line:03a464a,"Me: Oh-oh... ",cactus.start,love,46
+line:004ea86,"Date: Uhm... uh... So much sand?  ",cactus.start,desert,55
+line:063c859,"Date: I would rather go to the jungle.  ",cactus.start,desert,56
+line:017f612,"Date: More humid and actually nice...  ",cactus.start,desert,57
+line:066efe4,"Date: It is so hot in here...hihi... ",cactus.start,silencieux,64
+line:0ca872a,"Date: Is it burning or is it m- ",cactus.start,silencieux,65
+line:0dcd425,"Date: Aaah! Help! Fire!  ",cactus.start,silencieux,67
+line:08b0284,"Date: Yes!  ",cactus.start,thankyou,74
+line:099ba93,"Date: What do you want to talk about? ",cactus.start,thankyou,75
+line:0e53c0b,The desert!,cactus.start,thankyou,77
+line:0227810,silence,cactus.start,thankyou,80
+line:0e5123c,"Me: Apropos cactus! Have you ever been to the desert? ",cactus.start,thankyou,78
+line:0266ecc,"Me: Oh-oh... ",cactus.start,thankyou,81
+line:0487c80,"Date: Sure... ",cactus.start,nofeelings,89
+line:0debaf8,"Date: *cough* Hypocrite... *cough*  ",cactus.start,nofeelings,90

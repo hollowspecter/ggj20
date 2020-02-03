@@ -10,51 +10,53 @@ ScriptedImporter:
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
   baseLanguageID: en
   stringIDs:
-  - tv.start-tv.start-0
-  - tv.start-tv.start-1
-  - tv.start-tv.start-2
-  - tv.start-tv.start-3
-  - tv.start-tv_favorite-4
-  - tv.start-tv_favorite-5
-  - tv.start-tv_favorite-6
-  - tv.start-tv_favorite-7
-  - tv.start-tv_favorite-8
-  - tv.start-tv_favorite-9
-  - tv.start-tv_favorite-10
-  - tv.start-tv_favorite-11
-  - tv.start-tv_favorite-12
-  - tv.start-tv_favorite-13
-  - tv.start-tv_favorite-14
-  - tv.start-tv_favorite-15
-  - tv.start-tv_favorite-16
-  - tv.start-tv_favorite-17
-  - tv.start-igor-18
-  - tv.start-igor-19
-  - tv.start-susan-20
-  - tv.start-susan-21
-  - tv.start-susan-22
-  - tv.start-susan-23
-  - tv.start-susan-24
-  - tv.start-susan-25
-  - tv.start-susan-26
-  - tv.start-Lina-27
-  - tv.start-Lina-28
-  - tv.start-Lina-29
-  - tv.start-Lina-30
-  - tv.start-Lina-31
-  - tv.start-Lina-32
-  - tv.start-Lina-33
-  - tv.start-Lina-34
-  - tv.start-silence_four-35
-  - tv.start-sister-36
-  - tv.start-sister-37
-  - tv.start-sister-38
-  - tv.start-kids-39
-  - tv.start-kids-40
-  - tv.start-kids-41
-  compilationStatus: 1
+  - line:002cfaa
+  - line:0c5fb5a
+  - line:0415d7f
+  - line:049bf30
+  - line:028a7d9
+  - line:010a7b5
+  - line:0bff1d7
+  - line:0e81afa
+  - line:0c22347
+  - line:0d62ed7
+  - line:06d2468
+  - line:0236379
+  - line:0ebe449
+  - line:03daa33
+  - line:0890c33
+  - line:00319db
+  - line:0f31d08
+  - line:02cae16
+  - line:0f68fce
+  - line:04e5b4c
+  - line:0b8cd31
+  - line:082ab82
+  - line:06a896f
+  - line:0a5cb97
+  - line:06f3f53
+  - line:0541ccb
+  - line:0346991
+  - line:05a7c50
+  - line:08bc856
+  - line:0eb85c6
+  - line:012863b
+  - line:08e3baa
+  - line:08893c2
+  - line:0cb2830
+  - line:0c1d8b9
+  - line:053c35d
+  - line:0c32160
+  - line:042eb75
+  - line:019af80
+  - line:0aff621
+  - line:0325f09
+  - line:0f0188a
+  compilationStatus: 0
   isSuccesfullyCompiled: 1
   compilationErrorMessage: 
   baseLanguage: {fileID: 7128917941130120860, guid: 4e48790cedec74496b99c26724f2ed48,
     type: 3}
-  localizations: []
+  localizations:
+  - languageName: en
+    text: {fileID: 4900000, guid: 778880a770ede0247acc370ef7c67309, type: 3}

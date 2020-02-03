@@ -40,9 +40,9 @@ Date: Do you like it? Is it what you have dreamed of?  #line:0e07550
     Me: I guess I never thought about what I wanted.  #line:0606774
     Me: Maybe I should start making own decision. Hehe... #line:0705257
     [[dreamno]] 
--> Silence
-    Me: Uhm...... what
-    Date: Thanks for listening...
+-> Silence #line:0e76c10
+    Me: Uhm...... what #line:0de81ae
+    Date: Thanks for listening... #line:0bf698b
     [[instructions2]]
 ===
 title: artist
@@ -65,9 +65,9 @@ Date: Do you like your job? Is it what you have dreamed of?  #line:0934160
     Me: Sometimes I just work a lot for other people.  #line:0a176fd
     Me: And sometimes I am not sure that I still want this at all.  #line:04d8049
     [[dreamno]] 
--> Silence
-    Me: Uhm...... what
-    Date: Thanks for listening...
+-> Silence #line:05404c1
+    Me: Uhm...... what #line:04c224b
+    Date: Thanks for listening... #line:0cb3f08
     [[instructions2]]
 ===
 title: plummer
@@ -91,9 +91,9 @@ Date: So... is this your dreamjob? #line:056cfca
     Me: And I kind of liked it.  #line:0727a55
     Me: But now, all I feel is tired. Ah, hehe... I just don't know.  #line:08d19df
     [[dreamno]]
--> Silence
-    Me: Uhm...... what
-    Date: Thanks for listening...
+-> Silence #line:01980a5
+    Me: Uhm...... what #line:0cb1240
+    Date: Thanks for listening... #line:0013dcb
     [[instructions2]]
 ===
 title: dreamyes
@@ -123,6 +123,6 @@ tags:
 colorID: 3
 position: 416,-160
 ---
-Instructions: Careful! A fire broke out! Make sure your date is fine, distract them so
-Instructions: they don't notice it. Try to put it out!
+Instructions: Careful! A fire broke out! Make sure your date is fine, distract them so #line:09c1f1a
+Instructions: they don't notice it. Try to put it out! #line:05f00b3
 ===

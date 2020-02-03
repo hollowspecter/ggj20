@@ -1,0 +1,22 @@
+id,text,file,node,lineNumber
+line:000ed2f,"Me: What a stylish hat over there! ",hat.start,hat.start,6
+line:068794d,Same as my aunts'!,hat.start,hat.start,8
+line:0ac32ed,I love hats!,hat.start,hat.start,12
+line:07cdb63,silence,hat.start,hat.start,15
+line:0eb39bd,"Me: My aunt had one of those and wore it every day. ",hat.start,hat.start,9
+line:01ec732,"Me: Can you believe? ",hat.start,hat.start,10
+line:06320a4,"Me: I just love hats... ",hat.start,hat.start,13
+line:089bf6d,"Me: Weird... ",hat.start,hat.start,16
+line:0f37bef,"Date: Aha... I really needed to know that about your aunt...  ",hat.start,aunthat,24
+line:0a345d2,"Date: Hihi...  ",hat.start,lovehats,31
+line:04c0e03,"Date: I also like hats. But I like neckties more.  ",hat.start,lovehats,32
+line:048a968,"Date: I have a whole collection, hihi. ",hat.start,lovehats,33
+line:04f179a,What's your favorite?,hat.start,lovehats,35
+line:078f1c8,silence,hat.start,lovehats,40
+line:0bc19dd,"Me: Hehe, what? ",hat.start,lovehats,36
+line:0c330e3,"Me: You need to show it to me! ",hat.start,lovehats,37
+line:049e61b,"Me: What is your favorite motive?  ",hat.start,lovehats,38
+line:0208131,"Me: Weird... ",hat.start,lovehats,41
+line:0d09856,"Date: What the heck are you doing?!  ",hat.start,stilte,49
+line:0c37c76,"Date: Hihi, I will show it to you! ",hat.start,necktie,56
+line:0807fb1,"Date: My favorite one is pink with yellow ducks, hihi. ",hat.start,necktie,57

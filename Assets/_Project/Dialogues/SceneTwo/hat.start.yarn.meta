@@ -10,30 +10,32 @@ ScriptedImporter:
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
   baseLanguageID: en
   stringIDs:
-  - hat.start-hat.start-0
-  - hat.start-hat.start-1
-  - hat.start-hat.start-2
-  - hat.start-hat.start-3
-  - hat.start-hat.start-4
-  - hat.start-hat.start-5
-  - hat.start-hat.start-6
-  - hat.start-hat.start-7
-  - hat.start-aunthat-8
-  - hat.start-lovehats-9
-  - hat.start-lovehats-10
-  - hat.start-lovehats-11
-  - hat.start-lovehats-12
-  - hat.start-lovehats-13
-  - hat.start-lovehats-14
-  - hat.start-lovehats-15
-  - hat.start-lovehats-16
-  - hat.start-lovehats-17
-  - hat.start-stilte-18
-  - hat.start-necktie-19
-  - hat.start-necktie-20
-  compilationStatus: 1
+  - line:000ed2f
+  - line:068794d
+  - line:0ac32ed
+  - line:07cdb63
+  - line:0eb39bd
+  - line:01ec732
+  - line:06320a4
+  - line:089bf6d
+  - line:0f37bef
+  - line:0a345d2
+  - line:04c0e03
+  - line:048a968
+  - line:04f179a
+  - line:078f1c8
+  - line:0bc19dd
+  - line:0c330e3
+  - line:049e61b
+  - line:0208131
+  - line:0d09856
+  - line:0c37c76
+  - line:0807fb1
+  compilationStatus: 0
   isSuccesfullyCompiled: 1
   compilationErrorMessage: 
   baseLanguage: {fileID: 7128917941130120860, guid: 0b22d467e87ca46ab957fae9c27d3622,
     type: 3}
-  localizations: []
+  localizations:
+  - languageName: en
+    text: {fileID: 4900000, guid: a5466eff77fc5164b86e1d87a0000890, type: 3}

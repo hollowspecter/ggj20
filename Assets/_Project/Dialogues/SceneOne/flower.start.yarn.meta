@@ -10,30 +10,37 @@ ScriptedImporter:
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
   baseLanguageID: en
   stringIDs:
-  - flower.start-flower.start-0
-  - flower.start-flower.start-1
-  - flower.start-flower.start-2
-  - flower.start-flower.start-3
-  - flower.start-why-4
-  - flower.start-why-5
-  - flower.start-why-6
-  - flower.start-why-7
-  - flower.start-lame-8
-  - flower.start-lame-9
-  - flower.start-turn-10
-  - flower.start-turn-11
-  - flower.start-turn-12
-  - flower.start-turn-13
-  - flower.start-turn-14
-  - flower.start-turn-15
-  - flower.start-turn-16
-  - flower.start-turn-17
-  - flower.start-silence_two-18
-  - flower.start-book-19
-  - flower.start-book-20
-  compilationStatus: 1
+  - line:0943008
+  - line:06fc0db
+  - line:0bdab68
+  - line:003fe13
+  - line:035084e
+  - line:0d7fd63
+  - line:0b0e8c3
+  - line:0a9a463
+  - line:00671a9
+  - line:0120a21
+  - line:03154da
+  - line:0e80aa6
+  - line:0d0612e
+  - line:05154cf
+  - line:0667a54
+  - line:0ebe14d
+  - line:047524c
+  - line:0c0ff7d
+  - line:0583fbb
+  - line:005d9da
+  - line:06a177c
+  - line:08b1620
+  - line:0b5a832
+  - line:0e97dee
+  - line:00bce1b
+  - line:0ad548a
+  compilationStatus: 0
   isSuccesfullyCompiled: 1
   compilationErrorMessage: 
   baseLanguage: {fileID: 7128917941130120860, guid: 8cb48369d1cd746248a45ced587b2a5e,
     type: 3}
-  localizations: []
+  localizations:
+  - languageName: en
+    text: {fileID: 4900000, guid: c35277905b3c91b4581ec6df49dc200a, type: 3}

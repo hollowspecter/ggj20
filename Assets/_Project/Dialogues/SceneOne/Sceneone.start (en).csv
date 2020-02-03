@@ -1,0 +1,144 @@
+id,text,file,node,lineNumber
+line:0090914,"Date: Hello! It is so nice to finally see you. You look so much greener than on 'Chameleove'.  ",Sceneone.start,sceneone.start,6
+line:07a8d73,"Date: Hihi...  ",Sceneone.start,sceneone.start,7
+line:0940c32,"Date: I am so curious about this place. I have never been here. ",Sceneone.start,sceneone.start,9
+line:0ec96ba,I'm nervous,Sceneone.start,sceneone.start,11
+line:00d369d,Make compliment,Sceneone.start,sceneone.start,14
+line:0631f5a,Talk about me,Sceneone.start,sceneone.start,17
+line:0cc7eca,Silence,Sceneone.start,sceneone.start,21
+line:059eb39,"Me: H-hey. Uhm... yeah, green is good, right... So you found the place...? Of course you did, you are here. Haha... ",Sceneone.start,sceneone.start,12
+line:015be8d,"Me: I am so happy that you said yes to go on a date with me...Hehe... Your eyes are the prettiest! So big! ",Sceneone.start,sceneone.start,15
+line:03c7f6f,"Me: So, hello... Thank you! I always keep my skin moist and then rub it in sand to get rid of old skin. ",Sceneone.start,sceneone.start,18
+line:099d46e,"Me: You should try it! Also, this place has the most stars on omnivore.com, so I really wanted to try it. ",Sceneone.start,sceneone.start,19
+line:017e735,"Me: yeah...uhhh... what...? ",Sceneone.start,sceneone.start,22
+line:09962fa,"Date: You are so cute! Hihi.  ",Sceneone.start,nervous,30
+line:03ae0c2,"Date: So... do you know if they have roasted bees here? They are so delicious! Also with honey!  ",Sceneone.start,nervous,32
+line:087ab9e,"Date: Do you like sweets? ",Sceneone.start,nervous,33
+line:015fb0e,I like fruits,Sceneone.start,nervous,35
+line:06a135d,Roasted bees?,Sceneone.start,nervous,38
+line:0db210a,I like pie,Sceneone.start,nervous,41
+line:0917a36,Silence,Sceneone.start,nervous,44
+line:094d013,"Me: Oh, hehe... yes, I love sweets. Especially pie. With aaaall the fruits. Fruits are the best thing in the world! ",Sceneone.start,nervous,36
+line:0fde7c6,"Me: I never tried roasted bees, they sound weird. Will you not get stung? ",Sceneone.start,nervous,39
+line:006bbc9,"Me: Well, I just like pies. Do you like pies? ",Sceneone.start,nervous,42
+line:08fde7a,"Me: yeah...uhhh... what...? ",Sceneone.start,nervous,45
+line:0a52ca1,"Date: Uhm... okay... ",Sceneone.start,compliment,53
+line:0973c0c,"Date: Can you instead tell me something about you?  ",Sceneone.start,compliment,54
+line:0448fb6,I like sunbathing,Sceneone.start,compliment,56
+line:028352c,I like trees,Sceneone.start,compliment,59
+line:07df95d,I like cherries,Sceneone.start,compliment,62
+line:0a2570b,Silence,Sceneone.start,compliment,65
+line:09518bb,"Me: My favorite thing is sunbathing, feeling the wonderful warmth of the sun on me... and I guess I like yellow. ",Sceneone.start,compliment,57
+line:0c4d765,"Me: I love hanging around and watch trees grow and how the wind is waving in the leaves, hehe... And I really like green. ",Sceneone.start,compliment,60
+line:01bdab4,"Me: I really love cherries and red, like some of the scales in your shiny skin. ",Sceneone.start,compliment,63
+line:0884d16,"Me: yeah...uhhh... what...? ",Sceneone.start,compliment,66
+line:0c4b7cc,"Date: Moist skin is the best skin.  ",Sceneone.start,selfcentered,74
+line:0f96f44,"Date: Hihi.  ",Sceneone.start,selfcentered,75
+line:06f13f2,"Date: I don't like the sand, but maybe I will try it, if it makes you that green.  ",Sceneone.start,selfcentered,76
+line:0b9685e,"Date: Do you have a favorite color?  ",Sceneone.start,selfcentered,77
+line:0b28c5d,Yellow,Sceneone.start,selfcentered,79
+line:0f68a62,Green,Sceneone.start,selfcentered,82
+line:0fb1c82,Red,Sceneone.start,selfcentered,86
+line:0ae1353,Silence,Sceneone.start,selfcentered,89
+line:006d1d0,"Me: My favorite thing is sunbathing, feeling the wonderful warmth of the sun on me... so I guess I really like yellow. ",Sceneone.start,selfcentered,80
+line:0a0c8ac,"Me: Of course my favorite color is all the greens, like my picture in my mirror pond. ",Sceneone.start,selfcentered,83
+line:0bb9781,"Me: I also love hanging around and watch trees grow and how the wind is waving in the leaves. ",Sceneone.start,selfcentered,84
+line:0ac5fb6,"Me: It's exactly the kind of lovely red you have in your beautiful scale. ",Sceneone.start,selfcentered,87
+line:0873478,"Me: yeah...uhhh... what...? ",Sceneone.start,selfcentered,90
+line:0921d97,"Date: Oh yes! Yes! We should have fruits for dessert! ",Sceneone.start,fruits,98
+line:020c0b0,"Date: Maybe they even have fruit salad! ",Sceneone.start,fruits,99
+line:059e6ec,Yes fruits!,Sceneone.start,fruits,101
+line:0e484ab,Meh,Sceneone.start,fruits,105
+line:019351b,Silence,Sceneone.start,fruits,110
+line:0710836,"Me: Oh yes! Let's do it! Give me all the fruits! ",Sceneone.start,fruits,102
+line:0e57f9b,"Me: They are all so delicious and juicy and flavourful and just the best. Fruits are basically my reason to live! ",Sceneone.start,fruits,103
+line:0c3b43b,"Me: I mean... I don't like all the fruits. I am allergic to kiwi, bananas are too sweet, ",Sceneone.start,fruits,106
+line:00fe740,"Me: strawberries are actually nuts, apples can be very sour, pineapple makes my stomach weird, ",Sceneone.start,fruits,107
+line:0024d4a,"Me: oranges hurt my teeth... I mean, you get what I am saying... ",Sceneone.start,fruits,108
+line:0eaaef9,"Me: yeah...uhhh... what...? ",Sceneone.start,fruits,111
+line:0eedf91,"Date: Oh, uh... Stung?  ",Sceneone.start,stung,119
+line:0555aae,"Date: No, no! You just pick out the stingy part.  ",Sceneone.start,stung,120
+line:0c8a6e6,"Date: It's not weird...  ",Sceneone.start,stung,121
+line:03aea2e,"Date: Also, I like it kinda dangerous. Hihi.  ",Sceneone.start,stung,122
+line:04e856d,"Date: My grandma always said: No risk, no risk.  ",Sceneone.start,stung,123
+line:0b7942e,"Date: And then she got trampled by an elephant while trying to ride it.  ",Sceneone.start,stung,125
+line:080a5d1,"Date: Ha... she died, as she lived.  ",Sceneone.start,stung,126
+line:077a809,What a hero,Sceneone.start,stung,128
+line:07df9b9,What an idiot,Sceneone.start,stung,131
+line:08f9a1f,Uhm..,Sceneone.start,stung,135
+line:0d4ab2d,Silence,Sceneone.start,stung,138
+line:041717e,"Me: I actually never saw it from that perspective. That sounds awesome! She sounds like a real adventurer! ",Sceneone.start,stung,129
+line:01897ac,"Me: Hm... okay... I am not sure that sounds like a relaxed meal, haha... And about riding an elephant... ",Sceneone.start,stung,132
+line:05c92af,"Me: What did she want to achieve with that? That sounds like foolhardiness to me... ",Sceneone.start,stung,133
+line:0b786ff,"Me: That really sounds... risky... haha... Do you also ride elephants? ",Sceneone.start,stung,136
+line:0e496a7,"Me: yeah...uhhh... what...? ",Sceneone.start,stung,139
+line:0965db3,"Date: I like my sweets more cross. But pie is fine.  ",Sceneone.start,pie,147
+line:0e6bcc0,"Date: Oh, you could also fill it with bees!!! ",Sceneone.start,pie,148
+line:0f715f6,Yes!!,Sceneone.start,pie,150
+line:065f31d,No!,Sceneone.start,pie,153
+line:0d446f8,Silence,Sceneone.start,pie,156
+line:0f8ccea,"Me: Huh? That actually sounds like a good idea! Let's invent a new cake! But I can not really bake. Do you bake...? ",Sceneone.start,pie,151
+line:0100793,"Me: But pie is about being sweet! Nah, that doesn't sound tasty at all! ",Sceneone.start,pie,154
+line:0b2721f,"Me: yeah...uhhh... what...? ",Sceneone.start,pie,157
+line:007747b,"Date: Sunbathing! One of the best things in live... ",Sceneone.start,yellow,165
+line:0241270,"Date: We should totally do it together some time, hihi. ",Sceneone.start,yellow,166
+line:0bdd25f,Sure,Sceneone.start,yellow,168
+line:07be3a0,Nope,Sceneone.start,yellow,171
+line:053cf2e,Silence,Sceneone.start,yellow,174
+line:0365b18,"Me: Uh, really? Hehe... that sounds nice. ",Sceneone.start,yellow,169
+line:0c498da,"Me: Uh-uh... sorry, but no. That is my private chill time and I will share it with nobody. ",Sceneone.start,yellow,172
+line:0b4d08b,"Me: yeah...uhhh... what...? ",Sceneone.start,yellow,175
+line:0f721f9,"Date: You can see the trees grow?  ",Sceneone.start,green,183
+line:08464f8,"Date: Awesome! And so much green!  ",Sceneone.start,green,184
+line:0ca88cd,"Date: I love green!  ",Sceneone.start,green,185
+line:05d31af,"Date: Like so much! But sometimes, when I am scared or angry, I can become red, I really hate red.  ",Sceneone.start,green,186
+line:02de37b,Make a compliment,Sceneone.start,green,188
+line:0c03254,Don't worry,Sceneone.start,green,191
+line:05f8de5,Silence,Sceneone.start,green,194
+line:04f3da1,"Me: I am sure you would also look beautiful in red. Like a nice... cherry. ",Sceneone.start,green,189
+line:02022da,"Me: Oh, I see. Don't worry, I will make sure there will be no reason for you to become angry or scared. ",Sceneone.start,green,192
+line:043ef77,"Me: yeah...uhhh... what...? ",Sceneone.start,green,195
+line:02e65fd,"Date: Ugh! I hate red!  ",Sceneone.start,red,203
+line:0f79a59,"Date: It always appears, when I am angry or scared and I really don't like it.  ",Sceneone.start,red,204
+line:0bd7269,Make a compliment,Sceneone.start,red,206
+line:0df4f32,Don't worry,Sceneone.start,red,209
+line:0414f40,Silence,Sceneone.start,red,212
+line:087f1fc,"Me: I am sure you would also look beautiful in red. Like a nice... cherry. ",Sceneone.start,red,207
+line:061ae1c,"Me: Oh, I see. Don't worry, I will make sure there will be no reason for you to become angry or scared. ",Sceneone.start,red,210
+line:08c718e,"Me: yeah...uhhh... what...? ",Sceneone.start,red,213
+line:04f21e8,"Date: Hihi. ",Sceneone.start,hero,221
+line:0dcf77b,"Date: Yes, thank you so much for saying that! She was so awesome. ",Sceneone.start,hero,222
+line:018d14a,"Date: I wish I could be more like her. ",Sceneone.start,hero,223
+line:09c5a2c,"Date: But, to be honest, I am really easily scared... ",Sceneone.start,hero,224
+line:0166800,"Date: What?!  ",Sceneone.start,idiot,232
+line:0f612a6,"Date: You really can't say anything about it, if you haven't tried it yet!  ",Sceneone.start,idiot,233
+line:045531a,"Date: ... ",Sceneone.start,idiot,234
+line:01634c7,"Date: Hihi, no I haven't tried riding an elephant yet.  ",Sceneone.start,unsure,242
+line:03375b3,"Date: It really sounds risky, but maybe it is super fun!  ",Sceneone.start,unsure,243
+line:02a72fc,"Date: But I am also afraid of heights...  ",Sceneone.start,unsure,245
+line:0f9c1ce,"Date: Yes!  ",Sceneone.start,yes,253
+line:004c231,"Date: Hihi.  ",Sceneone.start,yes,254
+line:023d8da,"Date: But.. I also can not bake...  ",Sceneone.start,yes,255
+line:0479ea0,"Date: Hm... I think you have no idea! ",Sceneone.start,no,263
+line:0cb0144,"Date: You should try it first!  ",Sceneone.start,no,264
+line:01fdaa1,"Date: Wow, you sound very enthusiastic.  ",Sceneone.start,good,272
+line:04a4f84,"Date: Are you okay though...?  ",Sceneone.start,good,273
+line:09432b3,"Date: Oh, okay...  ",Sceneone.start,meh,281
+line:09209e2,"Date: so...  ",Sceneone.start,meh,282
+line:05a554f,"Date: I am not sure what you mean exactly, to be honest...  ",Sceneone.start,meh,283
+line:0b6b32c,"Date: Hihi, yes...  ",Sceneone.start,sure,291
+line:0d62b5f,"Date: In the sun... together...  ",Sceneone.start,sure,292
+line:0872eda,"Date: Hihi... ",Sceneone.start,sure,293
+line:0a7d854,"Date: I would never want to disturb your peace! ",Sceneone.start,nope,301
+line:045d042,"Date: Just... I thought... ",Sceneone.start,nope,302
+line:0905780,"Date: But, okay...  ",Sceneone.start,nope,303
+line:0ca66ed,"Date: A... cherry?  ",Sceneone.start,cherry,311
+line:0186d3a,"Date: That sounds really weird.  ",Sceneone.start,cherry,312
+line:0f4ffb5,"Date: Please, don't call me a cherry anymore...  ",Sceneone.start,cherry,313
+line:0282548,"Date: Hihi, okay.  ",Sceneone.start,worry,321
+line:0e2c330,"Date: I am counting on you!  ",Sceneone.start,worry,322
+line:035e063,"Date: Am I boring you?  ",Sceneone.start,silence_one,330
+line:09a98c5,"Date: Hey, didn't you say something about a gift? ",Sceneone.start,sceneone.end,345
+line:0bd9cb0,"Date: I really wonder, what it could be! ",Sceneone.start,sceneone.end,346
+line:0ddd516,"Date: Can I have it now? ",Sceneone.start,sceneone.end,347
+line:0646894,"Instructions: Give your date the gift! Make sure to show it to them really closely! ",Sceneone.start,sceneone.end,348

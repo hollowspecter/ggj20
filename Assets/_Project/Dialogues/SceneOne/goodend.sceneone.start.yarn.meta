@@ -17,9 +17,18 @@ ScriptedImporter:
   - line:09284c4
   - line:0d0bfa3
   - line:03a7c8a
+  - line:029b1c3
+  - line:06155ea
+  - line:0782880
+  - line:0565790
+  - line:0ccea6d
+  - line:0afc841
+  - line:0739c25
   compilationStatus: 0
   isSuccesfullyCompiled: 1
   compilationErrorMessage: 
   baseLanguage: {fileID: 7128917941130120860, guid: 0556985a6affa4f49aff93763c91ecca,
     type: 3}
-  localizations: []
+  localizations:
+  - languageName: en
+    text: {fileID: 4900000, guid: 37c241e6d73fb0e49ab2b454e5625fb0, type: 3}

@@ -1,0 +1,13 @@
+id,text,file,node,lineNumber
+line:08b3f24,"Me: So, hehe... how are you feeling so far?  ",end.sceneTwo,goodend.scenetwo.start,6
+line:0df6fed,"Date: I didn't have that much fun in a while! ",end.sceneTwo,goodend.scenetwo.start,7
+line:01b929e,"Date: And I already like you a lot. You seem so focused. I really like that.  ",end.sceneTwo,goodend.scenetwo.start,8
+line:0a6ac06,"Me: Yes... haha... focus is my best ability... I hope...  ",end.sceneTwo,goodend.scenetwo.start,9
+line:01e4deb,"Date: Let's go on then!  ",end.sceneTwo,goodend.scenetwo.start,10
+line:0af50ae,"Me: So... how do you feel so far...hehe...? ",end.sceneTwo,badend.scenetwo.start,17
+line:04c0494,"Date... Uhm... actually it feels a little bit, like this date is falling apart. ",end.sceneTwo,badend.scenetwo.start,18
+line:0b376df,"Date: Sometimes I can't tell if you are really listening and sometimes... ",end.sceneTwo,badend.scenetwo.start,19
+line:08a1e82,"Date: Well, sometimes you just say that weird stuff, that makes me really wonder... ",end.sceneTwo,badend.scenetwo.start,20
+line:0903e01,"Date: I think you are a good person overall, so maybe...  ",end.sceneTwo,badend.scenetwo.start,21
+line:0d96e63,"Date: ...maybe just try to focus a little bit more on getting to know each other. ",end.sceneTwo,badend.scenetwo.start,22
+line:0e2a83f,"Date: Okay...?  ",end.sceneTwo,badend.scenetwo.start,23

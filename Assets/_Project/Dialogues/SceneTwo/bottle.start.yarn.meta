@@ -10,48 +10,50 @@ ScriptedImporter:
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
   baseLanguageID: en
   stringIDs:
-  - bottle.start-Bottle.start-0
-  - bottle.start-Bottle.start-1
-  - bottle.start-Bottle.start-2
-  - bottle.start-Bottle.start-3
-  - bottle.start-Bottle.start-4
-  - bottle.start-Bottle.start-5
-  - bottle.start-Bottle.start-6
-  - bottle.start-Bottle.start-7
-  - bottle.start-connoisseur-8
-  - bottle.start-connoisseur-9
-  - bottle.start-connoisseur-10
-  - bottle.start-connoisseur-11
-  - bottle.start-connoisseur-12
-  - bottle.start-connoisseur-13
-  - bottle.start-connoisseur-14
-  - bottle.start-connoisseur-15
-  - bottle.start-connoisseur-16
-  - bottle.start-connoisseur-17
-  - bottle.start-connoisseur-18
-  - bottle.start-connoisseur-19
-  - bottle.start-weirdwine-20
-  - bottle.start-weirdwine-21
-  - bottle.start-weirdwine-22
-  - bottle.start-weirdwine-23
-  - bottle.start-weirdwine-24
-  - bottle.start-weirdwine-25
-  - bottle.start-weirdwine-26
-  - bottle.start-weirdwine-27
-  - bottle.start-weirdwine-28
-  - bottle.start-weirdwine-29
-  - bottle.start-silencio-30
-  - bottle.start-silencio-31
-  - bottle.start-specialwine-32
-  - bottle.start-specialwine-33
-  - bottle.start-specialwine-34
-  - bottle.start-specialwine-35
-  - bottle.start-soundsgood-36
-  - bottle.start-soundsgood-37
-  - bottle.start-soundsgood-38
-  compilationStatus: 1
+  - line:02467a1
+  - line:08c8327
+  - line:02ace90
+  - line:035360b
+  - line:05eeb27
+  - line:0125b70
+  - line:05ee4af
+  - line:0a4588c
+  - line:0f16ba2
+  - line:0b4eb25
+  - line:083e3f4
+  - line:05a5719
+  - line:02a575b
+  - line:06efeee
+  - line:0b74dd1
+  - line:080b6fb
+  - line:0309265
+  - line:0c8253c
+  - line:0f06995
+  - line:0e05dda
+  - line:0a619ee
+  - line:06b4bf4
+  - line:0fecc98
+  - line:0ba4f8e
+  - line:048ec31
+  - line:013584d
+  - line:0db93d4
+  - line:0c37a9a
+  - line:0399c4b
+  - line:0360268
+  - line:08683d0
+  - line:0264595
+  - line:020a8dc
+  - line:0776d5d
+  - line:0e2841b
+  - line:08aedc0
+  - line:01b7155
+  - line:0f49ae1
+  - line:0df171c
+  compilationStatus: 0
   isSuccesfullyCompiled: 1
   compilationErrorMessage: 
   baseLanguage: {fileID: 7128917941130120860, guid: b997071b369624914a0278355e1aa248,
     type: 3}
-  localizations: []
+  localizations:
+  - languageName: en
+    text: {fileID: 4900000, guid: 353962fa4f4dc074e9483139ae6e81c8, type: 3}

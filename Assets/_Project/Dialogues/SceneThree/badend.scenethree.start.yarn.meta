@@ -10,21 +10,23 @@ ScriptedImporter:
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
   baseLanguageID: en
   stringIDs:
-  - badend.scenethree.start-badend.scenethree.start-0
-  - badend.scenethree.start-badend.scenethree.start-1
-  - badend.scenethree.start-badend.scenethree.start-2
-  - badend.scenethree.start-badend.scenethree.start-3
-  - badend.scenethree.start-badend.scenethree.start-4
-  - badend.scenethree.start-badend.scenethree.start-5
-  - badend.scenethree.start-badend.scenethree.start-6
-  - badend.scenethree.start-badend.scenethree.start-7
-  - badend.scenethree.start-badend.scenethree.start-8
-  - badend.scenethree.start-badend.scenethree.start-9
-  - badend.scenethree.start-badend.scenethree.start-10
-  - badend.scenethree.start-badend.scenethree.start-11
-  compilationStatus: 1
+  - line:09f5923
+  - line:0b5aae2
+  - line:000aecf
+  - line:0497a2b
+  - line:06aaafe
+  - line:0afb877
+  - line:0948789
+  - line:09ae6bf
+  - line:0e90382
+  - line:02cd7e1
+  - line:0b7b522
+  - line:04e0ac1
+  compilationStatus: 0
   isSuccesfullyCompiled: 1
   compilationErrorMessage: 
   baseLanguage: {fileID: 7128917941130120860, guid: 9ac160efc39044cb09ccddec6624c2d8,
     type: 3}
-  localizations: []
+  localizations:
+  - languageName: en
+    text: {fileID: 4900000, guid: 6ed71cad21b2d9a46a5adf028aa3fc7e, type: 3}

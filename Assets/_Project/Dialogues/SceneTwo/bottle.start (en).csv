@@ -1,0 +1,40 @@
+id,text,file,node,lineNumber
+line:02467a1,"Me: Oh, uh, do you see this nice bottle of wine?  ",bottle.start,Bottle.start,6
+line:08c8327,Wine connoisseur.,bottle.start,Bottle.start,7
+line:02ace90,Weird wine.,bottle.start,Bottle.start,10
+line:035360b,silence,bottle.start,Bottle.start,14
+line:05eeb27,"Me: I actually always thought about being a wine connoisseur.  ",bottle.start,Bottle.start,8
+line:0125b70,"Me: I heard they found weird bacteria in the wine.  ",bottle.start,Bottle.start,11
+line:05ee4af,"Me: They will live inside you and uh... eat your brain.  ",bottle.start,Bottle.start,12
+line:0a4588c,"Me: No...  ",bottle.start,Bottle.start,15
+line:0f16ba2,"Date: Uh, so you already know a lot about wine?  ",bottle.start,connoisseur,23
+line:0b4eb25,"Date: And probably also like it a lot? Hihi.  ",bottle.start,connoisseur,24
+line:083e3f4,"Date: Tell me about this wine! ",bottle.start,connoisseur,26
+line:05a5719,lie,bottle.start,connoisseur,28
+line:02a575b,Weird wine.,bottle.start,connoisseur,31
+line:06efeee,silence,bottle.start,connoisseur,37
+line:0b74dd1,"Me: So, uh... It is a... special... red... wine...  ",bottle.start,connoisseur,29
+line:080b6fb,"Me: So, I actually don't know a lot about wine yet. ",bottle.start,connoisseur,32
+line:0309265,"Me: I just thought it would be cool, to know a lot about it. ",bottle.start,connoisseur,33
+line:0c8253c,"Me: But I heard they found weird bacteria in the wine.  ",bottle.start,connoisseur,34
+line:0f06995,"Me: They will live inside you and uh... eat your brain.  ",bottle.start,connoisseur,35
+line:0e05dda,"Me: No...  ",bottle.start,connoisseur,38
+line:0a619ee,"Date: Hihi, that sounds awesomely gross!  ",bottle.start,weirdwine,46
+line:06b4bf4,"Date: I think I have a relative that died of that, after the bacteria made her become a winemaker.  ",bottle.start,weirdwine,47
+line:0fecc98,"Date: To create more space and victims for the bacteria I think, you know?  ",bottle.start,weirdwine,48
+line:0ba4f8e,"Date: Let's drink it and stop being responsible for our behaviour. Hihi.  ",bottle.start,weirdwine,49
+line:048ec31,Sounds good!,bottle.start,weirdwine,51
+line:013584d,silence,bottle.start,weirdwine,57
+line:0db93d4,"Me: Uhm, yes. Hehe...  ",bottle.start,weirdwine,52
+line:0c37a9a,"Me: Cheers!  ",bottle.start,weirdwine,53
+line:0399c4b,"Me: To great, brainless adventures... I guess. ",bottle.start,weirdwine,54
+line:0360268,"Me: No...  ",bottle.start,weirdwine,58
+line:08683d0,"Date: Oh no! ",bottle.start,silencio,66
+line:0264595,"Date: What is happening here?  ",bottle.start,silencio,67
+line:020a8dc,"Date: A... red wine?  ",bottle.start,specialwine,74
+line:0776d5d,"Date: I could have told you that.  ",bottle.start,specialwine,75
+line:0e2841b,"Date: You don't know anything about wine, do you?  ",bottle.start,specialwine,76
+line:08aedc0,"Date: And here I thought you could tell me something interesting... ",bottle.start,specialwine,77
+line:01b7155,"Date: Yes!!! ",bottle.start,soundsgood,84
+line:0f49ae1,"Date: Hihi, you are so much fun! ",bottle.start,soundsgood,85
+line:0df171c,"Date: Cheers! To all the brainless making alcohol.  ",bottle.start,soundsgood,86

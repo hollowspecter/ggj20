@@ -10,35 +10,37 @@ ScriptedImporter:
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
   baseLanguageID: en
   stringIDs:
-  - end.scenethree.start-goodend.scenethree.start-0
-  - end.scenethree.start-goodend.scenethree.start-1
-  - end.scenethree.start-goodend.scenethree.start-2
-  - end.scenethree.start-goodend.scenethree.start-3
-  - end.scenethree.start-goodend.scenethree.start-4
-  - end.scenethree.start-goodend.scenethree.start-5
-  - end.scenethree.start-goodend.scenethree.start-6
-  - end.scenethree.start-goodend.scenethree.start-7
-  - end.scenethree.start-goodend.scenethree.start-8
-  - end.scenethree.start-goodend.scenethree.start-9
-  - end.scenethree.start-goodend.scenethree.start-10
-  - end.scenethree.start-goodend.scenethree.start-11
-  - end.scenethree.start-goodend.scenethree.start-12
-  - end.scenethree.start-goodend.scenethree.start-13
-  - end.scenethree.start-badend.scenethree.start-14
-  - end.scenethree.start-badend.scenethree.start-15
-  - end.scenethree.start-badend.scenethree.start-16
-  - end.scenethree.start-badend.scenethree.start-17
-  - end.scenethree.start-badend.scenethree.start-18
-  - end.scenethree.start-badend.scenethree.start-19
-  - end.scenethree.start-badend.scenethree.start-20
-  - end.scenethree.start-badend.scenethree.start-21
-  - end.scenethree.start-badend.scenethree.start-22
-  - end.scenethree.start-badend.scenethree.start-23
-  - end.scenethree.start-badend.scenethree.start-24
-  - end.scenethree.start-badend.scenethree.start-25
-  compilationStatus: 1
+  - line:046702d
+  - line:0bef997
+  - line:059d6c9
+  - line:04afdbe
+  - line:0a1056b
+  - line:029b445
+  - line:0aa02eb
+  - line:005d9f6
+  - line:0c112bc
+  - line:062906e
+  - line:0a024cd
+  - line:0cc3b17
+  - line:06fc4e7
+  - line:04563ec
+  - line:02807d3
+  - line:06252a1
+  - line:0358bd8
+  - line:0d33ef6
+  - line:02cd8a3
+  - line:0ea8a33
+  - line:0eac1e4
+  - line:0f356b1
+  - line:0bb36be
+  - line:06caf95
+  - line:05850da
+  - line:0161584
+  compilationStatus: 0
   isSuccesfullyCompiled: 1
   compilationErrorMessage: 
   baseLanguage: {fileID: 7128917941130120860, guid: 30d461f2ded344d65862db18d7f4f07e,
     type: 3}
-  localizations: []
+  localizations:
+  - languageName: en
+    text: {fileID: 4900000, guid: 1e9666694aafcb54088e5a8a1026f8f9, type: 3}

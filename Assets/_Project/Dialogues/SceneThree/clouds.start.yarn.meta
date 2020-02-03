@@ -10,40 +10,44 @@ ScriptedImporter:
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
   baseLanguageID: en
   stringIDs:
-  - clouds.start-clouds.start-0
-  - clouds.start-clouds.start-1
-  - clouds.start-clouds.start-2
-  - clouds.start-clouds.start-3
-  - clouds.start-clouds.start-4
-  - clouds.start-clouds.start-5
-  - clouds.start-clouds.start-6
-  - clouds.start-clouds.start-7
-  - clouds.start-clouds.start-8
-  - clouds.start-beecloud-9
-  - clouds.start-beecloud-10
-  - clouds.start-beecloud-11
-  - clouds.start-beecloud-12
-  - clouds.start-beecloud-13
-  - clouds.start-beecloud-14
-  - clouds.start-beecloud-15
-  - clouds.start-beecloud-16
-  - clouds.start-beecloud-17
-  - clouds.start-beecloud-18
-  - clouds.start-pineapplecloud-19
-  - clouds.start-pineapplecloud-20
-  - clouds.start-pineapplecloud-21
-  - clouds.start-pineapplecloud-22
-  - clouds.start-sharknado-23
-  - clouds.start-sharknado-24
-  - clouds.start-sharknado-25
-  - clouds.start-Cichy-26
-  - clouds.start-Cichy-27
-  - clouds.start-Cichy-28
-  - clouds.start-morebees-29
-  - clouds.start-morebees-30
-  compilationStatus: 1
+  - line:09a2e96
+  - line:05bbb01
+  - line:0e4001a
+  - line:053197b
+  - line:003c2d9
+  - line:0bacad0
+  - line:0ed2734
+  - line:0f2ace4
+  - line:08aefe6
+  - line:0d750bc
+  - line:01ae381
+  - line:07a5581
+  - line:0748124
+  - line:0797c08
+  - line:09a0c46
+  - line:0bc7c0b
+  - line:005d517
+  - line:0dc0c55
+  - line:05dc2e7
+  - line:0895e3a
+  - line:08c27ea
+  - line:0160712
+  - line:09099ec
+  - line:0077d24
+  - line:0a83dd8
+  - line:035363a
+  - line:0525bce
+  - line:0013d52
+  - line:059b6eb
+  - line:08950d5
+  - line:09892ab
+  - line:06dbcfc
+  - line:0b0bbcf
+  compilationStatus: 0
   isSuccesfullyCompiled: 1
   compilationErrorMessage: 
   baseLanguage: {fileID: 7128917941130120860, guid: a8c0489b136db4cc59ad77ef0b464b6a,
     type: 3}
-  localizations: []
+  localizations:
+  - languageName: en
+    text: {fileID: 4900000, guid: 3e102b864fc59204992ea272d2f5535d, type: 3}

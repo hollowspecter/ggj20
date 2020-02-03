@@ -21,9 +21,9 @@ Date: Are you part of the revolution too?  #line:0835165
     Me: No one is as smart, beautiful and nice as reptiles.  #line:0f6bf10
     Me: I mean some of us can even clone ourselves, something humans have yet to achieve.  #line:0f5eccf
     [[conhumans]] 
--> Silence
-    Me: Uhm...... what
-    Date: Thanks for listening...
+-> Silence #line:0af8997
+    Me: Uhm...... what #line:0c69b74
+    Date: Thanks for listening... #line:025f3cf
     [[instructions3]]
 ===
 title: prohumans
@@ -44,9 +44,9 @@ Date: Look what happened to our ancestors, the great dinosaurs and they didn't e
     Me: Yes! That's what I always thought too! #line:063c43b
     Me: But I also think it was just a big coincidence and nobody deserves to die just like that.  #line:09969db
     [[toojudgy]] 
--> Silence
-    Me: Uhm...... what
-    Date: Thanks for listening...
+-> Silence #line:08d0db3
+    Me: Uhm...... what #line:007c816
+    Date: Thanks for listening... #line:04fbcb2
     [[instructions3]]
 ===
 title: conhumans
@@ -72,9 +72,9 @@ Date: They totally have the wrong color...  #line:0a63087
     Me: I don't think you can change that, to be honest.  #line:064bc42
     Me: Maybe this is going a bit far... #line:032657d
     [[undoable]] 
--> Silence
-    Me: Uhm...... what
-    Date: Thanks for listening...
+-> Silence #line:0721b47
+    Me: Uhm...... what #line:00693f9
+    Date: Thanks for listening... #line:0abc2a3
     [[instructions3]]
 ===
 title: doubt
@@ -116,9 +116,9 @@ Date: I could imagine a life like that with you, hihi... #line:0f6fef7
     Me: Sounds like paradise and a little bit unreal.  #line:0691b10
     Me: But I guess it is okay to dream. Hehe. #line:01d4c51
     [[dream]] 
--> Silence
-    Me: Uhm...... what
-    Date: Thanks for listening...
+-> Silence #line:0f05908
+    Me: Uhm...... what #line:07629f1
+    Date: Thanks for listening... #line:0bfab9e
     [[instructions2]]
 ===
 title: undoable
@@ -159,5 +159,5 @@ tags:
 colorID: 4
 position: 1366,294
 ---
-Instructions: Careful, a sharknado!!!! Aren't you supposed to boop sharks on the nose to make them scared?
+Instructions: Careful, a sharknado!!!! Aren't you supposed to boop sharks on the nose to make them scared? #line:0f9497d
 ===
