@@ -18,11 +18,10 @@ public class ButtonFun : MonoBehaviour
         _button = GetComponent<Button>();
         _defaultPos = rt.anchoredPosition;
     }
-    
+
 
     public void HoverEnter()
     {
-        print("over");
         var endVal = offset + _defaultPos.y;
         rt.DOAnchorPosY(endVal, duration);
         ps.Play();
