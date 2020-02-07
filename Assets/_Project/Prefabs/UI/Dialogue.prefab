@@ -76,6 +76,7 @@ MonoBehaviour:
   - {fileID: 6528194375904336720}
   - {fileID: 6528194374213177867}
   - {fileID: 6528194374760566493}
+  lineText: {fileID: 7950120413270983376}
   onDialogueStart:
     m_PersistentCalls:
       m_Calls:
@@ -2485,6 +2486,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voiceName: Date
   voiceEmitter: {fileID: 6493561967269242859}
+  voiceColor: {r: 1, g: 0.25802958, b: 0.13679248, a: 1}
 --- !u!114 &6493561967269242859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2554,6 +2556,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voiceName: Me
   voiceEmitter: {fileID: 1633904391727167055}
+  voiceColor: {r: 0.1476504, g: 0.31880102, b: 0.3962264, a: 1}
 --- !u!114 &1633904391727167055
 MonoBehaviour:
   m_ObjectHideFlags: 0

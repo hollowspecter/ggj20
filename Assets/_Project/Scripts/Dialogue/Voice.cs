@@ -8,6 +8,7 @@ public class Voice : MonoBehaviour
 
     public string voiceName = "";
     public FMODUnity.StudioEventEmitter voiceEmitter;
+    public Color voiceColor = Color.black;
 
     protected void Awake()
     {
@@ -19,6 +20,7 @@ public class Voice : MonoBehaviour
         try
         {
             voiceEmitter?.Play();
-        } catch(System.Exception e) { }
+        }
+        catch (System.Exception e) { }
     }
 }

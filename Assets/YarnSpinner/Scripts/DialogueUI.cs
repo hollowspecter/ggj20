@@ -29,6 +29,7 @@ using System.Collections;
 using UnityEngine.UI;
 using System.Text;
 using System.Collections.Generic;
+using TMPro;
 
 namespace Yarn.Unity
 {
@@ -52,6 +53,7 @@ namespace Yarn.Unity
 
         /// The buttons that let the user choose an option
         public List<Button> optionButtons;
+        public TextMeshProUGUI lineText;
 
         // When true, the user has indicated that they want to proceed to
         // the next line.
@@ -113,6 +115,11 @@ namespace Yarn.Unity
             }
 
             Voice.Registry.TryGetValue(GetNameFromLine(text), out Voice voice);
+
+            if (voice == null)
+                lineText.color = Color.black;
+            else
+                lineText.color = voice.voiceColor;
 
             if (textSpeed > 0.0f)
             {
