@@ -30,7 +30,8 @@ using UnityEngine.UI;
 using System.Text;
 using System.Collections.Generic;
 
-namespace Yarn.Unity {
+namespace Yarn.Unity
+{
     /// Displays dialogue lines to the player, and sends
     /// user choices back to the dialogue system.
 
@@ -62,11 +63,11 @@ namespace Yarn.Unity {
 
         // When true, the DialogueRunner is waiting for the user to press
         // one of the option buttons.
-        private bool waitingForOptionSelection = false;     
+        private bool waitingForOptionSelection = false;
 
         public UnityEngine.Events.UnityEvent onDialogueStart;
 
-        public UnityEngine.Events.UnityEvent onDialogueEnd;  
+        public UnityEngine.Events.UnityEvent onDialogueEnd;
 
         public UnityEngine.Events.UnityEvent onLineStart;
         public UnityEngine.Events.UnityEvent onLineFinishDisplaying;
@@ -77,19 +78,20 @@ namespace Yarn.Unity {
         public UnityEngine.Events.UnityEvent onOptionsEnd;
 
         public DialogueRunner.StringUnityEvent onCommand;
-        
-        void Awake ()
+
+        void Awake()
         {
             // Start by hiding the container
             if (dialogueContainer != null)
                 dialogueContainer.SetActive(false);
 
-            foreach (var button in optionButtons) {
-                button.gameObject.SetActive (false);
+            foreach (var button in optionButtons)
+            {
+                button.gameObject.SetActive(false);
             }
         }
 
-        public override Dialogue.HandlerExecutionType RunLine (Yarn.Line line, IDictionary<string,string> strings, System.Action onComplete)
+        public override Dialogue.HandlerExecutionType RunLine(Yarn.Line line, IDictionary<string, string> strings, System.Action onComplete)
         {
             // Start displaying the line; it will call onComplete later
             // which will tell the dialogue to continue
@@ -98,23 +100,27 @@ namespace Yarn.Unity {
         }
 
         /// Show a line of dialogue, gradually        
-        private IEnumerator DoRunLine(Yarn.Line line, IDictionary<string,string> strings, System.Action onComplete) {
+        private IEnumerator DoRunLine(Yarn.Line line, IDictionary<string, string> strings, System.Action onComplete)
+        {
             onLineStart?.Invoke();
 
             userRequestedNextLine = false;
-            
-            if (strings.TryGetValue(line.ID, out var text) == false) {
+
+            if (strings.TryGetValue(line.ID, out var text) == false)
+            {
                 Debug.LogWarning($"Line {line.ID} doesn't have any localised text.");
-                text = line.ID;
+                text = line.Text;
             }
 
             Voice.Registry.TryGetValue(GetNameFromLine(text), out Voice voice);
 
-            if (textSpeed > 0.0f) {
+            if (textSpeed > 0.0f)
+            {
                 // Display the line one character at a time
-                var stringBuilder = new StringBuilder ();
+                var stringBuilder = new StringBuilder();
 
-                foreach (char c in text) {
+                foreach (char c in text)
+                {
 
                     // play a voice if character is a vowel
                     if ("aeiouAEIOU".IndexOf(c) >= 0)
@@ -123,17 +129,20 @@ namespace Yarn.Unity {
                         voice?.Talk();
                     }
 
-                    stringBuilder.Append (c);
-                    onLineUpdate?.Invoke(stringBuilder.ToString ());
-                    if (userRequestedNextLine) {
+                    stringBuilder.Append(c);
+                    onLineUpdate?.Invoke(stringBuilder.ToString());
+                    if (userRequestedNextLine)
+                    {
                         // We've requested a skip of the entire line.
                         // Display all of the text immediately.
                         onLineUpdate?.Invoke(text);
                         break;
                     }
-                    yield return new WaitForSeconds (textSpeed);
+                    yield return new WaitForSeconds(textSpeed);
                 }
-            } else {
+            }
+            else
+            {
                 // Display the entire line immediately if textSpeed <= 0
                 onLineUpdate?.Invoke(text);
             }
@@ -159,13 +168,14 @@ namespace Yarn.Unity {
 
         }
 
-        public override void RunOptions (Yarn.OptionSet optionsCollection, IDictionary<string,string> strings, System.Action<int> selectOption) {
+        public override void RunOptions(Yarn.OptionSet optionsCollection, IDictionary<string, string> strings, System.Action<int> selectOption)
+        {
             StartCoroutine(DoRunOptions(optionsCollection, strings, selectOption));
         }
 
         /// Show a list of options, and wait for the player to make a
         /// selection.
-        public  IEnumerator DoRunOptions (Yarn.OptionSet optionsCollection, IDictionary<string,string> strings, System.Action<int> selectOption)
+        public IEnumerator DoRunOptions(Yarn.OptionSet optionsCollection, IDictionary<string, string> strings, System.Action<int> selectOption)
         {
             // Display each option in a button, and make it visible
             int i = 0;
@@ -174,7 +184,8 @@ namespace Yarn.Unity {
 
             currentOptionSelectionHandler = selectOption;
 
-            foreach (var optionString in optionsCollection.Options) {
+            foreach (var optionString in optionsCollection.Options)
+            {
 
                 // dont show options if no buttons are available
                 if (i >= optionButtons.Count - 1)
@@ -183,24 +194,27 @@ namespace Yarn.Unity {
                 if (i >= optionsCollection.Options.Length - 1)
                     continue;
 
-                optionButtons [i].gameObject.SetActive (true);
+                optionButtons[i].gameObject.SetActive(true);
 
                 // When the button is selected, tell the dialogue about it
-                optionButtons [i].onClick.RemoveAllListeners();
-                optionButtons [i].onClick.AddListener(() => SelectOption(optionString.ID));
+                optionButtons[i].onClick.RemoveAllListeners();
+                optionButtons[i].onClick.AddListener(() => SelectOption(optionString.ID));
 
-                if (strings.TryGetValue(optionString.Line.ID, out var optionText) == false) {
+                if (strings.TryGetValue(optionString.Line.ID, out var optionText) == false)
+                {
                     Debug.LogWarning($"Option {optionString.Line.ID} doesn't have any localised text");
                     optionText = optionString.Line.ID;
                 }
 
-                var unityText = optionButtons [i].GetComponentInChildren<Text> ();
-                if (unityText != null) {
+                var unityText = optionButtons[i].GetComponentInChildren<Text>();
+                if (unityText != null)
+                {
                     unityText.text = optionText;
                 }
 
-                var textMeshProText = optionButtons [i].GetComponentInChildren<TMPro.TMP_Text> ();
-                if (textMeshProText != null) {
+                var textMeshProText = optionButtons[i].GetComponentInChildren<TMPro.TMP_Text>();
+                if (textMeshProText != null)
+                {
                     textMeshProText.text = optionText;
                 }
 
@@ -211,7 +225,8 @@ namespace Yarn.Unity {
 
             // Wait until the chooser has been used and then removed 
             float timer = 0f;
-            while (waitingForOptionSelection) {
+            while (waitingForOptionSelection)
+            {
                 timer += Time.deltaTime;
 
                 // after some time always choose the last option
@@ -223,10 +238,11 @@ namespace Yarn.Unity {
                 yield return null;
             }
 
-            
+
             // Hide all the buttons
-            foreach (var button in optionButtons) {
-                button.gameObject.SetActive (false);
+            foreach (var button in optionButtons)
+            {
+                button.gameObject.SetActive(false);
             }
 
             onOptionsEnd?.Invoke();
@@ -234,46 +250,50 @@ namespace Yarn.Unity {
         }
 
         /// Run an internal command.
-        public override Dialogue.HandlerExecutionType RunCommand (Yarn.Command command, System.Action onComplete) {
+        public override Dialogue.HandlerExecutionType RunCommand(Yarn.Command command, System.Action onComplete)
+        {
             StartCoroutine(DoRunCommand(command, onComplete));
             return Dialogue.HandlerExecutionType.ContinueExecution;
         }
 
-        public IEnumerator DoRunCommand (Yarn.Command command, System.Action onComplete)
+        public IEnumerator DoRunCommand(Yarn.Command command, System.Action onComplete)
         {
             // "Perform" the command
-            Debug.Log ("Command: " + command.Text);
+            Debug.Log("Command: " + command.Text);
             onComplete?.Invoke();
             yield break;
         }
 
         /// Called when the dialogue system has started running.
-        public override void DialogueStarted ()
+        public override void DialogueStarted()
         {
             // Enable the dialogue controls.
             if (dialogueContainer != null)
                 dialogueContainer.SetActive(true);
 
-            onDialogueStart?.Invoke();            
+            onDialogueStart?.Invoke();
         }
 
         /// Called when the dialogue system has finished running.
-        public override void DialogueComplete ()
+        public override void DialogueComplete()
         {
             onDialogueEnd?.Invoke();
 
             // Hide the dialogue interface.
             if (dialogueContainer != null)
                 dialogueContainer.SetActive(false);
-            
+
         }
 
-        public void MarkLineComplete() {
+        public void MarkLineComplete()
+        {
             userRequestedNextLine = true;
         }
 
-        public void SelectOption(int index) {
-            if (waitingForOptionSelection == false) {
+        public void SelectOption(int index)
+        {
+            if (waitingForOptionSelection == false)
+            {
                 Debug.LogWarning("An option was selected, but the dialogue UI was not expecting it.");
                 return;
             }
